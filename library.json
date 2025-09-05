@@ -1,0 +1,26 @@
+{
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+    "name": "MechaLib",
+    "version": "0.1.0",
+    "description": "The software library for MechaLeague robots.",
+    "keywords": ["MechaLeague", "ML", "MechaLib", "Chemistry Quest"],
+    "authors": [
+      {
+        "name": "Ramón de León",
+        "email": "ramon@coahuilacreations.xyz"
+      }
+    ],
+    "license": "BSL-1.0",
+    "frameworks": ["arduino"], 
+    "platforms": ["espressif32"],
+    "dependencies": [
+      {
+        "name": "robtillaart/AS5600",
+        "version": "^0.6.6"
+      },
+      {
+        "name": "wifwaf/TCA9548A",
+        "version": "^1.1.3"
+      }
+    ]
+  }
