@@ -3,7 +3,7 @@
 #define MOTOR_CONTROLLER_L298N_H
 
 #include <Arduino.h>
-#include <motor/MOTOR_CONTROLLER_Base.h>
+#include <motor/dc/MOTOR_CONTROLLER_Base.h>
 #include <motor/MotorSafety.h>
 
 class MOTOR_CONTROLLER_L298N : public MOTOR_CONTROLLER_Base {
