@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
     "name": "MechaLib",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "The software library for MechaLeague robots.",
     "keywords": ["MechaLeague", "ML", "MechaLib", "Chemistry Quest"],
     "authors": [
@@ -31,6 +31,6 @@
       }
     ],
     "scripts": {
-
+      "postinstall": "scripts/post_install.py"
     }
   }
