@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_eb5bd66d608c462d0443cbbfba4140e5" kind="dir">
+    <compoundname>src/drive</compoundname>
+    <innerfile refid="_chassis_speeds_8h">ChassisSpeeds.h</innerfile>
+    <innerfile refid="_differential_drive_kinematics_8h">DifferentialDriveKinematics.h</innerfile>
+    <innerfile refid="_mecanum_drive_kinematics_8h">MecanumDriveKinematics.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/drive/"/>
+  </compounddef>
+</doxygen>

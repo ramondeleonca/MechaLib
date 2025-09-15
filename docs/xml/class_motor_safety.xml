@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_motor_safety" kind="class" language="C++" prot="public">
+    <compoundname>MotorSafety</compoundname>
+    <includes refid="_motor_safety_8h" local="no">MotorSafety.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_motor_safety_1ad8310472ca69b6999e5a58a10724beca" prot="private" static="no" mutable="no">
+        <type><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699" kindref="member">MotorSafetyStatus</ref></type>
+        <definition>MotorSafetyStatus MotorSafety::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>MotorSafety::status</qualifiedname>
+        <initializer>= <ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a4eca054070419f48846f93d1e09f2ac6" kindref="member">MotorSafetyStatus::PROTECTED</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/MotorSafety.h" line="12" column="27" bodyfile="src/motor/MotorSafety.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_motor_safety_1a8b13a150baafe53ed9f0cb515495a930" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MotorSafety::enable</definition>
+        <argsstring>()</argsstring>
+        <name>enable</name>
+        <qualifiedname>MotorSafety::enable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/MotorSafety.h" line="15" column="14" bodyfile="src/motor/MotorSafety.h" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_safety_1a5916467d507c5f1ace5edd7f0879a249" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MotorSafety::disable</definition>
+        <argsstring>()</argsstring>
+        <name>disable</name>
+        <qualifiedname>MotorSafety::disable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/MotorSafety.h" line="19" column="14" bodyfile="src/motor/MotorSafety.h" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_safety_1ac4b471a2109f684122428ff0ea78224a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699" kindref="member">MotorSafetyStatus</ref></type>
+        <definition>MotorSafetyStatus MotorSafety::getStatus</definition>
+        <argsstring>()</argsstring>
+        <name>getStatus</name>
+        <qualifiedname>MotorSafety::getStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/MotorSafety.h" line="23" column="27" bodyfile="src/motor/MotorSafety.h" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_safety_1ae460d83bff86597bb83931b6e6fd11e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MotorSafety::MotorSafety</definition>
+        <argsstring>()</argsstring>
+        <name>MotorSafety</name>
+        <qualifiedname>MotorSafety::MotorSafety</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/MotorSafety.h" line="29" column="9" bodyfile="src/motor/MotorSafety.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_motor_safety_1a37901b493830135d3d2ad23b80d7c0ec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_motor_safety" kindref="compound">MotorSafety</ref> &amp;</type>
+        <definition>static MotorSafety &amp; MotorSafety::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>MotorSafety::getInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/MotorSafety.h" line="30" column="28" bodyfile="src/motor/MotorSafety.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/motor/MotorSafety.h" line="10" column="1" bodyfile="src/motor/MotorSafety.h" bodystart="10" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_motor_safety_1a5916467d507c5f1ace5edd7f0879a249" prot="public" virt="non-virtual"><scope>MotorSafety</scope><name>disable</name></member>
+      <member refid="class_motor_safety_1a8b13a150baafe53ed9f0cb515495a930" prot="public" virt="non-virtual"><scope>MotorSafety</scope><name>enable</name></member>
+      <member refid="class_motor_safety_1a37901b493830135d3d2ad23b80d7c0ec" prot="public" virt="non-virtual"><scope>MotorSafety</scope><name>getInstance</name></member>
+      <member refid="class_motor_safety_1ac4b471a2109f684122428ff0ea78224a" prot="public" virt="non-virtual"><scope>MotorSafety</scope><name>getStatus</name></member>
+      <member refid="class_motor_safety_1ae460d83bff86597bb83931b6e6fd11e5" prot="public" virt="non-virtual"><scope>MotorSafety</scope><name>MotorSafety</name></member>
+      <member refid="class_motor_safety_1ad8310472ca69b6999e5a58a10724beca" prot="private" virt="non-virtual"><scope>MotorSafety</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

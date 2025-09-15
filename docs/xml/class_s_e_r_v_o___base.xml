@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_s_e_r_v_o___base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SERVO_Base</compoundname>
+    <includes refid="_s_e_r_v_o___base_8h" local="no">SERVO_Base.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_e_r_v_o___base_1a89214b9899769b02fbb9567008844660" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SERVO_Base::minDeg</definition>
+        <argsstring></argsstring>
+        <name>minDeg</name>
+        <qualifiedname>SERVO_Base::minDeg</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="13" column="13" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_e_r_v_o___base_1aee20ae7c94e11d8cc54acf6cb8fc8022" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SERVO_Base::maxDeg</definition>
+        <argsstring></argsstring>
+        <name>maxDeg</name>
+        <qualifiedname>SERVO_Base::maxDeg</qualifiedname>
+        <initializer>= 180</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="14" column="13" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_e_r_v_o___base_1ab6cbabf41ee7b207c3b991173a89b3cc" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SERVO_Base::inverted</definition>
+        <argsstring></argsstring>
+        <name>inverted</name>
+        <qualifiedname>SERVO_Base::inverted</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="16" column="13" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_e_r_v_o___base_1a85279d5c82d5014fab561d41bf567b62" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SERVO_Base::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>SERVO_Base::offset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="17" column="13" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_e_r_v_o___base_1a86e33e9a294a8520db92d6f029b2576a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SERVO_Base::minPulse</definition>
+        <argsstring></argsstring>
+        <name>minPulse</name>
+        <qualifiedname>SERVO_Base::minPulse</qualifiedname>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="19" column="13" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_e_r_v_o___base_1a110827b053b2323601b9ef03bad1ecc2" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SERVO_Base::maxPulse</definition>
+        <argsstring></argsstring>
+        <name>maxPulse</name>
+        <qualifiedname>SERVO_Base::maxPulse</qualifiedname>
+        <initializer>= 2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="20" column="13" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_e_r_v_o___base_1a9973aa02dbb294ce6ef23bcb5947f36c" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_e_r_v_o___base" kindref="compound">SERVO_Base</ref> *</type>
+        <definition>SERVO_Base* SERVO_Base::followers[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>followers</name>
+        <qualifiedname>SERVO_Base::followers</qualifiedname>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="22" column="20" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_e_r_v_o___base_1af8d46d78d6bf2888599aee15e9097b12" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SERVO_Base::begin</definition>
+        <argsstring>()=0</argsstring>
+        <name>begin</name>
+        <qualifiedname>SERVO_Base::begin</qualifiedname>
+        <briefdescription>
+<para>Begin the servo motor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="29" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_e_r_v_o___base_1a9e97280cc7e1e9cebb15b547b69ec4e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SERVO_Base::set</definition>
+        <argsstring>(float rotation)=0</argsstring>
+        <name>set</name>
+        <qualifiedname>SERVO_Base::set</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Set the rotation (percent) of the servo motor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation (percent) to set the servo motor to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="36" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_e_r_v_o___base_1afa17f474e7196393fddb846cebe20dd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SERVO_Base::setAngle</definition>
+        <argsstring>(int angle)</argsstring>
+        <name>setAngle</name>
+        <qualifiedname>SERVO_Base::setAngle</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Set the angle (degrees) of the servo motor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle (degrees) to set the servo motor to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="42" column="18" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_e_r_v_o___base_1adbd60c8170d44b071363fbd8ba9b9d45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_e_r_v_o___base" kindref="compound">SERVO_Base</ref> **</type>
+        <definition>virtual SERVO_Base ** SERVO_Base::getFollowers</definition>
+        <argsstring>()</argsstring>
+        <name>getFollowers</name>
+        <qualifiedname>SERVO_Base::getFollowers</qualifiedname>
+        <briefdescription>
+<para>Get the followers for the servo motor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The followers for the servo motor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="52" column="32" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_e_r_v_o___base_1ac6816a69197f35558bce01085d7c482b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SERVO_Base::updateFollowers</definition>
+        <argsstring>(float rotation)</argsstring>
+        <name>updateFollowers</name>
+        <qualifiedname>SERVO_Base::updateFollowers</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Update the followers of the servo motor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The speed to set the followers to servo motor internally calls this, not necessary to call this externally </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="62" column="26" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="62" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Recomended PWM pins: 2,4,12-19,21-23,25-27,32-33 </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>SERVO_Base</label>
+        <link refid="class_s_e_r_v_o___base"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>followers</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/motor/servo/SERVO_Base.h" line="11" column="1" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="11" bodyend="67"/>
+    <listofallmembers>
+      <member refid="class_s_e_r_v_o___base_1af8d46d78d6bf2888599aee15e9097b12" prot="public" virt="pure-virtual"><scope>SERVO_Base</scope><name>begin</name></member>
+      <member refid="class_s_e_r_v_o___base_1a9973aa02dbb294ce6ef23bcb5947f36c" prot="protected" virt="non-virtual"><scope>SERVO_Base</scope><name>followers</name></member>
+      <member refid="class_s_e_r_v_o___base_1adbd60c8170d44b071363fbd8ba9b9d45" prot="public" virt="virtual"><scope>SERVO_Base</scope><name>getFollowers</name></member>
+      <member refid="class_s_e_r_v_o___base_1ab6cbabf41ee7b207c3b991173a89b3cc" prot="protected" virt="non-virtual"><scope>SERVO_Base</scope><name>inverted</name></member>
+      <member refid="class_s_e_r_v_o___base_1aee20ae7c94e11d8cc54acf6cb8fc8022" prot="protected" virt="non-virtual"><scope>SERVO_Base</scope><name>maxDeg</name></member>
+      <member refid="class_s_e_r_v_o___base_1a110827b053b2323601b9ef03bad1ecc2" prot="protected" virt="non-virtual"><scope>SERVO_Base</scope><name>maxPulse</name></member>
+      <member refid="class_s_e_r_v_o___base_1a89214b9899769b02fbb9567008844660" prot="protected" virt="non-virtual"><scope>SERVO_Base</scope><name>minDeg</name></member>
+      <member refid="class_s_e_r_v_o___base_1a86e33e9a294a8520db92d6f029b2576a" prot="protected" virt="non-virtual"><scope>SERVO_Base</scope><name>minPulse</name></member>
+      <member refid="class_s_e_r_v_o___base_1a85279d5c82d5014fab561d41bf567b62" prot="protected" virt="non-virtual"><scope>SERVO_Base</scope><name>offset</name></member>
+      <member refid="class_s_e_r_v_o___base_1a9e97280cc7e1e9cebb15b547b69ec4e5" prot="public" virt="pure-virtual"><scope>SERVO_Base</scope><name>set</name></member>
+      <member refid="class_s_e_r_v_o___base_1afa17f474e7196393fddb846cebe20dd5" prot="public" virt="non-virtual"><scope>SERVO_Base</scope><name>setAngle</name></member>
+      <member refid="class_s_e_r_v_o___base_1ac6816a69197f35558bce01085d7c482b" prot="public" virt="virtual"><scope>SERVO_Base</scope><name>updateFollowers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

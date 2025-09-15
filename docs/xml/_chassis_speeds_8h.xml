@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_chassis_speeds_8h" kind="file" language="C++">
+    <compoundname>ChassisSpeeds.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="_mecha_lib_8h" local="no">src/MechaLib.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>src/drive/ChassisSpeeds.h</label>
+        <link refid="_chassis_speeds_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/MechaLib.h</label>
+        <link refid="_mecha_lib_8h"/>
+      </node>
+      <node id="1">
+        <label>src/drive/ChassisSpeeds.h</label>
+        <link refid="_chassis_speeds_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_chassis_speeds" prot="public">ChassisSpeeds</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_chassis_speeds_8h_1a1a0dd81c1bcf7226d34f101ef37f399c" prot="public" static="no">
+        <name>CHASSIS_SPEEDS_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="3" column="9" bodyfile="src/drive/ChassisSpeeds.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CHASSIS_SPEEDS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_chassis_speeds_8h_1a1a0dd81c1bcf7226d34f101ef37f399c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHASSIS_SPEEDS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_chassis_speeds" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_chassis_speeds" kindref="compound">ChassisSpeeds</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vx<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vy<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="class_chassis_speeds_1abe6d0b590cdc2dea9e645d5908bd8658" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_chassis_speeds_1abe6d0b590cdc2dea9e645d5908bd8658" kindref="member">getVx</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;vx;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_chassis_speeds_1aa1915396a41ad70f298076d8bb805f57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_chassis_speeds_1aa1915396a41ad70f298076d8bb805f57" kindref="member">getVy</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;vy;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_chassis_speeds_1a415287bb731c5528002e0ea643062b80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_chassis_speeds_1a415287bb731c5528002e0ea643062b80" kindref="member">getOmega</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;omega;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_chassis_speeds_1a41faa0c3c3489cda270b55583a0c1871" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_chassis_speeds_1a41faa0c3c3489cda270b55583a0c1871" kindref="member">setVx</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vx)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vx<sp/>=<sp/>vx;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_chassis_speeds_1a978be66688e0023b3f17c3301f312394" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_chassis_speeds_1a978be66688e0023b3f17c3301f312394" kindref="member">setVy</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vy)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vy<sp/>=<sp/>vy;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_chassis_speeds_1a0948898c43752cc6c8932524260add29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_chassis_speeds_1a0948898c43752cc6c8932524260add29" kindref="member">setOmega</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;omega<sp/>=<sp/>omega;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_chassis_speeds_1aeb22ae59d74515619e757e39aaf8eb7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_chassis_speeds_1aeb22ae59d74515619e757e39aaf8eb7c" kindref="member">set</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vx,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vy,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vx<sp/>=<sp/>vx;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vy<sp/>=<sp/>vy;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;omega<sp/>=<sp/>omega;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_chassis_speeds_1afda15133d06681a684e49cd96af16e1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_chassis_speeds_1afda15133d06681a684e49cd96af16e1e" kindref="member">setFieldRelative</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vx,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vy,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>heading)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vx<sp/>=<sp/>vx<sp/>*<sp/>cos(heading)<sp/>-<sp/>vy<sp/>*<sp/>sin(heading);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;vy<sp/>=<sp/>vx<sp/>*<sp/>sin(heading)<sp/>+<sp/>vy<sp/>*<sp/>cos(heading);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;omega<sp/>=<sp/>omega;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_chassis_speeds_1a468ad906c43edc5d2662f24f91177df4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="class_chassis_speeds_1a468ad906c43edc5d2662f24f91177df4" kindref="member">toString</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;ChassisSpeeds{vx=&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(this-&gt;vx)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>vy=&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(this-&gt;vy)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>omega=&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(this-&gt;omega)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/drive/ChassisSpeeds.h"/>
+  </compounddef>
+</doxygen>

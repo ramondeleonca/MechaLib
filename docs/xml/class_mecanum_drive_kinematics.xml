@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mecanum_drive_kinematics" kind="class" language="C++" prot="public">
+    <compoundname>MecanumDriveKinematics</compoundname>
+    <includes refid="_mecanum_drive_kinematics_8h" local="no">MecanumDriveKinematics.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mecanum_drive_kinematics_1a127006084f1ac34ee9f924932f14ce1e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MecanumDriveKinematics::wheelDiameter</definition>
+        <argsstring></argsstring>
+        <name>wheelDiameter</name>
+        <qualifiedname>MecanumDriveKinematics::wheelDiameter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/MecanumDriveKinematics.h" line="9" column="15" bodyfile="src/drive/MecanumDriveKinematics.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mecanum_drive_kinematics_1aa36315328f95ba2a73c9282002f34909" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MecanumDriveKinematics::trackWidth</definition>
+        <argsstring></argsstring>
+        <name>trackWidth</name>
+        <qualifiedname>MecanumDriveKinematics::trackWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/MecanumDriveKinematics.h" line="10" column="15" bodyfile="src/drive/MecanumDriveKinematics.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mecanum_drive_kinematics_1a5ffa01e3f927891e2b013786d0a4b119" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MecanumDriveKinematics::wheelBase</definition>
+        <argsstring></argsstring>
+        <name>wheelBase</name>
+        <qualifiedname>MecanumDriveKinematics::wheelBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/MecanumDriveKinematics.h" line="11" column="15" bodyfile="src/drive/MecanumDriveKinematics.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mecanum_drive_kinematics_1a95df982053b045c1cc4f5f160f344460" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MecanumDriveKinematics::MecanumDriveKinematics</definition>
+        <argsstring>(float wheelDiameter, float trackWidth, float wheelBase)</argsstring>
+        <name>MecanumDriveKinematics</name>
+        <qualifiedname>MecanumDriveKinematics::MecanumDriveKinematics</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>wheelDiameter</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>trackWidth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>wheelBase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/MecanumDriveKinematics.h" line="14" column="9" bodyfile="src/drive/MecanumDriveKinematics.h" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mecanum_drive_kinematics_1a68fa5cfab0d1e9f036732e12ee189f7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MecanumDriveKinematics::calculateWheelSpeeds</definition>
+        <argsstring>(float *wheelSpeeds, float vx, float vy, float omega)</argsstring>
+        <name>calculateWheelSpeeds</name>
+        <qualifiedname>MecanumDriveKinematics::calculateWheelSpeeds</qualifiedname>
+        <param>
+          <type>float *</type>
+          <declname>wheelSpeeds</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/MecanumDriveKinematics.h" line="20" column="14" bodyfile="src/drive/MecanumDriveKinematics.h" bodystart="20" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mecanum_drive_kinematics_1a6d7b544311efe97fd2386217901331cb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>static float * MecanumDriveKinematics::normalizeWheelSpeeds</definition>
+        <argsstring>(float *wheelSpeeds)</argsstring>
+        <name>normalizeWheelSpeeds</name>
+        <qualifiedname>MecanumDriveKinematics::normalizeWheelSpeeds</qualifiedname>
+        <param>
+          <type>float *</type>
+          <declname>wheelSpeeds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/MecanumDriveKinematics.h" line="27" column="22" bodyfile="src/drive/MecanumDriveKinematics.h" bodystart="27" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/drive/MecanumDriveKinematics.h" line="7" column="1" bodyfile="src/drive/MecanumDriveKinematics.h" bodystart="7" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_mecanum_drive_kinematics_1a68fa5cfab0d1e9f036732e12ee189f7e" prot="public" virt="non-virtual"><scope>MecanumDriveKinematics</scope><name>calculateWheelSpeeds</name></member>
+      <member refid="class_mecanum_drive_kinematics_1a95df982053b045c1cc4f5f160f344460" prot="public" virt="non-virtual"><scope>MecanumDriveKinematics</scope><name>MecanumDriveKinematics</name></member>
+      <member refid="class_mecanum_drive_kinematics_1a6d7b544311efe97fd2386217901331cb" prot="public" virt="non-virtual"><scope>MecanumDriveKinematics</scope><name>normalizeWheelSpeeds</name></member>
+      <member refid="class_mecanum_drive_kinematics_1aa36315328f95ba2a73c9282002f34909" prot="private" virt="non-virtual"><scope>MecanumDriveKinematics</scope><name>trackWidth</name></member>
+      <member refid="class_mecanum_drive_kinematics_1a5ffa01e3f927891e2b013786d0a4b119" prot="private" virt="non-virtual"><scope>MecanumDriveKinematics</scope><name>wheelBase</name></member>
+      <member refid="class_mecanum_drive_kinematics_1a127006084f1ac34ee9f924932f14ce1e" prot="private" virt="non-virtual"><scope>MecanumDriveKinematics</scope><name>wheelDiameter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

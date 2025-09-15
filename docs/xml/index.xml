@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="en-US">
+  <compound refid="class_chassis_speeds" kind="class"><name>ChassisSpeeds</name>
+    <member refid="class_chassis_speeds_1a41e1008349e53731f28386266892b908" kind="variable"><name>vx</name></member>
+    <member refid="class_chassis_speeds_1aecdd35aa386f93577703d690707686a3" kind="variable"><name>vy</name></member>
+    <member refid="class_chassis_speeds_1af97b1b8dbd4dd72a9eee33f3bd3e87d4" kind="variable"><name>omega</name></member>
+    <member refid="class_chassis_speeds_1abe6d0b590cdc2dea9e645d5908bd8658" kind="function"><name>getVx</name></member>
+    <member refid="class_chassis_speeds_1aa1915396a41ad70f298076d8bb805f57" kind="function"><name>getVy</name></member>
+    <member refid="class_chassis_speeds_1a415287bb731c5528002e0ea643062b80" kind="function"><name>getOmega</name></member>
+    <member refid="class_chassis_speeds_1a41faa0c3c3489cda270b55583a0c1871" kind="function"><name>setVx</name></member>
+    <member refid="class_chassis_speeds_1a978be66688e0023b3f17c3301f312394" kind="function"><name>setVy</name></member>
+    <member refid="class_chassis_speeds_1a0948898c43752cc6c8932524260add29" kind="function"><name>setOmega</name></member>
+    <member refid="class_chassis_speeds_1aeb22ae59d74515619e757e39aaf8eb7c" kind="function"><name>set</name></member>
+    <member refid="class_chassis_speeds_1afda15133d06681a684e49cd96af16e1e" kind="function"><name>setFieldRelative</name></member>
+    <member refid="class_chassis_speeds_1a468ad906c43edc5d2662f24f91177df4" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="class_comms" kind="class"><name>Comms</name>
+    <member refid="class_comms_1a7956d378223c598b4883d907cd9ef516" kind="variable"><name>fieldSSID</name></member>
+    <member refid="class_comms_1aff24d317de710a5611c39f0c7de0827d" kind="variable"><name>fieldPass</name></member>
+    <member refid="class_comms_1a6758c5f5e83b592948f14179172a4734" kind="variable"><name>mdnsFormat</name></member>
+    <member refid="class_comms_1a6f5704d758b4cec35422cd75e05f8d65" kind="variable"><name>controlServer</name></member>
+    <member refid="class_comms_1a14fd34cdd849c52aa07852c065f289bc" kind="variable"><name>controlServerPort</name></member>
+    <member refid="class_comms_1a18ce656a839865530778af6ff4439bef" kind="variable"><name>telemetryServer</name></member>
+    <member refid="class_comms_1a7c02b0c1a838077a55a9669d39266e7f" kind="variable"><name>telemetryServerPort</name></member>
+    <member refid="class_comms_1ada9cbf7e426e1e8197d4955bf80efd16" kind="variable"><name>init</name></member>
+    <member refid="class_comms_1ab72338d0d90e23b2d29f6f750cce6da0" kind="function"><name>validateTeamID</name></member>
+    <member refid="class_comms_1a8604747083d79dd88dc290566f06d660" kind="function"><name>connectToWiFi</name></member>
+    <member refid="class_comms_1a9b4c7c511347df093ae57149baf32128" kind="function"><name>startMDNS</name></member>
+    <member refid="class_comms_1a8ffdd1d67376e751d37cf0718fadae8a" kind="function"><name>startServer</name></member>
+    <member refid="class_comms_1acb67096a7b2d74f85842a3eee20aca25" kind="function"><name>connectToField</name></member>
+    <member refid="class_comms_1aa3878221ed907d6d6841ee77741c1f49" kind="function"><name>Comms</name></member>
+    <member refid="class_comms_1a84477cd2049de0d0d4dfe7b761574556" kind="function"><name>getInstance</name></member>
+  </compound>
+  <compound refid="class_differential_drive_kinematics" kind="class"><name>DifferentialDriveKinematics</name>
+    <member refid="class_differential_drive_kinematics_1a263253aaa999456bcefa8a5b32d551a8" kind="variable"><name>trackWidth</name></member>
+    <member refid="class_differential_drive_kinematics_1ad89e71160cf6fc1c92d649e9fc3b7c29" kind="variable"><name>wheelRadius</name></member>
+    <member refid="class_differential_drive_kinematics_1a250cbd713d915923eef537b7bc5c6f31" kind="function"><name>DifferentialDriveKinematics</name></member>
+    <member refid="class_differential_drive_kinematics_1ae79268d191cbb894cb4af092423e11a7" kind="function"><name>calculateWheelSpeeds</name></member>
+    <member refid="class_differential_drive_kinematics_1a581c3086f069d3ab6f91b40f9dc3623d" kind="function"><name>normalizeWheelSpeeds</name></member>
+  </compound>
+  <compound refid="class_e_n_c_o_d_e_r___a_s5600" kind="class"><name>ENCODER_AS5600</name>
+    <member refid="class_e_n_c_o_d_e_r___a_s5600_1ae41732044e54e6630760e06d197c3e5d" kind="variable"><name>wire</name></member>
+    <member refid="class_e_n_c_o_d_e_r___a_s5600_1a447b314c06207207e6d2cd8554cdc3e7" kind="variable"><name>encoder</name></member>
+    <member refid="class_e_n_c_o_d_e_r___a_s5600_1a56339908b39fcd9f8860d9c99094e41e" kind="variable"><name>directionPin</name></member>
+    <member refid="class_e_n_c_o_d_e_r___a_s5600_1a6d87dd77949bd87281ccd9359f4db4c4" kind="function"><name>ENCODER_AS5600</name></member>
+    <member refid="class_e_n_c_o_d_e_r___a_s5600_1a13b0f3cfecc1b35f2581d811a7f02488" kind="function"><name>begin</name></member>
+    <member refid="class_e_n_c_o_d_e_r___a_s5600_1a2f9da0bfd074f178700c87f0ec82cb23" kind="function"><name>getAbsoluteAngle</name></member>
+  </compound>
+  <compound refid="class_gamepad_manager" kind="class"><name>GamepadManager</name>
+    <member refid="class_gamepad_manager_1a1a0c59438bf9ed8fa93fd621c7de505d" kind="variable"><name>gamepads</name></member>
+    <member refid="class_gamepad_manager_1a530775ebaa765de0b17f9a87f3b4e7d4" kind="function"><name>onConnect</name></member>
+    <member refid="class_gamepad_manager_1aea58faba8fc0488d1a437575fa70a6ae" kind="function"><name>onDisconnect</name></member>
+    <member refid="class_gamepad_manager_1a0d3fe1187cce00784a069f10bb1266df" kind="function"><name>GamepadManager</name></member>
+    <member refid="class_gamepad_manager_1a857fb4815da21121dfe49bd3cf4082d9" kind="function"><name>getInstance</name></member>
+  </compound>
+  <compound refid="class_i2_c___m_u_x___base" kind="class"><name>I2C_MUX_Base</name>
+    <member refid="class_i2_c___m_u_x___base_1a00e2399442ee54fed09c229e3483a7fe" kind="function"><name>begin</name></member>
+    <member refid="class_i2_c___m_u_x___base_1a4fdffe0108dea3edf1c8e757f401a34b" kind="function"><name>exposeChannel</name></member>
+    <member refid="class_i2_c___m_u_x___base_1a70dafd7f0d780e4ca28a71a03bae1cec" kind="function"><name>hideChannel</name></member>
+    <member refid="class_i2_c___m_u_x___base_1a642fa93b54625c83e72bbab8ef8f22ce" kind="function"><name>exposeAllChannels</name></member>
+    <member refid="class_i2_c___m_u_x___base_1afda776aaa3f349f462c3dceabc61df59" kind="function"><name>hideAllChannels</name></member>
+    <member refid="class_i2_c___m_u_x___base_1ae6a5dbac89a088fb224d3f1102f20e21" kind="function"><name>isChannelExposed</name></member>
+    <member refid="class_i2_c___m_u_x___base_1a2858960f9aed92bbf8b32deedcc3d330" kind="function"><name>getChannelStates</name></member>
+  </compound>
+  <compound refid="class_i2_c___m_u_x___t_c_a9548_a" kind="class"><name>I2C_MUX_TCA9548A</name>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a18da7f541195bea997899f2ecc0461d7" kind="variable"><name>wire</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a2362d5bdc66c0f21cb17c8a92f2f2b4a" kind="variable"><name>mux</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a52becaf38e2c76a02eb7f84093409dde" kind="variable"><name>channelStates</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1ac06540468a3409b1e4f3bf7d5540f826" kind="variable"><name>n_channels</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a7f2f10f000beb1d93902505e74b164a6" kind="function"><name>validateChannel</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a892b38566c4380cdd6c2302c22974069" kind="function"><name>I2C_MUX_TCA9548A</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a3b0c3d395409b4a7c73cbf8f41880e3f" kind="function"><name>I2C_MUX_TCA9548A</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1adf7551b8b1a86d5940605fda07a55f43" kind="function"><name>I2C_MUX_TCA9548A</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1ac17b7ad45f9152c49825930fbfd8fe3a" kind="function"><name>begin</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a306a7e2b715f934ee1aec5f0da80e3a4" kind="function"><name>exposeChannel</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1afd36d9cdce722a454569f102a2aee4a3" kind="function"><name>hideChannel</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1abc62fbac04bd7b855157156268e90cd4" kind="function"><name>exposeAllChannels</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1abee68a010190764bc454faf70031f14b" kind="function"><name>hideAllChannels</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1ae4b9abe94641a95ac7bc39e2cf69a941" kind="function"><name>isChannelExposed</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a8179714173d810aa078424d40ec35972" kind="function"><name>getChannelStates</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1aba1f45fec68f07895ace2e709255e511" kind="function"><name>writeRawRegister</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1ae04370f03b867c74334c699828239f1f" kind="function"><name>readRawRegister</name></member>
+    <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a7afc9234f624d4b23c79c246a651f1ec" kind="function"><name>~I2C_MUX_TCA9548A</name></member>
+  </compound>
+  <compound refid="class_joystick_util" kind="class"><name>JoystickUtil</name>
+    <member refid="class_joystick_util_1aa216fa6ddfe136e41e79bc75c4f6a7e6" kind="function"><name>deadbandMap</name></member>
+  </compound>
+  <compound refid="class_logger" kind="class"><name>Logger</name>
+    <member refid="class_logger_1abc41bfb031d896170c7675fa96a6b30c" kind="function"><name>Logger</name></member>
+    <member refid="class_logger_1a56defd0fd628ce6263d25d02296e48ce" kind="function"><name>getInstance</name></member>
+  </compound>
+  <compound refid="class_math_util" kind="class"><name>MathUtil</name>
+    <member refid="class_math_util_1a1d411db22ca61cc20ff783fd3ff72460" kind="function"><name>mapFloat</name></member>
+  </compound>
+  <compound refid="class_mecanum_drive_kinematics" kind="class"><name>MecanumDriveKinematics</name>
+    <member refid="class_mecanum_drive_kinematics_1a127006084f1ac34ee9f924932f14ce1e" kind="variable"><name>wheelDiameter</name></member>
+    <member refid="class_mecanum_drive_kinematics_1aa36315328f95ba2a73c9282002f34909" kind="variable"><name>trackWidth</name></member>
+    <member refid="class_mecanum_drive_kinematics_1a5ffa01e3f927891e2b013786d0a4b119" kind="variable"><name>wheelBase</name></member>
+    <member refid="class_mecanum_drive_kinematics_1a95df982053b045c1cc4f5f160f344460" kind="function"><name>MecanumDriveKinematics</name></member>
+    <member refid="class_mecanum_drive_kinematics_1a68fa5cfab0d1e9f036732e12ee189f7e" kind="function"><name>calculateWheelSpeeds</name></member>
+    <member refid="class_mecanum_drive_kinematics_1a6d7b544311efe97fd2386217901331cb" kind="function"><name>normalizeWheelSpeeds</name></member>
+  </compound>
+  <compound refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kind="class"><name>MOTOR_CONTROLLER_Base</name>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ac8dd481c1d701b9ac01b7d3159db03d5" kind="variable"><name>multiplier</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" kind="variable"><name>deadband</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a3c835bb772f89cb1f481c7d20597e439" kind="variable"><name>inverted</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kind="variable"><name>followers</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4e4ef7b8731a5eaba5a76ae8730810ab" kind="function"><name>applySpeedFilters</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af234d80a5f894665f9327696b442a721" kind="function"><name>begin</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a47435ee939e4d235d6f402c5b064e7e1" kind="function"><name>set</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a03c67f6e5a3c4e905151be11e2e5a761" kind="function"><name>set</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af99f51c50263a22b54e3034b7e81a50d" kind="function"><name>setInverted</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a6f7bc574a1212f378719ff70bceedee8" kind="function"><name>stop</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a989e9662e5b9f44f961d8fae48efc2eb" kind="function"><name>addFollower</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01ac03664b23edcd69e2dd3486a8546a" kind="function"><name>removeFollower</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a947bbbbfc685e913cfd6a8e322da140b" kind="function"><name>follow</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aa65faf15f28cb8b8a7c3b6934ea1eaa5" kind="function"><name>setMultiplier</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1acf1de87ef168ca4f590eddd1e0c91985" kind="function"><name>setDeadband</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4dc423a56131fbbd3f6ef56be993b075" kind="function"><name>getMultiplier</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aaecb4d51a118820a3c3b2b246a93fbc6" kind="function"><name>getDeadband</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af538dceb11edc0a9f95c681eb406f878" kind="function"><name>getInverted</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01e88bf2cd39334fed8ad1e3f535eb65" kind="function"><name>getFollowers</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a64c4bc2d03b238e81122bfa1cbd5f2b7" kind="function"><name>updateFollowers</name></member>
+  </compound>
+  <compound refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871" kind="class"><name>MOTOR_CONTROLLER_DRV8871</name>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1a150b4cf82b139f7e00a2b7c4db1665b1" kind="enum"><name>DRV8871_IdleMode</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1a150b4cf82b139f7e00a2b7c4db1665b1a01911a96c97a36cc13fe1349f12c0420" kind="enumvalue"><name>kCoast</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1a150b4cf82b139f7e00a2b7c4db1665b1aa70c5e8d8a6126c2c82f417dd24bf8ca" kind="enumvalue"><name>kBrake</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1af2f8fd58e83518166ba0a5ffaeec9076" kind="variable"><name>in1</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1ac5c1ff6a9f978d9fe11b71e937f3e5fc" kind="variable"><name>in2</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1a25dba4474873f5e55402959387f8b0ce" kind="variable"><name>idleMode</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1a7c5067571986fb6e0cfc429ec90e232c" kind="function"><name>MOTOR_CONTROLLER_DRV8871</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1a45a5a65a743bfe5073665fd7da213474" kind="function"><name>begin</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1aedb4644787fa56938a278e06b1d0d5aa" kind="function"><name>setIdleMode</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1a0dc7f55574b4b0f103fff81d2c994a45" kind="function"><name>set</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1aff18db68e5ed947a07cb43d66e63f01e" kind="function"><name>set</name></member>
+  </compound>
+  <compound refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n" kind="class"><name>MOTOR_CONTROLLER_L298N</name>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a94a347333e528cd7d9fa7ce1c9b47f4f" kind="variable"><name>in1</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a2ac109de78b83ffcdab3fe7f3646fecc" kind="variable"><name>in2</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a7880f49baf55f9670a74b5a732d5903a" kind="variable"><name>en</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1aaeaa2a619fb8b3d422c003f80c8fa5e2" kind="function"><name>MOTOR_CONTROLLER_L298N</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a7c70540ef031820bacee4cae65f1b03b" kind="function"><name>begin</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a4a2b1e5a011b885ce4c3f473382a8f13" kind="function"><name>set</name></member>
+    <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a8c0db9154498bc64fec5bbfb77070b19" kind="function"><name>set</name></member>
+  </compound>
+  <compound refid="class_motor_safety" kind="class"><name>MotorSafety</name>
+    <member refid="class_motor_safety_1ad8310472ca69b6999e5a58a10724beca" kind="variable"><name>status</name></member>
+    <member refid="class_motor_safety_1a8b13a150baafe53ed9f0cb515495a930" kind="function"><name>enable</name></member>
+    <member refid="class_motor_safety_1a5916467d507c5f1ace5edd7f0879a249" kind="function"><name>disable</name></member>
+    <member refid="class_motor_safety_1ac4b471a2109f684122428ff0ea78224a" kind="function"><name>getStatus</name></member>
+    <member refid="class_motor_safety_1ae460d83bff86597bb83931b6e6fd11e5" kind="function"><name>MotorSafety</name></member>
+    <member refid="class_motor_safety_1a37901b493830135d3d2ad23b80d7c0ec" kind="function"><name>getInstance</name></member>
+  </compound>
+  <compound refid="class_robot_base" kind="class"><name>RobotBase</name>
+    <member refid="class_robot_base_1a6b265267ea6a6868eb4287bab4801f85" kind="function"><name>robotSetup</name></member>
+    <member refid="class_robot_base_1a6b813c0cd79253530b8ad47209aa8f3a" kind="function"><name>robotLoop</name></member>
+    <member refid="class_robot_base_1a0dea625204cfb0b63ffc424bcfb3280b" kind="function"><name>autoSetup</name></member>
+    <member refid="class_robot_base_1a46a7875fc55d5605ef170d75ceff5a20" kind="function"><name>autoLoop</name></member>
+    <member refid="class_robot_base_1a540a33340bd3a82dbc3597f35dfde92c" kind="function"><name>driverSetup</name></member>
+    <member refid="class_robot_base_1af548ee192b10a957a6b7473be1755e6f" kind="function"><name>driverLoop</name></member>
+    <member refid="class_robot_base_1a6e8214342344398b993cf5c577444ec8" kind="function"><name>disabledSetup</name></member>
+    <member refid="class_robot_base_1a7549250779e827734f391c9ba4325dbb" kind="function"><name>disabledLoop</name></member>
+  </compound>
+  <compound refid="class_s_e_r_v_o___base" kind="class"><name>SERVO_Base</name>
+    <member refid="class_s_e_r_v_o___base_1a89214b9899769b02fbb9567008844660" kind="variable"><name>minDeg</name></member>
+    <member refid="class_s_e_r_v_o___base_1aee20ae7c94e11d8cc54acf6cb8fc8022" kind="variable"><name>maxDeg</name></member>
+    <member refid="class_s_e_r_v_o___base_1ab6cbabf41ee7b207c3b991173a89b3cc" kind="variable"><name>inverted</name></member>
+    <member refid="class_s_e_r_v_o___base_1a85279d5c82d5014fab561d41bf567b62" kind="variable"><name>offset</name></member>
+    <member refid="class_s_e_r_v_o___base_1a86e33e9a294a8520db92d6f029b2576a" kind="variable"><name>minPulse</name></member>
+    <member refid="class_s_e_r_v_o___base_1a110827b053b2323601b9ef03bad1ecc2" kind="variable"><name>maxPulse</name></member>
+    <member refid="class_s_e_r_v_o___base_1a9973aa02dbb294ce6ef23bcb5947f36c" kind="variable"><name>followers</name></member>
+    <member refid="class_s_e_r_v_o___base_1af8d46d78d6bf2888599aee15e9097b12" kind="function"><name>begin</name></member>
+    <member refid="class_s_e_r_v_o___base_1a9e97280cc7e1e9cebb15b547b69ec4e5" kind="function"><name>set</name></member>
+    <member refid="class_s_e_r_v_o___base_1afa17f474e7196393fddb846cebe20dd5" kind="function"><name>setAngle</name></member>
+    <member refid="class_s_e_r_v_o___base_1adbd60c8170d44b071363fbd8ba9b9d45" kind="function"><name>getFollowers</name></member>
+    <member refid="class_s_e_r_v_o___base_1ac6816a69197f35558bce01085d7c482b" kind="function"><name>updateFollowers</name></member>
+  </compound>
+  <compound refid="comms_8hpp" kind="file"><name>comms.hpp</name>
+    <member refid="comms_8hpp_1a623f7e714f56d3d9d4a7220a7afc4ec3" kind="define"><name>COMMS_H</name></member>
+    <member refid="comms_8hpp_1ab4c16e137e47552b53564bafb7f71ec7" kind="define"><name>TEAM_ID</name></member>
+    <member refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519" kind="enum"><name>COMMS_CONN_ERR</name></member>
+    <member refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a1ea8c2fe1fcb20c57388391b0a119b49" kind="enumvalue"><name>COMMS_SUCCESS</name></member>
+    <member refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a55ae5ffab289e48983f817a928e04c65" kind="enumvalue"><name>COMMS_FAILURE</name></member>
+    <member refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a2faba8af5c6d987553decdd29a60f2a5" kind="enumvalue"><name>COMMS_NO_TEAM_ID</name></member>
+    <member refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519ae040fc0e5b9d19c907a6c770008b33a2" kind="enumvalue"><name>COMMS_INVALID_TEAM_ID</name></member>
+    <member refid="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897c" kind="enum"><name>COMMS_MDNS_ERR</name></member>
+    <member refid="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897cafb931a3735bce4ebedcb45214d05ef44" kind="enumvalue"><name>MDNS_SUCCESS</name></member>
+    <member refid="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897ca9e20c570622ca7dd3df44b213c5f5d6e" kind="enumvalue"><name>MDNS_FAILURE</name></member>
+    <member refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1d" kind="enum"><name>COMMS_CONN_TYPE</name></member>
+    <member refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1da8d07c50402910b994777b750e9e61084" kind="enumvalue"><name>CONN_FIELD</name></member>
+    <member refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1da363544e9ec20d0adb278989c917def6c" kind="enumvalue"><name>CONN_BRIDGE</name></member>
+    <member refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1dac4560036ff6104f2350e4c0cafee8454" kind="enumvalue"><name>CONN_AP</name></member>
+  </compound>
+  <compound refid="_alliance_8h" kind="file"><name>Alliance.h</name>
+    <member refid="_alliance_8h_1a6645fcd8d5b4ec9c00a540b7daae5acd" kind="define"><name>ALLIANCE_H</name></member>
+    <member refid="_alliance_8h_1ae9e309c8266f9d55633e3ed8eae9cfe3" kind="enum"><name>Alliance</name></member>
+    <member refid="_alliance_8h_1ae9e309c8266f9d55633e3ed8eae9cfe3a61c6985ceade29cc8239d01753366a11" kind="enumvalue"><name>BLUE_ALLIANCE</name></member>
+    <member refid="_alliance_8h_1ae9e309c8266f9d55633e3ed8eae9cfe3a228ad66ca911fe5abc4f3ee14ce63ac2" kind="enumvalue"><name>RED_ALLIANCE</name></member>
+    <member refid="_alliance_8h_1ae9e309c8266f9d55633e3ed8eae9cfe3af2d552c371ad47db5d9f42554d34c573" kind="enumvalue"><name>NO_ALLIANCE</name></member>
+  </compound>
+  <compound refid="_gamepad_8h" kind="file"><name>Gamepad.h</name>
+    <member refid="_gamepad_8h_1ab4a7e6fe758e860c3283fb0b31ade572" kind="define"><name>GAMEPAD_H</name></member>
+  </compound>
+  <compound refid="_logger_8h" kind="file"><name>Logger.h</name>
+    <member refid="_logger_8h_1a99e9475c18d71618254ad969a68df5e8" kind="define"><name>LOGGER_H</name></member>
+    <member refid="_logger_8h_1a1e846c09148feb5a96c264e3fc814d14" kind="variable"><name>LOGGER_SERIAL_BAUD</name></member>
+  </compound>
+  <compound refid="_joystick_util_8h" kind="file"><name>JoystickUtil.h</name>
+  </compound>
+  <compound refid="_math_util_8h" kind="file"><name>MathUtil.h</name>
+  </compound>
+  <compound refid="_robot_base_8h" kind="file"><name>RobotBase.h</name>
+    <member refid="_robot_base_8h_1abb1a716f109046cb721824fb4e6702a9" kind="define"><name>ROBOTBASE_H</name></member>
+  </compound>
+  <compound refid="_chassis_speeds_8h" kind="file"><name>ChassisSpeeds.h</name>
+    <member refid="_chassis_speeds_8h_1a1a0dd81c1bcf7226d34f101ef37f399c" kind="define"><name>CHASSIS_SPEEDS_H</name></member>
+  </compound>
+  <compound refid="_differential_drive_kinematics_8h" kind="file"><name>DifferentialDriveKinematics.h</name>
+    <member refid="_differential_drive_kinematics_8h_1adc9bf23265b4869a3edae0992b73a54b" kind="define"><name>DIFFERENTIAL_DRIVE_KINEMATICS_H</name></member>
+  </compound>
+  <compound refid="_mecanum_drive_kinematics_8h" kind="file"><name>MecanumDriveKinematics.h</name>
+    <member refid="_mecanum_drive_kinematics_8h_1a33753c4f8d3533cd223be768cb8f6681" kind="define"><name>MECANUM_DRIVE_KINEMATICS_H</name></member>
+  </compound>
+  <compound refid="_e_n_c_o_d_e_r___i2_c___a_s5600_8h" kind="file"><name>ENCODER_I2C_AS5600.h</name>
+    <member refid="_e_n_c_o_d_e_r___i2_c___a_s5600_8h_1a52ca26f79d15e4f483ccfc695e22a2b6" kind="define"><name>MECHALIB_ENCODER_I2C_AS5600_H</name></member>
+  </compound>
+  <compound refid="_i2_c___m_u_x___base_8h" kind="file"><name>I2C_MUX_Base.h</name>
+    <member refid="_i2_c___m_u_x___base_8h_1a72c59172e4484e4358dba1251d5b029b" kind="define"><name>MECHALIB_I2C_MUX_BASE_H</name></member>
+  </compound>
+  <compound refid="_i2_c___m_u_x___t_c_a9548_a_8h" kind="file"><name>I2C_MUX_TCA9548A.h</name>
+    <member refid="_i2_c___m_u_x___t_c_a9548_a_8h_1a9e9ae98e787b443291c66d9a08c09f3d" kind="define"><name>MECHALIB_I2C_MUX_TCA9548A_H</name></member>
+  </compound>
+  <compound refid="_mecha_lib_8h" kind="file"><name>MechaLib.h</name>
+    <member refid="_mecha_lib_8h_1aa15587e1ec054e50987a89a7beb959dc" kind="define"><name>MECHALIB_H</name></member>
+  </compound>
+  <compound refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h" kind="file"><name>MOTOR_CONTROLLER_Base.h</name>
+    <member refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h_1a383a3031c34bc0428786cd5fad0b5d70" kind="define"><name>CONTROLLER_BASE_H</name></member>
+  </compound>
+  <compound refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h" kind="file"><name>MOTOR_CONTROLLER_DRV8871.h</name>
+    <member refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h_1add90776bfbde09fdd8215f5e270254cc" kind="define"><name>MOTOR_CONTROLLER_DRV8871_H</name></member>
+  </compound>
+  <compound refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h" kind="file"><name>MOTOR_CONTROLLER_L298N.h</name>
+    <member refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h_1ace41cc7ed06b72223eeb3ed3b4a165a9" kind="define"><name>MOTOR_CONTROLLER_L298N_H</name></member>
+  </compound>
+  <compound refid="_motor_safety_8h" kind="file"><name>MotorSafety.h</name>
+    <member refid="_motor_safety_8h_1a00b7d98b22638f8c6f9f03d93b924465" kind="define"><name>MOTOR_SAFETY_H</name></member>
+    <member refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699" kind="enum"><name>MotorSafetyStatus</name></member>
+    <member refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a4eca054070419f48846f93d1e09f2ac6" kind="enumvalue"><name>PROTECTED</name></member>
+    <member refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a99788d1f27bac42d0c7bac63026c5959" kind="enumvalue"><name>ENABLED</name></member>
+  </compound>
+  <compound refid="_s_e_r_v_o___base_8h" kind="file"><name>SERVO_Base.h</name>
+    <member refid="_s_e_r_v_o___base_8h_1a6ab95d31f980082ab9bf8cd2e2d6a493" kind="define"><name>SERVO_BASE_H</name></member>
+  </compound>
+  <compound refid="dir_be11f7c621fa6e62b686e188f0bed851" kind="dir"><name>src/core/comms</name>
+  </compound>
+  <compound refid="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir"><name>src/core</name>
+  </compound>
+  <compound refid="dir_5f3ce9855ea0c00312bff03a1aa584a3" kind="dir"><name>src/motor/dc</name>
+  </compound>
+  <compound refid="dir_eb5bd66d608c462d0443cbbfba4140e5" kind="dir"><name>src/drive</name>
+  </compound>
+  <compound refid="dir_78d40d07f89b5277eb532bed3fe2d001" kind="dir"><name>src/i2c/encoder</name>
+  </compound>
+  <compound refid="dir_0130927f3d1a7a08b11c8881127d3514" kind="dir"><name>src/core/game</name>
+  </compound>
+  <compound refid="dir_7feb203e202d67008ad99ecce317cfac" kind="dir"><name>src/core/gamepad</name>
+  </compound>
+  <compound refid="dir_4dc4bab0c83361445d1434e79b04c26d" kind="dir"><name>src/i2c</name>
+  </compound>
+  <compound refid="dir_e235ce117329fd16b24743c07cd49299" kind="dir"><name>src/core/math</name>
+  </compound>
+  <compound refid="dir_51d2704dc12fe8077069f9b3a7ec2d12" kind="dir"><name>src/motor</name>
+  </compound>
+  <compound refid="dir_b4dca12d053d0d167a3da5e39a8064f3" kind="dir"><name>src/i2c/mux</name>
+  </compound>
+  <compound refid="dir_b29cb1b40fd868ec3c3c0dea742d0e64" kind="dir"><name>src/motor/servo</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

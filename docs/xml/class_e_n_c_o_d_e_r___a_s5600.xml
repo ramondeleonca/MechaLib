@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_e_n_c_o_d_e_r___a_s5600" kind="class" language="C++" prot="public">
+    <compoundname>ENCODER_AS5600</compoundname>
+    <includes refid="_e_n_c_o_d_e_r___i2_c___a_s5600_8h" local="no">ENCODER_I2C_AS5600.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_e_n_c_o_d_e_r___a_s5600_1ae41732044e54e6630760e06d197c3e5d" prot="private" static="no" mutable="no">
+        <type>TwoWire *</type>
+        <definition>TwoWire* ENCODER_AS5600::wire</definition>
+        <argsstring></argsstring>
+        <name>wire</name>
+        <qualifiedname>ENCODER_AS5600::wire</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/encoder/ENCODER_I2C_AS5600.h" line="11" column="17" bodyfile="src/i2c/encoder/ENCODER_I2C_AS5600.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_n_c_o_d_e_r___a_s5600_1a447b314c06207207e6d2cd8554cdc3e7" prot="private" static="no" mutable="no">
+        <type>AS5600</type>
+        <definition>AS5600 ENCODER_AS5600::encoder</definition>
+        <argsstring></argsstring>
+        <name>encoder</name>
+        <qualifiedname>ENCODER_AS5600::encoder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/encoder/ENCODER_I2C_AS5600.h" line="12" column="16" bodyfile="src/i2c/encoder/ENCODER_I2C_AS5600.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_n_c_o_d_e_r___a_s5600_1a56339908b39fcd9f8860d9c99094e41e" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t ENCODER_AS5600::directionPin</definition>
+        <argsstring></argsstring>
+        <name>directionPin</name>
+        <qualifiedname>ENCODER_AS5600::directionPin</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/encoder/ENCODER_I2C_AS5600.h" line="13" column="16" bodyfile="src/i2c/encoder/ENCODER_I2C_AS5600.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_e_n_c_o_d_e_r___a_s5600_1a6d87dd77949bd87281ccd9359f4db4c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ENCODER_AS5600::ENCODER_AS5600</definition>
+        <argsstring>()</argsstring>
+        <name>ENCODER_AS5600</name>
+        <qualifiedname>ENCODER_AS5600::ENCODER_AS5600</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/encoder/ENCODER_I2C_AS5600.h" line="33" column="9" bodyfile="src/i2c/encoder/ENCODER_I2C_AS5600.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_n_c_o_d_e_r___a_s5600_1a13b0f3cfecc1b35f2581d811a7f02488" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ENCODER_AS5600::begin</definition>
+        <argsstring>(bool beginI2C=true)</argsstring>
+        <name>begin</name>
+        <qualifiedname>ENCODER_AS5600::begin</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>beginI2C</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Begin the I2C communication By default this function begins the I2C bus, if this behavior is not desired, pass false as the argument. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/encoder/ENCODER_I2C_AS5600.h" line="43" column="14" bodyfile="src/i2c/encoder/ENCODER_I2C_AS5600.h" bodystart="43" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_n_c_o_d_e_r___a_s5600_1a2f9da0bfd074f178700c87f0ec82cb23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t ENCODER_AS5600::getAbsoluteAngle</definition>
+        <argsstring>()</argsstring>
+        <name>getAbsoluteAngle</name>
+        <qualifiedname>ENCODER_AS5600::getAbsoluteAngle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/encoder/ENCODER_I2C_AS5600.h" line="52" column="18" bodyfile="src/i2c/encoder/ENCODER_I2C_AS5600.h" bodystart="52" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/i2c/encoder/ENCODER_I2C_AS5600.h" line="9" column="1" bodyfile="src/i2c/encoder/ENCODER_I2C_AS5600.h" bodystart="9" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_e_n_c_o_d_e_r___a_s5600_1a13b0f3cfecc1b35f2581d811a7f02488" prot="public" virt="non-virtual"><scope>ENCODER_AS5600</scope><name>begin</name></member>
+      <member refid="class_e_n_c_o_d_e_r___a_s5600_1a56339908b39fcd9f8860d9c99094e41e" prot="private" virt="non-virtual"><scope>ENCODER_AS5600</scope><name>directionPin</name></member>
+      <member refid="class_e_n_c_o_d_e_r___a_s5600_1a447b314c06207207e6d2cd8554cdc3e7" prot="private" virt="non-virtual"><scope>ENCODER_AS5600</scope><name>encoder</name></member>
+      <member refid="class_e_n_c_o_d_e_r___a_s5600_1a6d87dd77949bd87281ccd9359f4db4c4" prot="public" virt="non-virtual"><scope>ENCODER_AS5600</scope><name>ENCODER_AS5600</name></member>
+      <member refid="class_e_n_c_o_d_e_r___a_s5600_1a2f9da0bfd074f178700c87f0ec82cb23" prot="public" virt="non-virtual"><scope>ENCODER_AS5600</scope><name>getAbsoluteAngle</name></member>
+      <member refid="class_e_n_c_o_d_e_r___a_s5600_1ae41732044e54e6630760e06d197c3e5d" prot="private" virt="non-virtual"><scope>ENCODER_AS5600</scope><name>wire</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

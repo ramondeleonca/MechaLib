@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_b4dca12d053d0d167a3da5e39a8064f3" kind="dir">
+    <compoundname>src/i2c/mux</compoundname>
+    <innerfile refid="_i2_c___m_u_x___base_8h">I2C_MUX_Base.h</innerfile>
+    <innerfile refid="_i2_c___m_u_x___t_c_a9548_a_8h">I2C_MUX_TCA9548A.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/i2c/mux/"/>
+  </compounddef>
+</doxygen>

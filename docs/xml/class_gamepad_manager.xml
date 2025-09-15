@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_gamepad_manager" kind="class" language="C++" prot="public">
+    <compoundname>GamepadManager</compoundname>
+    <includes refid="_gamepad_8h" local="no">Gamepad.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_gamepad_manager_1a1a0c59438bf9ed8fa93fd621c7de505d" prot="private" static="yes" mutable="no">
+        <type>GamepadPtr</type>
+        <definition>GamepadPtr GamepadManager::gamepads[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>gamepads</name>
+        <qualifiedname>GamepadManager::gamepads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/gamepad/Gamepad.h" line="14" column="27" bodyfile="src/core/gamepad/Gamepad.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_gamepad_manager_1a530775ebaa765de0b17f9a87f3b4e7d4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GamepadManager::onConnect</definition>
+        <argsstring>()</argsstring>
+        <name>onConnect</name>
+        <qualifiedname>GamepadManager::onConnect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/gamepad/Gamepad.h" line="16" column="14" bodyfile="src/core/gamepad/Gamepad.h" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad_manager_1aea58faba8fc0488d1a437575fa70a6ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GamepadManager::onDisconnect</definition>
+        <argsstring>()</argsstring>
+        <name>onDisconnect</name>
+        <qualifiedname>GamepadManager::onDisconnect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/gamepad/Gamepad.h" line="20" column="14" bodyfile="src/core/gamepad/Gamepad.h" bodystart="20" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gamepad_manager_1a0d3fe1187cce00784a069f10bb1266df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GamepadManager::GamepadManager</definition>
+        <argsstring>()</argsstring>
+        <name>GamepadManager</name>
+        <qualifiedname>GamepadManager::GamepadManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/gamepad/Gamepad.h" line="25" column="9" bodyfile="src/core/gamepad/Gamepad.h" bodystart="25" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_gamepad_manager_1a857fb4815da21121dfe49bd3cf4082d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_gamepad_manager" kindref="compound">GamepadManager</ref> &amp;</type>
+        <definition>static GamepadManager &amp; GamepadManager::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>GamepadManager::getInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/gamepad/Gamepad.h" line="43" column="31" bodyfile="src/core/gamepad/Gamepad.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Gamepad Manager Supported gamepads: <ulink url="https://bluepad32.readthedocs.io/en/latest/supported_gamepads/">https://bluepad32.readthedocs.io/en/latest/supported_gamepads/</ulink> </para>
+    </detaileddescription>
+    <location file="src/core/gamepad/Gamepad.h" line="12" column="1" bodyfile="src/core/gamepad/Gamepad.h" bodystart="12" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_gamepad_manager_1a0d3fe1187cce00784a069f10bb1266df" prot="public" virt="non-virtual"><scope>GamepadManager</scope><name>GamepadManager</name></member>
+      <member refid="class_gamepad_manager_1a1a0c59438bf9ed8fa93fd621c7de505d" prot="private" virt="non-virtual"><scope>GamepadManager</scope><name>gamepads</name></member>
+      <member refid="class_gamepad_manager_1a857fb4815da21121dfe49bd3cf4082d9" prot="public" virt="non-virtual"><scope>GamepadManager</scope><name>getInstance</name></member>
+      <member refid="class_gamepad_manager_1a530775ebaa765de0b17f9a87f3b4e7d4" prot="private" virt="non-virtual"><scope>GamepadManager</scope><name>onConnect</name></member>
+      <member refid="class_gamepad_manager_1aea58faba8fc0488d1a437575fa70a6ae" prot="private" virt="non-virtual"><scope>GamepadManager</scope><name>onDisconnect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

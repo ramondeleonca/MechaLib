@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_robot_base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>RobotBase</compoundname>
+    <includes refid="_robot_base_8h" local="no">RobotBase.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_robot_base_1a6b265267ea6a6868eb4287bab4801f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void RobotBase::robotSetup</definition>
+        <argsstring>()=0</argsstring>
+        <name>robotSetup</name>
+        <qualifiedname>RobotBase::robotSetup</qualifiedname>
+        <briefdescription>
+<para>robotSetup is called once when the robot is powered on or reset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/RobotBase.h" line="16" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_base_1a6b813c0cd79253530b8ad47209aa8f3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void RobotBase::robotLoop</definition>
+        <argsstring>()=0</argsstring>
+        <name>robotLoop</name>
+        <qualifiedname>RobotBase::robotLoop</qualifiedname>
+        <briefdescription>
+<para>robotLoop is called repeatedly in the main Arduino loop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/RobotBase.h" line="21" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_base_1a0dea625204cfb0b63ffc424bcfb3280b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void RobotBase::autoSetup</definition>
+        <argsstring>()=0</argsstring>
+        <name>autoSetup</name>
+        <qualifiedname>RobotBase::autoSetup</qualifiedname>
+        <briefdescription>
+<para>autoSetup is called when the robot enters autonomous mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/RobotBase.h" line="28" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_base_1a46a7875fc55d5605ef170d75ceff5a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void RobotBase::autoLoop</definition>
+        <argsstring>()=0</argsstring>
+        <name>autoLoop</name>
+        <qualifiedname>RobotBase::autoLoop</qualifiedname>
+        <briefdescription>
+<para>autoLoop is called repeatedly during autonomous mode right after robotLoop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/RobotBase.h" line="33" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_base_1a540a33340bd3a82dbc3597f35dfde92c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void RobotBase::driverSetup</definition>
+        <argsstring>()=0</argsstring>
+        <name>driverSetup</name>
+        <qualifiedname>RobotBase::driverSetup</qualifiedname>
+        <briefdescription>
+<para>driverSetup is called when the robot enters teleoperated mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/RobotBase.h" line="40" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_base_1af548ee192b10a957a6b7473be1755e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void RobotBase::driverLoop</definition>
+        <argsstring>()=0</argsstring>
+        <name>driverLoop</name>
+        <qualifiedname>RobotBase::driverLoop</qualifiedname>
+        <briefdescription>
+<para>driverLoop is called repeatedly during teleoperated mode right after robotLoop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/RobotBase.h" line="45" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_base_1a6e8214342344398b993cf5c577444ec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void RobotBase::disabledSetup</definition>
+        <argsstring>()=0</argsstring>
+        <name>disabledSetup</name>
+        <qualifiedname>RobotBase::disabledSetup</qualifiedname>
+        <briefdescription>
+<para>disabledSetup is called when the robot enters disabled mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/RobotBase.h" line="52" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_base_1a7549250779e827734f391c9ba4325dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void RobotBase::disabledLoop</definition>
+        <argsstring>()=0</argsstring>
+        <name>disabledLoop</name>
+        <qualifiedname>RobotBase::disabledLoop</qualifiedname>
+        <briefdescription>
+<para>disabledLoop is called repeatedly during disabled mode right after robotLoop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/RobotBase.h" line="57" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The main class a robot program should extend, <ref refid="class_robot_base" kindref="compound">RobotBase</ref> will act as a container for the parent robot functions </para>
+    </detaileddescription>
+    <location file="src/core/RobotBase.h" line="10" column="1" bodyfile="src/core/RobotBase.h" bodystart="10" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_robot_base_1a46a7875fc55d5605ef170d75ceff5a20" prot="public" virt="pure-virtual"><scope>RobotBase</scope><name>autoLoop</name></member>
+      <member refid="class_robot_base_1a0dea625204cfb0b63ffc424bcfb3280b" prot="public" virt="pure-virtual"><scope>RobotBase</scope><name>autoSetup</name></member>
+      <member refid="class_robot_base_1a7549250779e827734f391c9ba4325dbb" prot="public" virt="pure-virtual"><scope>RobotBase</scope><name>disabledLoop</name></member>
+      <member refid="class_robot_base_1a6e8214342344398b993cf5c577444ec8" prot="public" virt="pure-virtual"><scope>RobotBase</scope><name>disabledSetup</name></member>
+      <member refid="class_robot_base_1af548ee192b10a957a6b7473be1755e6f" prot="public" virt="pure-virtual"><scope>RobotBase</scope><name>driverLoop</name></member>
+      <member refid="class_robot_base_1a540a33340bd3a82dbc3597f35dfde92c" prot="public" virt="pure-virtual"><scope>RobotBase</scope><name>driverSetup</name></member>
+      <member refid="class_robot_base_1a6b813c0cd79253530b8ad47209aa8f3a" prot="public" virt="pure-virtual"><scope>RobotBase</scope><name>robotLoop</name></member>
+      <member refid="class_robot_base_1a6b265267ea6a6868eb4287bab4801f85" prot="public" virt="pure-virtual"><scope>RobotBase</scope><name>robotSetup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

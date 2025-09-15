@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_differential_drive_kinematics_8h" kind="file" language="C++">
+    <compoundname>DifferentialDriveKinematics.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="_mecha_lib_8h" local="no">src/MechaLib.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>src/drive/DifferentialDriveKinematics.h</label>
+        <link refid="_differential_drive_kinematics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/MechaLib.h</label>
+        <link refid="_mecha_lib_8h"/>
+      </node>
+      <node id="1">
+        <label>src/drive/DifferentialDriveKinematics.h</label>
+        <link refid="_differential_drive_kinematics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_differential_drive_kinematics" prot="public">DifferentialDriveKinematics</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_differential_drive_kinematics_8h_1adc9bf23265b4869a3edae0992b73a54b" prot="public" static="no">
+        <name>DIFFERENTIAL_DRIVE_KINEMATICS_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/DifferentialDriveKinematics.h" line="3" column="9" bodyfile="src/drive/DifferentialDriveKinematics.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DIFFERENTIAL_DRIVE_KINEMATICS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_differential_drive_kinematics_8h_1adc9bf23265b4869a3edae0992b73a54b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIFFERENTIAL_DRIVE_KINEMATICS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_differential_drive_kinematics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_differential_drive_kinematics_1a250cbd713d915923eef537b7bc5c6f31" kindref="member">DifferentialDriveKinematics</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>trackWidth;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>wheelRadius;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="class_differential_drive_kinematics_1a250cbd713d915923eef537b7bc5c6f31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_differential_drive_kinematics_1a250cbd713d915923eef537b7bc5c6f31" kindref="member">DifferentialDriveKinematics</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>trackWidth,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>wheelRadius)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;trackWidth<sp/>=<sp/>trackWidth;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;wheelRadius<sp/>=<sp/>wheelRadius;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_differential_drive_kinematics_1ae79268d191cbb894cb4af092423e11a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_differential_drive_kinematics_1ae79268d191cbb894cb4af092423e11a7" kindref="member">calculateWheelSpeeds</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>wheelSpeeds,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vy,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wheelSpeeds[0]<sp/>=<sp/>(vy<sp/>-<sp/>omega<sp/>*<sp/>trackWidth<sp/>/<sp/>2)<sp/>/<sp/>wheelRadius;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wheelSpeeds[1]<sp/>=<sp/>(vy<sp/>+<sp/>omega<sp/>*<sp/>trackWidth<sp/>/<sp/>2)<sp/>/<sp/>wheelRadius;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_differential_drive_kinematics_1a581c3086f069d3ab6f91b40f9dc3623d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/><ref refid="class_differential_drive_kinematics_1a581c3086f069d3ab6f91b40f9dc3623d" kindref="member">normalizeWheelSpeeds</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>wheelSpeeds)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxMagnitude<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>2;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>magnitude<sp/>=<sp/>abs(wheelSpeeds[i]);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(magnitude<sp/>&gt;<sp/>maxMagnitude)<sp/>maxMagnitude<sp/>=<sp/>magnitude;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maxMagnitude<sp/>&gt;<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>2;<sp/>i++)<sp/>wheelSpeeds[i]<sp/>/=<sp/>maxMagnitude;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>wheelSpeeds;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/drive/DifferentialDriveKinematics.h"/>
+  </compounddef>
+</doxygen>

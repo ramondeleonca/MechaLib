@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_robot_base_8h" kind="file" language="C++">
+    <compoundname>RobotBase.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="_mecha_lib_8h" local="no">src/MechaLib.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>src/core/RobotBase.h</label>
+        <link refid="_robot_base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/MechaLib.h</label>
+        <link refid="_mecha_lib_8h"/>
+      </node>
+      <node id="1">
+        <label>src/core/RobotBase.h</label>
+        <link refid="_robot_base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_robot_base" prot="public">RobotBase</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_robot_base_8h_1abb1a716f109046cb721824fb4e6702a9" prot="public" static="no">
+        <name>ROBOTBASE_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/RobotBase.h" line="3" column="9" bodyfile="src/core/RobotBase.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ROBOTBASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_robot_base_8h_1abb1a716f109046cb721824fb4e6702a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROBOTBASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_robot_base" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_robot_base" kindref="compound">RobotBase</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>*<sp/>Robot<sp/>Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_robot_base_1a6b265267ea6a6868eb4287bab4801f85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_robot_base_1a6b265267ea6a6868eb4287bab4801f85" kindref="member">robotSetup</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_robot_base_1a6b813c0cd79253530b8ad47209aa8f3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_robot_base_1a6b813c0cd79253530b8ad47209aa8f3a" kindref="member">robotLoop</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>*<sp/>Auto<sp/>Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_robot_base_1a0dea625204cfb0b63ffc424bcfb3280b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_robot_base_1a0dea625204cfb0b63ffc424bcfb3280b" kindref="member">autoSetup</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_robot_base_1a46a7875fc55d5605ef170d75ceff5a20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_robot_base_1a46a7875fc55d5605ef170d75ceff5a20" kindref="member">autoLoop</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>*<sp/>Teleop<sp/>Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_robot_base_1a540a33340bd3a82dbc3597f35dfde92c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_robot_base_1a540a33340bd3a82dbc3597f35dfde92c" kindref="member">driverSetup</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_robot_base_1af548ee192b10a957a6b7473be1755e6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_robot_base_1af548ee192b10a957a6b7473be1755e6f" kindref="member">driverLoop</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>*<sp/>Disabled<sp/>Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="class_robot_base_1a6e8214342344398b993cf5c577444ec8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_robot_base_1a6e8214342344398b993cf5c577444ec8" kindref="member">disabledSetup</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_robot_base_1a7549250779e827734f391c9ba4325dbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_robot_base_1a7549250779e827734f391c9ba4325dbb" kindref="member">disabledLoop</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/core/RobotBase.h"/>
+  </compounddef>
+</doxygen>

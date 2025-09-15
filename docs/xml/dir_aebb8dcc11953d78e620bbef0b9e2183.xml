@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir">
+    <compoundname>src/core</compoundname>
+    <innerdir refid="dir_be11f7c621fa6e62b686e188f0bed851">src/core/comms</innerdir>
+    <innerdir refid="dir_0130927f3d1a7a08b11c8881127d3514">src/core/game</innerdir>
+    <innerdir refid="dir_7feb203e202d67008ad99ecce317cfac">src/core/gamepad</innerdir>
+    <innerdir refid="dir_e235ce117329fd16b24743c07cd49299">src/core/math</innerdir>
+    <innerfile refid="_logger_8h">Logger.h</innerfile>
+    <innerfile refid="_robot_base_8h">RobotBase.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>MOTOR_CONTROLLER_Base</compoundname>
+    <derivedcompoundref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871" prot="public" virt="non-virtual">MOTOR_CONTROLLER_DRV8871</derivedcompoundref>
+    <derivedcompoundref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n" prot="public" virt="non-virtual">MOTOR_CONTROLLER_L298N</derivedcompoundref>
+    <includes refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h" local="no">MOTOR_CONTROLLER_Base.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ac8dd481c1d701b9ac01b7d3159db03d5" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MOTOR_CONTROLLER_Base::multiplier</definition>
+        <argsstring></argsstring>
+        <name>multiplier</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::multiplier</qualifiedname>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="13" column="15" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MOTOR_CONTROLLER_Base::deadband</definition>
+        <argsstring></argsstring>
+        <name>deadband</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::deadband</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="14" column="15" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a3c835bb772f89cb1f481c7d20597e439" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MOTOR_CONTROLLER_Base::inverted</definition>
+        <argsstring></argsstring>
+        <name>inverted</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::inverted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="15" column="14" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref> *</type>
+        <definition>MOTOR_CONTROLLER_Base* MOTOR_CONTROLLER_Base::followers[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>followers</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::followers</qualifiedname>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="16" column="31" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4e4ef7b8731a5eaba5a76ae8730810ab" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float MOTOR_CONTROLLER_Base::applySpeedFilters</definition>
+        <argsstring>(float speed, bool isBeep)</argsstring>
+        <name>applySpeedFilters</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::applySpeedFilters</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isBeep</declname>
+        </param>
+        <briefdescription>
+<para>Process the speed value (apply deadband, multiplier, inversion, constraints, motor safety status and beep setpoint) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The speed to process </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isBeep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wether or not this is a beep setpoint (speed value will be taken as a percentage of deadband) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="23" column="23" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="23" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af234d80a5f894665f9327696b442a721" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void MOTOR_CONTROLLER_Base::begin</definition>
+        <argsstring>()=0</argsstring>
+        <name>begin</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::begin</qualifiedname>
+        <reimplementedby refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1a45a5a65a743bfe5073665fd7da213474">begin</reimplementedby>
+        <reimplementedby refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a7c70540ef031820bacee4cae65f1b03b">begin</reimplementedby>
+        <briefdescription>
+<para>Begin the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="40" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a47435ee939e4d235d6f402c5b064e7e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void MOTOR_CONTROLLER_Base::set</definition>
+        <argsstring>(float speed, bool isBeep)=0</argsstring>
+        <name>set</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::set</qualifiedname>
+        <reimplementedby refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_1a0dc7f55574b4b0f103fff81d2c994a45">set</reimplementedby>
+        <reimplementedby refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a4a2b1e5a011b885ce4c3f473382a8f13">set</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isBeep</declname>
+        </param>
+        <briefdescription>
+<para>Set the speed of the motor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The speed to set the motor to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isBeep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wether or not this is a beep setpoint (speed value will be taken as a percentage of deadband) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="48" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a03c67f6e5a3c4e905151be11e2e5a761" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MOTOR_CONTROLLER_Base::set</definition>
+        <argsstring>(float speed)</argsstring>
+        <name>set</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::set</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+<para>Set the speed of the motor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The speed to set the motor to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="54" column="14" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af99f51c50263a22b54e3034b7e81a50d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MOTOR_CONTROLLER_Base::setInverted</definition>
+        <argsstring>(bool inverted)</argsstring>
+        <name>setInverted</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::setInverted</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>inverted</declname>
+        </param>
+        <briefdescription>
+<para>Wether or not the motor should be inverted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="61" column="22" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a6f7bc574a1212f378719ff70bceedee8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MOTOR_CONTROLLER_Base::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::stop</qualifiedname>
+        <briefdescription>
+<para>Stop the motor Calls set(0) by default. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="69" column="22" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a989e9662e5b9f44f961d8fae48efc2eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MOTOR_CONTROLLER_Base::addFollower</definition>
+        <argsstring>(MOTOR_CONTROLLER_Base *slave)</argsstring>
+        <name>addFollower</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::addFollower</qualifiedname>
+        <param>
+          <type><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref> *</type>
+          <declname>slave</declname>
+        </param>
+        <briefdescription>
+<para>Add a follower to the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The motor controller to follow this one </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Wether or not the follower was added </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="78" column="22" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="78" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01ac03664b23edcd69e2dd3486a8546a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MOTOR_CONTROLLER_Base::removeFollower</definition>
+        <argsstring>(MOTOR_CONTROLLER_Base *slave)</argsstring>
+        <name>removeFollower</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::removeFollower</qualifiedname>
+        <param>
+          <type><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref> *</type>
+          <declname>slave</declname>
+        </param>
+        <briefdescription>
+<para>Remove a follower from the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The motor controller to remove from the followers list </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="94" column="22" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a947bbbbfc685e913cfd6a8e322da140b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MOTOR_CONTROLLER_Base::follow</definition>
+        <argsstring>(MOTOR_CONTROLLER_Base *master)</argsstring>
+        <name>follow</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::follow</qualifiedname>
+        <param>
+          <type><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref> *</type>
+          <declname>master</declname>
+        </param>
+        <briefdescription>
+<para>Follow another motor controller Inverted status is independent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="102" column="22" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aa65faf15f28cb8b8a7c3b6934ea1eaa5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MOTOR_CONTROLLER_Base::setMultiplier</definition>
+        <argsstring>(float multiplier)</argsstring>
+        <name>setMultiplier</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::setMultiplier</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>multiplier</declname>
+        </param>
+        <briefdescription>
+<para>Set the multiplier for the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>multiplier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The multiplier to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="110" column="22" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1acf1de87ef168ca4f590eddd1e0c91985" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MOTOR_CONTROLLER_Base::setDeadband</definition>
+        <argsstring>(float deadband)</argsstring>
+        <name>setDeadband</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::setDeadband</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>deadband</declname>
+        </param>
+        <briefdescription>
+<para>Set the deadband for the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>deadband</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The deadband to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="118" column="22" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4dc423a56131fbbd3f6ef56be993b075" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float MOTOR_CONTROLLER_Base::getMultiplier</definition>
+        <argsstring>()</argsstring>
+        <name>getMultiplier</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::getMultiplier</qualifiedname>
+        <briefdescription>
+<para>Get the multiplier for the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The multiplier for the motor controller </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="126" column="23" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aaecb4d51a118820a3c3b2b246a93fbc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float MOTOR_CONTROLLER_Base::getDeadband</definition>
+        <argsstring>()</argsstring>
+        <name>getDeadband</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::getDeadband</qualifiedname>
+        <briefdescription>
+<para>Get the deadband for the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The deadband for the motor controller </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="134" column="23" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af538dceb11edc0a9f95c681eb406f878" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MOTOR_CONTROLLER_Base::getInverted</definition>
+        <argsstring>()</argsstring>
+        <name>getInverted</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::getInverted</qualifiedname>
+        <briefdescription>
+<para>Get the inverted status for the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The inverted status for the motor controller </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="142" column="22" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01e88bf2cd39334fed8ad1e3f535eb65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref> **</type>
+        <definition>virtual MOTOR_CONTROLLER_Base ** MOTOR_CONTROLLER_Base::getFollowers</definition>
+        <argsstring>()</argsstring>
+        <name>getFollowers</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::getFollowers</qualifiedname>
+        <briefdescription>
+<para>Get the followers for the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The followers for the motor controller </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="150" column="39" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a64c4bc2d03b238e81122bfa1cbd5f2b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MOTOR_CONTROLLER_Base::updateFollowers</definition>
+        <argsstring>(float speed, bool isBeep)</argsstring>
+        <name>updateFollowers</name>
+        <qualifiedname>MOTOR_CONTROLLER_Base::updateFollowers</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isBeep</declname>
+        </param>
+        <briefdescription>
+<para>Update the followers of the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The speed to set the followers to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isBeep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wether or not this is a beep setpoint (speed value will be taken as a percentage of deadband) Calls set(speed, isBeep) on all followers Motor controller internally calls this, not necessary to call this externally </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="161" column="22" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="161" bodyend="165"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Recomended PWM pins: 2,4,12-19,21-23,25-27,32-33 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MOTOR_CONTROLLER_Base</label>
+        <link refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base"/>
+      </node>
+      <node id="2">
+        <label>MOTOR_CONTROLLER_DRV8871</label>
+        <link refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MOTOR_CONTROLLER_L298N</label>
+        <link refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MOTOR_CONTROLLER_Base</label>
+        <link refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>followers</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="11" column="1" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="11" bodyend="166"/>
+    <listofallmembers>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a989e9662e5b9f44f961d8fae48efc2eb" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>addFollower</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4e4ef7b8731a5eaba5a76ae8730810ab" prot="protected" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>applySpeedFilters</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af234d80a5f894665f9327696b442a721" prot="public" virt="pure-virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>begin</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" prot="protected" virt="non-virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>deadband</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a947bbbbfc685e913cfd6a8e322da140b" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>follow</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" prot="protected" virt="non-virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>followers</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aaecb4d51a118820a3c3b2b246a93fbc6" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>getDeadband</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01e88bf2cd39334fed8ad1e3f535eb65" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>getFollowers</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af538dceb11edc0a9f95c681eb406f878" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>getInverted</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4dc423a56131fbbd3f6ef56be993b075" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>getMultiplier</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a3c835bb772f89cb1f481c7d20597e439" prot="protected" virt="non-virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>inverted</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ac8dd481c1d701b9ac01b7d3159db03d5" prot="protected" virt="non-virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>multiplier</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01ac03664b23edcd69e2dd3486a8546a" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>removeFollower</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a47435ee939e4d235d6f402c5b064e7e1" prot="public" virt="pure-virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>set</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a03c67f6e5a3c4e905151be11e2e5a761" prot="public" virt="non-virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>set</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1acf1de87ef168ca4f590eddd1e0c91985" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>setDeadband</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af99f51c50263a22b54e3034b7e81a50d" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>setInverted</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aa65faf15f28cb8b8a7c3b6934ea1eaa5" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>setMultiplier</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a6f7bc574a1212f378719ff70bceedee8" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>stop</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a64c4bc2d03b238e81122bfa1cbd5f2b7" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_Base</scope><name>updateFollowers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

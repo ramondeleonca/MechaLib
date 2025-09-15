@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_s_e_r_v_o___base_8h" kind="file" language="C++">
+    <compoundname>SERVO_Base.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes refid="_motor_safety_8h" local="no">motor/MotorSafety.h</includes>
+    <includedby refid="_mecha_lib_8h" local="no">src/MechaLib.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="3">
+        <label>motor/MotorSafety.h</label>
+        <link refid="_motor_safety_8h"/>
+      </node>
+      <node id="1">
+        <label>src/motor/servo/SERVO_Base.h</label>
+        <link refid="_s_e_r_v_o___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/MechaLib.h</label>
+        <link refid="_mecha_lib_8h"/>
+      </node>
+      <node id="1">
+        <label>src/motor/servo/SERVO_Base.h</label>
+        <link refid="_s_e_r_v_o___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_s_e_r_v_o___base" prot="public">SERVO_Base</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_s_e_r_v_o___base_8h_1a6ab95d31f980082ab9bf8cd2e2d6a493" prot="public" static="no">
+        <name>SERVO_BASE_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/servo/SERVO_Base.h" line="3" column="9" bodyfile="src/motor/servo/SERVO_Base.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SERVO_BASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_s_e_r_v_o___base_8h_1a6ab95d31f980082ab9bf8cd2e2d6a493" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVO_BASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_motor_safety_8h" kindref="compound">motor/MotorSafety.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_s_e_r_v_o___base" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_e_r_v_o___base" kindref="compound">SERVO_Base</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="class_s_e_r_v_o___base_1a89214b9899769b02fbb9567008844660" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1a89214b9899769b02fbb9567008844660" kindref="member">minDeg</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14" refid="class_s_e_r_v_o___base_1aee20ae7c94e11d8cc54acf6cb8fc8022" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1aee20ae7c94e11d8cc54acf6cb8fc8022" kindref="member">maxDeg</ref><sp/>=<sp/>180;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_s_e_r_v_o___base_1ab6cbabf41ee7b207c3b991173a89b3cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1ab6cbabf41ee7b207c3b991173a89b3cc" kindref="member">inverted</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17" refid="class_s_e_r_v_o___base_1a85279d5c82d5014fab561d41bf567b62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1a85279d5c82d5014fab561d41bf567b62" kindref="member">offset</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_s_e_r_v_o___base_1a86e33e9a294a8520db92d6f029b2576a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1a86e33e9a294a8520db92d6f029b2576a" kindref="member">minPulse</ref><sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="20" refid="class_s_e_r_v_o___base_1a110827b053b2323601b9ef03bad1ecc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1a110827b053b2323601b9ef03bad1ecc2" kindref="member">maxPulse</ref><sp/>=<sp/>2000;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="class_s_e_r_v_o___base_1a9973aa02dbb294ce6ef23bcb5947f36c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_e_r_v_o___base" kindref="compound">SERVO_Base</ref>*<sp/><ref refid="class_s_e_r_v_o___base_1a9973aa02dbb294ce6ef23bcb5947f36c" kindref="member">followers</ref>[2]<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Per-servo<sp/>motor<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_s_e_r_v_o___base_1af8d46d78d6bf2888599aee15e9097b12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1af8d46d78d6bf2888599aee15e9097b12" kindref="member">begin</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Per-servo<sp/>motor<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_s_e_r_v_o___base_1a9e97280cc7e1e9cebb15b547b69ec4e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1a9e97280cc7e1e9cebb15b547b69ec4e5" kindref="member">set</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rotation)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_s_e_r_v_o___base_1afa17f474e7196393fddb846cebe20dd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1afa17f474e7196393fddb846cebe20dd5" kindref="member">setAngle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>angle<sp/>=<sp/>constrain(angle,<sp/><ref refid="class_s_e_r_v_o___base_1a89214b9899769b02fbb9567008844660" kindref="member">minDeg</ref>,<sp/><ref refid="class_s_e_r_v_o___base_1aee20ae7c94e11d8cc54acf6cb8fc8022" kindref="member">maxDeg</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rotation<sp/>=<sp/>(float)(angle<sp/>-<sp/><ref refid="class_s_e_r_v_o___base_1a89214b9899769b02fbb9567008844660" kindref="member">minDeg</ref>)<sp/>/<sp/>(<ref refid="class_s_e_r_v_o___base_1aee20ae7c94e11d8cc54acf6cb8fc8022" kindref="member">maxDeg</ref><sp/>-<sp/><ref refid="class_s_e_r_v_o___base_1a89214b9899769b02fbb9567008844660" kindref="member">minDeg</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_e_r_v_o___base_1a9e97280cc7e1e9cebb15b547b69ec4e5" kindref="member">set</ref>(rotation);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="class_s_e_r_v_o___base_1adbd60c8170d44b071363fbd8ba9b9d45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base" kindref="compound">SERVO_Base</ref>**<sp/><ref refid="class_s_e_r_v_o___base_1adbd60c8170d44b071363fbd8ba9b9d45" kindref="member">getFollowers</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1a9973aa02dbb294ce6ef23bcb5947f36c" kindref="member">followers</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>update<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="class_s_e_r_v_o___base_1ac6816a69197f35558bce01085d7c482b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_e_r_v_o___base_1ac6816a69197f35558bce01085d7c482b" kindref="member">updateFollowers</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rotation)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_s_e_r_v_o___base_1a9973aa02dbb294ce6ef23bcb5947f36c" kindref="member">followers</ref>)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_s_e_r_v_o___base_1a9973aa02dbb294ce6ef23bcb5947f36c" kindref="member">followers</ref>[0]);<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_s_e_r_v_o___base_1a9973aa02dbb294ce6ef23bcb5947f36c" kindref="member">followers</ref>[i]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/><ref refid="class_s_e_r_v_o___base_1a9973aa02dbb294ce6ef23bcb5947f36c" kindref="member">followers</ref>[i]-&gt;set(rotation);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/motor/servo/SERVO_Base.h"/>
+  </compounddef>
+</doxygen>

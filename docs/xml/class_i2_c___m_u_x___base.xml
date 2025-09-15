@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_i2_c___m_u_x___base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>I2C_MUX_Base</compoundname>
+    <includes refid="_i2_c___m_u_x___base_8h" local="no">I2C_MUX_Base.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i2_c___m_u_x___base_1a00e2399442ee54fed09c229e3483a7fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void I2C_MUX_Base::begin</definition>
+        <argsstring>()=0</argsstring>
+        <name>begin</name>
+        <qualifiedname>I2C_MUX_Base::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_Base.h" line="9" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___base_1a4fdffe0108dea3edf1c8e757f401a34b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void I2C_MUX_Base::exposeChannel</definition>
+        <argsstring>(uint8_t channel)=0</argsstring>
+        <name>exposeChannel</name>
+        <qualifiedname>I2C_MUX_Base::exposeChannel</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_Base.h" line="10" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___base_1a70dafd7f0d780e4ca28a71a03bae1cec" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void I2C_MUX_Base::hideChannel</definition>
+        <argsstring>(uint8_t channel)=0</argsstring>
+        <name>hideChannel</name>
+        <qualifiedname>I2C_MUX_Base::hideChannel</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_Base.h" line="11" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___base_1a642fa93b54625c83e72bbab8ef8f22ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void I2C_MUX_Base::exposeAllChannels</definition>
+        <argsstring>()=0</argsstring>
+        <name>exposeAllChannels</name>
+        <qualifiedname>I2C_MUX_Base::exposeAllChannels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_Base.h" line="12" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___base_1afda776aaa3f349f462c3dceabc61df59" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void I2C_MUX_Base::hideAllChannels</definition>
+        <argsstring>()=0</argsstring>
+        <name>hideAllChannels</name>
+        <qualifiedname>I2C_MUX_Base::hideAllChannels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_Base.h" line="13" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___base_1ae6a5dbac89a088fb224d3f1102f20e21" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool I2C_MUX_Base::isChannelExposed</definition>
+        <argsstring>(uint8_t channel)=0</argsstring>
+        <name>isChannelExposed</name>
+        <qualifiedname>I2C_MUX_Base::isChannelExposed</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_Base.h" line="14" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___base_1a2858960f9aed92bbf8b32deedcc3d330" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool *</type>
+        <definition>virtual bool * I2C_MUX_Base::getChannelStates</definition>
+        <argsstring>(uint8_t channel)=0</argsstring>
+        <name>getChannelStates</name>
+        <qualifiedname>I2C_MUX_Base::getChannelStates</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_Base.h" line="15" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/i2c/mux/I2C_MUX_Base.h" line="7" column="1" bodyfile="src/i2c/mux/I2C_MUX_Base.h" bodystart="7" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_i2_c___m_u_x___base_1a00e2399442ee54fed09c229e3483a7fe" prot="public" virt="pure-virtual"><scope>I2C_MUX_Base</scope><name>begin</name></member>
+      <member refid="class_i2_c___m_u_x___base_1a642fa93b54625c83e72bbab8ef8f22ce" prot="public" virt="pure-virtual"><scope>I2C_MUX_Base</scope><name>exposeAllChannels</name></member>
+      <member refid="class_i2_c___m_u_x___base_1a4fdffe0108dea3edf1c8e757f401a34b" prot="public" virt="pure-virtual"><scope>I2C_MUX_Base</scope><name>exposeChannel</name></member>
+      <member refid="class_i2_c___m_u_x___base_1a2858960f9aed92bbf8b32deedcc3d330" prot="public" virt="pure-virtual"><scope>I2C_MUX_Base</scope><name>getChannelStates</name></member>
+      <member refid="class_i2_c___m_u_x___base_1afda776aaa3f349f462c3dceabc61df59" prot="public" virt="pure-virtual"><scope>I2C_MUX_Base</scope><name>hideAllChannels</name></member>
+      <member refid="class_i2_c___m_u_x___base_1a70dafd7f0d780e4ca28a71a03bae1cec" prot="public" virt="pure-virtual"><scope>I2C_MUX_Base</scope><name>hideChannel</name></member>
+      <member refid="class_i2_c___m_u_x___base_1ae6a5dbac89a088fb224d3f1102f20e21" prot="public" virt="pure-virtual"><scope>I2C_MUX_Base</scope><name>isChannelExposed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

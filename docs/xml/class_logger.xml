@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_logger" kind="class" language="C++" prot="public">
+    <compoundname>Logger</compoundname>
+    <includes refid="_logger_8h" local="no">Logger.h</includes>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_logger_1abc41bfb031d896170c7675fa96a6b30c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Logger::Logger</definition>
+        <argsstring>()</argsstring>
+        <name>Logger</name>
+        <qualifiedname>Logger::Logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Logger.h" line="11" column="9" bodyfile="src/core/Logger.h" bodystart="11" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_logger_1a56defd0fd628ce6263d25d02296e48ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_logger" kindref="compound">Logger</ref> &amp;</type>
+        <definition>static Logger &amp; Logger::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>Logger::getInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Logger.h" line="18" column="23" bodyfile="src/core/Logger.h" bodystart="18" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/Logger.h" line="9" column="1" bodyfile="src/core/Logger.h" bodystart="9" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_logger_1a56defd0fd628ce6263d25d02296e48ce" prot="public" virt="non-virtual"><scope>Logger</scope><name>getInstance</name></member>
+      <member refid="class_logger_1abc41bfb031d896170c7675fa96a6b30c" prot="private" virt="non-virtual"><scope>Logger</scope><name>Logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

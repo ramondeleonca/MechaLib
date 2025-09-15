@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_motor_safety_8h" kind="file" language="C++">
+    <compoundname>MotorSafety.h</compoundname>
+    <includedby refid="_mecha_lib_8h" local="no">src/MechaLib.h</includedby>
+    <includedby refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h" local="no">src/motor/dc/MOTOR_CONTROLLER_Base.h</includedby>
+    <includedby refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h" local="no">src/motor/dc/MOTOR_CONTROLLER_DRV8871.h</includedby>
+    <includedby refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h" local="no">src/motor/dc/MOTOR_CONTROLLER_L298N.h</includedby>
+    <includedby refid="_s_e_r_v_o___base_8h" local="no">src/motor/servo/SERVO_Base.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/MechaLib.h</label>
+        <link refid="_mecha_lib_8h"/>
+      </node>
+      <node id="1">
+        <label>src/motor/MotorSafety.h</label>
+        <link refid="_motor_safety_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/motor/dc/MOTOR_CONTROLLER_Base.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/motor/dc/MOTOR_CONTROLLER_DRV8871.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/motor/dc/MOTOR_CONTROLLER_L298N.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/motor/servo/SERVO_Base.h</label>
+        <link refid="_s_e_r_v_o___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_motor_safety" prot="public">MotorSafety</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_motor_safety_8h_1a00b7d98b22638f8c6f9f03d93b924465" prot="public" static="no">
+        <name>MOTOR_SAFETY_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/MotorSafety.h" line="3" column="9" bodyfile="src/motor/MotorSafety.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MotorSafetyStatus</name>
+        <enumvalue id="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a4eca054070419f48846f93d1e09f2ac6" prot="public">
+          <name>PROTECTED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a99788d1f27bac42d0c7bac63026c5959" prot="public">
+          <name>ENABLED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/MotorSafety.h" line="5" column="1" bodyfile="src/motor/MotorSafety.h" bodystart="5" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MOTOR_SAFETY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_motor_safety_8h_1a00b7d98b22638f8c6f9f03d93b924465" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOTOR_SAFETY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699" kindref="member">MotorSafetyStatus</ref><sp/>{</highlight></codeline>
+<codeline lineno="6" refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a4eca054070419f48846f93d1e09f2ac6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a4eca054070419f48846f93d1e09f2ac6" kindref="member">PROTECTED</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="7" refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a99788d1f27bac42d0c7bac63026c5959" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a99788d1f27bac42d0c7bac63026c5959" kindref="member">ENABLED</ref><sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_motor_safety" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_motor_safety_1ae460d83bff86597bb83931b6e6fd11e5" kindref="member">MotorSafety</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699" kindref="member">MotorSafetyStatus</ref><sp/>status<sp/>=<sp/><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a4eca054070419f48846f93d1e09f2ac6" kindref="member">MotorSafetyStatus::PROTECTED</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="class_motor_safety_1a8b13a150baafe53ed9f0cb515495a930" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motor_safety_1a8b13a150baafe53ed9f0cb515495a930" kindref="member">enable</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a99788d1f27bac42d0c7bac63026c5959" kindref="member">MotorSafetyStatus::ENABLED</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_motor_safety_1a5916467d507c5f1ace5edd7f0879a249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motor_safety_1a5916467d507c5f1ace5edd7f0879a249" kindref="member">disable</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a4eca054070419f48846f93d1e09f2ac6" kindref="member">MotorSafetyStatus::PROTECTED</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="class_motor_safety_1ac4b471a2109f684122428ff0ea78224a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699" kindref="member">MotorSafetyStatus</ref><sp/><ref refid="class_motor_safety_1ac4b471a2109f684122428ff0ea78224a" kindref="member">getStatus</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Singleton</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="class_motor_safety_1ae460d83bff86597bb83931b6e6fd11e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_motor_safety_1ae460d83bff86597bb83931b6e6fd11e5" kindref="member">MotorSafety</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="30" refid="class_motor_safety_1a37901b493830135d3d2ad23b80d7c0ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_motor_safety_1ae460d83bff86597bb83931b6e6fd11e5" kindref="member">MotorSafety</ref>&amp;<sp/><ref refid="class_motor_safety_1a37901b493830135d3d2ad23b80d7c0ec" kindref="member">getInstance</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_motor_safety_1ae460d83bff86597bb83931b6e6fd11e5" kindref="member">MotorSafety</ref><sp/>instance;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>instance;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/motor/MotorSafety.h"/>
+  </compounddef>
+</doxygen>

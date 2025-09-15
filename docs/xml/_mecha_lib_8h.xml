@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_mecha_lib_8h" kind="file" language="C++">
+    <compoundname>MechaLib.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes local="no">Bluepad32.h</includes>
+    <includes local="no">RemoteXY.h</includes>
+    <includes refid="_logger_8h" local="no">core/Logger.h</includes>
+    <includes refid="_robot_base_8h" local="no">core/RobotBase.h</includes>
+    <includes refid="_chassis_speeds_8h" local="no">drive/ChassisSpeeds.h</includes>
+    <includes refid="_differential_drive_kinematics_8h" local="no">drive/DifferentialDriveKinematics.h</includes>
+    <includes refid="_mecanum_drive_kinematics_8h" local="no">drive/MecanumDriveKinematics.h</includes>
+    <includes refid="_e_n_c_o_d_e_r___i2_c___a_s5600_8h" local="no">i2c/encoder/ENCODER_I2C_AS5600.h</includes>
+    <includes refid="_i2_c___m_u_x___base_8h" local="no">i2c/mux/I2C_MUX_Base.h</includes>
+    <includes refid="_i2_c___m_u_x___t_c_a9548_a_8h" local="no">i2c/mux/I2C_MUX_TCA9548A.h</includes>
+    <includes refid="_motor_safety_8h" local="no">motor/MotorSafety.h</includes>
+    <includes refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h" local="no">motor/dc/MOTOR_CONTROLLER_Base.h</includes>
+    <includes refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h" local="no">motor/dc/MOTOR_CONTROLLER_DRV8871.h</includes>
+    <includes refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h" local="no">motor/dc/MOTOR_CONTROLLER_L298N.h</includes>
+    <includes refid="_s_e_r_v_o___base_8h" local="no">motor/servo/SERVO_Base.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>AS5600.h</label>
+      </node>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="3">
+        <label>Bluepad32.h</label>
+      </node>
+      <node id="1">
+        <label>src/MechaLib.h</label>
+        <link refid="_mecha_lib_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>core/Logger.h</label>
+        <link refid="_logger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>core/RobotBase.h</label>
+        <link refid="_robot_base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>drive/ChassisSpeeds.h</label>
+        <link refid="_chassis_speeds_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>drive/DifferentialDriveKinematics.h</label>
+        <link refid="_differential_drive_kinematics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>drive/MecanumDriveKinematics.h</label>
+        <link refid="_mecanum_drive_kinematics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>i2c/encoder/ENCODER_I2C_AS5600.h</label>
+        <link refid="_e_n_c_o_d_e_r___i2_c___a_s5600_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>i2c/mux/I2C_MUX_Base.h</label>
+        <link refid="_i2_c___m_u_x___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>i2c/mux/I2C_MUX_TCA9548A.h</label>
+        <link refid="_i2_c___m_u_x___t_c_a9548_a_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>motor/MotorSafety.h</label>
+        <link refid="_motor_safety_8h"/>
+      </node>
+      <node id="17">
+        <label>motor/dc/MOTOR_CONTROLLER_Base.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>motor/dc/MOTOR_CONTROLLER_DRV8871.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>motor/dc/MOTOR_CONTROLLER_L298N.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>motor/servo/SERVO_Base.h</label>
+        <link refid="_s_e_r_v_o___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RemoteXY.h</label>
+      </node>
+      <node id="15">
+        <label>TCA9548A.h</label>
+      </node>
+      <node id="11">
+        <label>Wire.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_mecha_lib_8h_1aa15587e1ec054e50987a89a7beb959dc" prot="public" static="no">
+        <name>MECHALIB_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MechaLib.h" line="3" column="9" bodyfile="src/MechaLib.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MECHALIB_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_mecha_lib_8h_1aa15587e1ec054e50987a89a7beb959dc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MECHALIB_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Bluepad32.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;RemoteXY.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/>Core</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_logger_8h" kindref="compound">core/Logger.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_robot_base_8h" kindref="compound">core/RobotBase.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//*<sp/>Drive</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_chassis_speeds_8h" kindref="compound">drive/ChassisSpeeds.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_differential_drive_kinematics_8h" kindref="compound">drive/DifferentialDriveKinematics.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_mecanum_drive_kinematics_8h" kindref="compound">drive/MecanumDriveKinematics.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//*<sp/>I2C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Encoders</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_e_n_c_o_d_e_r___i2_c___a_s5600_8h" kindref="compound">i2c/encoder/ENCODER_I2C_AS5600.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//*<sp/>Multiplexers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_i2_c___m_u_x___base_8h" kindref="compound">i2c/mux/I2C_MUX_Base.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_i2_c___m_u_x___t_c_a9548_a_8h" kindref="compound">i2c/mux/I2C_MUX_TCA9548A.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//*<sp/>Motors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_motor_safety_8h" kindref="compound">motor/MotorSafety.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DC<sp/>Motors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h" kindref="compound">motor/dc/MOTOR_CONTROLLER_Base.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h" kindref="compound">motor/dc/MOTOR_CONTROLLER_DRV8871.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h" kindref="compound">motor/dc/MOTOR_CONTROLLER_L298N.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Servo<sp/>Motors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_s_e_r_v_o___base_8h" kindref="compound">motor/servo/SERVO_Base.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/MechaLib.h"/>
+  </compounddef>
+</doxygen>

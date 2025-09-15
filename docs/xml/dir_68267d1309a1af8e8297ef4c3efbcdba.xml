@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_aebb8dcc11953d78e620bbef0b9e2183">src/core</innerdir>
+    <innerdir refid="dir_eb5bd66d608c462d0443cbbfba4140e5">src/drive</innerdir>
+    <innerdir refid="dir_4dc4bab0c83361445d1434e79b04c26d">src/i2c</innerdir>
+    <innerdir refid="dir_51d2704dc12fe8077069f9b3a7ec2d12">src/motor</innerdir>
+    <innerfile refid="_mecha_lib_8h">MechaLib.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/"/>
+  </compounddef>
+</doxygen>

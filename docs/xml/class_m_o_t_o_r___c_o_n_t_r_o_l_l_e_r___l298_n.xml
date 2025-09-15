@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n" kind="class" language="C++" prot="public">
+    <compoundname>MOTOR_CONTROLLER_L298N</compoundname>
+    <basecompoundref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" prot="public" virt="non-virtual">MOTOR_CONTROLLER_Base</basecompoundref>
+    <includes refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h" local="no">MOTOR_CONTROLLER_L298N.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a94a347333e528cd7d9fa7ce1c9b47f4f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MOTOR_CONTROLLER_L298N::in1</definition>
+        <argsstring></argsstring>
+        <name>in1</name>
+        <qualifiedname>MOTOR_CONTROLLER_L298N::in1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_L298N.h" line="11" column="13" bodyfile="src/motor/dc/MOTOR_CONTROLLER_L298N.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a2ac109de78b83ffcdab3fe7f3646fecc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MOTOR_CONTROLLER_L298N::in2</definition>
+        <argsstring></argsstring>
+        <name>in2</name>
+        <qualifiedname>MOTOR_CONTROLLER_L298N::in2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_L298N.h" line="12" column="13" bodyfile="src/motor/dc/MOTOR_CONTROLLER_L298N.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a7880f49baf55f9670a74b5a732d5903a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MOTOR_CONTROLLER_L298N::en</definition>
+        <argsstring></argsstring>
+        <name>en</name>
+        <qualifiedname>MOTOR_CONTROLLER_L298N::en</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_L298N.h" line="13" column="13" bodyfile="src/motor/dc/MOTOR_CONTROLLER_L298N.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1aaeaa2a619fb8b3d422c003f80c8fa5e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MOTOR_CONTROLLER_L298N::MOTOR_CONTROLLER_L298N</definition>
+        <argsstring>(int in1, int in2, int en, float deadband=0.075)</argsstring>
+        <name>MOTOR_CONTROLLER_L298N</name>
+        <qualifiedname>MOTOR_CONTROLLER_L298N::MOTOR_CONTROLLER_L298N</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>in1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>in2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>en</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>deadband</declname>
+          <defval>0.075</defval>
+        </param>
+        <briefdescription>
+<para>Constructor for the L298N motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin for IN1 control. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin for IN2 control. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin for EN control (PWM). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_L298N.h" line="22" column="9" bodyfile="src/motor/dc/MOTOR_CONTROLLER_L298N.h" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a7c70540ef031820bacee4cae65f1b03b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void MOTOR_CONTROLLER_L298N::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>MOTOR_CONTROLLER_L298N::begin</qualifiedname>
+        <reimplements refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af234d80a5f894665f9327696b442a721">begin</reimplements>
+        <briefdescription>
+<para>Begin the motor controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_L298N.h" line="29" column="14" bodyfile="src/motor/dc/MOTOR_CONTROLLER_L298N.h" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a4a2b1e5a011b885ce4c3f473382a8f13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void MOTOR_CONTROLLER_L298N::set</definition>
+        <argsstring>(float speed, bool isBeep)</argsstring>
+        <name>set</name>
+        <qualifiedname>MOTOR_CONTROLLER_L298N::set</qualifiedname>
+        <reimplements refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a47435ee939e4d235d6f402c5b064e7e1">set</reimplements>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isBeep</declname>
+        </param>
+        <briefdescription>
+<para>Set the speed of the motor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The speed to set the motor to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isBeep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wether or not this is a beep setpoint (speed value will be taken as a percentage of deadband) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_L298N.h" line="39" column="14" bodyfile="src/motor/dc/MOTOR_CONTROLLER_L298N.h" bodystart="39" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a8c0db9154498bc64fec5bbfb77070b19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MOTOR_CONTROLLER_L298N::set</definition>
+        <argsstring>(float speed)</argsstring>
+        <name>set</name>
+        <qualifiedname>MOTOR_CONTROLLER_L298N::set</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_L298N.h" line="59" column="14" bodyfile="src/motor/dc/MOTOR_CONTROLLER_L298N.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOTOR_CONTROLLER_Base</label>
+        <link refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base"/>
+      </node>
+      <node id="1">
+        <label>MOTOR_CONTROLLER_L298N</label>
+        <link refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOTOR_CONTROLLER_Base</label>
+        <link refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>followers</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MOTOR_CONTROLLER_L298N</label>
+        <link refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/motor/dc/MOTOR_CONTROLLER_L298N.h" line="9" column="1" bodyfile="src/motor/dc/MOTOR_CONTROLLER_L298N.h" bodystart="9" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a989e9662e5b9f44f961d8fae48efc2eb" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>addFollower</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4e4ef7b8731a5eaba5a76ae8730810ab" prot="protected" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>applySpeedFilters</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a7c70540ef031820bacee4cae65f1b03b" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>begin</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" prot="protected" virt="non-virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>deadband</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a7880f49baf55f9670a74b5a732d5903a" prot="private" virt="non-virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>en</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a947bbbbfc685e913cfd6a8e322da140b" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>follow</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" prot="protected" virt="non-virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>followers</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aaecb4d51a118820a3c3b2b246a93fbc6" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>getDeadband</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01e88bf2cd39334fed8ad1e3f535eb65" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>getFollowers</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af538dceb11edc0a9f95c681eb406f878" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>getInverted</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4dc423a56131fbbd3f6ef56be993b075" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>getMultiplier</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a94a347333e528cd7d9fa7ce1c9b47f4f" prot="private" virt="non-virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>in1</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a2ac109de78b83ffcdab3fe7f3646fecc" prot="private" virt="non-virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>in2</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a3c835bb772f89cb1f481c7d20597e439" prot="protected" virt="non-virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>inverted</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1aaeaa2a619fb8b3d422c003f80c8fa5e2" prot="public" virt="non-virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>MOTOR_CONTROLLER_L298N</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ac8dd481c1d701b9ac01b7d3159db03d5" prot="protected" virt="non-virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>multiplier</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01ac03664b23edcd69e2dd3486a8546a" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>removeFollower</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a4a2b1e5a011b885ce4c3f473382a8f13" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>set</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a8c0db9154498bc64fec5bbfb77070b19" prot="public" virt="non-virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>set</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1acf1de87ef168ca4f590eddd1e0c91985" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>setDeadband</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af99f51c50263a22b54e3034b7e81a50d" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>setInverted</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aa65faf15f28cb8b8a7c3b6934ea1eaa5" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>setMultiplier</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a6f7bc574a1212f378719ff70bceedee8" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>stop</name></member>
+      <member refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a64c4bc2d03b238e81122bfa1cbd5f2b7" prot="public" virt="virtual"><scope>MOTOR_CONTROLLER_L298N</scope><name>updateFollowers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

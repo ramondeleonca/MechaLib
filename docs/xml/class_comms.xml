@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_comms" kind="class" language="C++" prot="public">
+    <compoundname>Comms</compoundname>
+    <includes refid="comms_8hpp" local="no">comms.hpp</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_comms_1a7956d378223c598b4883d907cd9ef516" prot="protected" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Comms::fieldSSID</definition>
+        <argsstring></argsstring>
+        <name>fieldSSID</name>
+        <qualifiedname>Comms::fieldSSID</qualifiedname>
+        <initializer>= &quot;MechaLeague-Field&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="35" column="20" bodyfile="src/core/comms/comms.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_comms_1aff24d317de710a5611c39f0c7de0827d" prot="protected" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Comms::fieldPass</definition>
+        <argsstring></argsstring>
+        <name>fieldPass</name>
+        <qualifiedname>Comms::fieldPass</qualifiedname>
+        <initializer>= &quot;12345678&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="36" column="20" bodyfile="src/core/comms/comms.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_comms_1a6758c5f5e83b592948f14179172a4734" prot="protected" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Comms::mdnsFormat</definition>
+        <argsstring></argsstring>
+        <name>mdnsFormat</name>
+        <qualifiedname>Comms::mdnsFormat</qualifiedname>
+        <initializer>= &quot;mechaleague-bot-&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="39" column="20" bodyfile="src/core/comms/comms.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_comms_1a6f5704d758b4cec35422cd75e05f8d65" prot="protected" static="no" mutable="no">
+        <type>WiFiUDP</type>
+        <definition>WiFiUDP Comms::controlServer</definition>
+        <argsstring></argsstring>
+        <name>controlServer</name>
+        <qualifiedname>Comms::controlServer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="42" column="17" bodyfile="src/core/comms/comms.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_comms_1a14fd34cdd849c52aa07852c065f289bc" prot="protected" static="no" mutable="no">
+        <type>const uint</type>
+        <definition>const uint Comms::controlServerPort</definition>
+        <argsstring></argsstring>
+        <name>controlServerPort</name>
+        <qualifiedname>Comms::controlServerPort</qualifiedname>
+        <initializer>= 1010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="43" column="20" bodyfile="src/core/comms/comms.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_comms_1a18ce656a839865530778af6ff4439bef" prot="protected" static="no" mutable="no">
+        <type>WiFiUDP</type>
+        <definition>WiFiUDP Comms::telemetryServer</definition>
+        <argsstring></argsstring>
+        <name>telemetryServer</name>
+        <qualifiedname>Comms::telemetryServer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="46" column="17" bodyfile="src/core/comms/comms.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_comms_1a7c02b0c1a838077a55a9669d39266e7f" prot="protected" static="no" mutable="no">
+        <type>const uint</type>
+        <definition>const uint Comms::telemetryServerPort</definition>
+        <argsstring></argsstring>
+        <name>telemetryServerPort</name>
+        <qualifiedname>Comms::telemetryServerPort</qualifiedname>
+        <initializer>= 1011</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="47" column="20" bodyfile="src/core/comms/comms.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_comms_1ada9cbf7e426e1e8197d4955bf80efd16" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Comms::init</definition>
+        <argsstring></argsstring>
+        <name>init</name>
+        <qualifiedname>Comms::init</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="101" column="14" bodyfile="src/core/comms/comms.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_comms_1ab72338d0d90e23b2d29f6f750cce6da0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Comms::validateTeamID</definition>
+        <argsstring>()</argsstring>
+        <name>validateTeamID</name>
+        <qualifiedname>Comms::validateTeamID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="49" column="14" bodyfile="src/core/comms/comms.hpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_comms_1a8604747083d79dd88dc290566f06d660" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519" kindref="member">COMMS_CONN_ERR</ref></type>
+        <definition>COMMS_CONN_ERR Comms::connectToWiFi</definition>
+        <argsstring>(const char *ssid, const char *password=NULL)</argsstring>
+        <name>connectToWiFi</name>
+        <qualifiedname>Comms::connectToWiFi</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>password</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="54" column="24" bodyfile="src/core/comms/comms.hpp" bodystart="54" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_comms_1a9b4c7c511347df093ae57149baf32128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Comms::startMDNS</definition>
+        <argsstring>()</argsstring>
+        <name>startMDNS</name>
+        <qualifiedname>Comms::startMDNS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="84" column="14" bodyfile="src/core/comms/comms.hpp" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_comms_1a8ffdd1d67376e751d37cf0718fadae8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Comms::startServer</definition>
+        <argsstring>()</argsstring>
+        <name>startServer</name>
+        <qualifiedname>Comms::startServer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="90" column="14" bodyfile="src/core/comms/comms.hpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_comms_1acb67096a7b2d74f85842a3eee20aca25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519" kindref="member">COMMS_CONN_ERR</ref></type>
+        <definition>COMMS_CONN_ERR Comms::connectToField</definition>
+        <argsstring>()</argsstring>
+        <name>connectToField</name>
+        <qualifiedname>Comms::connectToField</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="95" column="24" bodyfile="src/core/comms/comms.hpp" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_comms_1aa3878221ed907d6d6841ee77741c1f49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Comms::Comms</definition>
+        <argsstring>()</argsstring>
+        <name>Comms</name>
+        <qualifiedname>Comms::Comms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="103" column="9" bodyfile="src/core/comms/comms.hpp" bodystart="103" bodyend="103"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_comms_1a84477cd2049de0d0d4dfe7b761574556" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_comms" kindref="compound">Comms</ref> &amp;</type>
+        <definition>static Comms &amp; Comms::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>Comms::getInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="104" column="22" bodyfile="src/core/comms/comms.hpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/comms/comms.hpp" line="32" column="1" bodyfile="src/core/comms/comms.hpp" bodystart="32" bodyend="108"/>
+    <listofallmembers>
+      <member refid="class_comms_1aa3878221ed907d6d6841ee77741c1f49" prot="public" virt="non-virtual"><scope>Comms</scope><name>Comms</name></member>
+      <member refid="class_comms_1acb67096a7b2d74f85842a3eee20aca25" prot="public" virt="non-virtual"><scope>Comms</scope><name>connectToField</name></member>
+      <member refid="class_comms_1a8604747083d79dd88dc290566f06d660" prot="protected" virt="non-virtual"><scope>Comms</scope><name>connectToWiFi</name></member>
+      <member refid="class_comms_1a6f5704d758b4cec35422cd75e05f8d65" prot="protected" virt="non-virtual"><scope>Comms</scope><name>controlServer</name></member>
+      <member refid="class_comms_1a14fd34cdd849c52aa07852c065f289bc" prot="protected" virt="non-virtual"><scope>Comms</scope><name>controlServerPort</name></member>
+      <member refid="class_comms_1aff24d317de710a5611c39f0c7de0827d" prot="protected" virt="non-virtual"><scope>Comms</scope><name>fieldPass</name></member>
+      <member refid="class_comms_1a7956d378223c598b4883d907cd9ef516" prot="protected" virt="non-virtual"><scope>Comms</scope><name>fieldSSID</name></member>
+      <member refid="class_comms_1a84477cd2049de0d0d4dfe7b761574556" prot="public" virt="non-virtual"><scope>Comms</scope><name>getInstance</name></member>
+      <member refid="class_comms_1ada9cbf7e426e1e8197d4955bf80efd16" prot="private" virt="non-virtual"><scope>Comms</scope><name>init</name></member>
+      <member refid="class_comms_1a6758c5f5e83b592948f14179172a4734" prot="protected" virt="non-virtual"><scope>Comms</scope><name>mdnsFormat</name></member>
+      <member refid="class_comms_1a9b4c7c511347df093ae57149baf32128" prot="public" virt="non-virtual"><scope>Comms</scope><name>startMDNS</name></member>
+      <member refid="class_comms_1a8ffdd1d67376e751d37cf0718fadae8a" prot="public" virt="non-virtual"><scope>Comms</scope><name>startServer</name></member>
+      <member refid="class_comms_1a18ce656a839865530778af6ff4439bef" prot="protected" virt="non-virtual"><scope>Comms</scope><name>telemetryServer</name></member>
+      <member refid="class_comms_1a7c02b0c1a838077a55a9669d39266e7f" prot="protected" virt="non-virtual"><scope>Comms</scope><name>telemetryServerPort</name></member>
+      <member refid="class_comms_1ab72338d0d90e23b2d29f6f750cce6da0" prot="protected" virt="non-virtual"><scope>Comms</scope><name>validateTeamID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

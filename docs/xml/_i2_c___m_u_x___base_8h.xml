@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_i2_c___m_u_x___base_8h" kind="file" language="C++">
+    <compoundname>I2C_MUX_Base.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="_mecha_lib_8h" local="no">src/MechaLib.h</includedby>
+    <includedby refid="_i2_c___m_u_x___t_c_a9548_a_8h" local="no">src/i2c/mux/I2C_MUX_TCA9548A.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>src/i2c/mux/I2C_MUX_Base.h</label>
+        <link refid="_i2_c___m_u_x___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/MechaLib.h</label>
+        <link refid="_mecha_lib_8h"/>
+      </node>
+      <node id="1">
+        <label>src/i2c/mux/I2C_MUX_Base.h</label>
+        <link refid="_i2_c___m_u_x___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/i2c/mux/I2C_MUX_TCA9548A.h</label>
+        <link refid="_i2_c___m_u_x___t_c_a9548_a_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_i2_c___m_u_x___base" prot="public">I2C_MUX_Base</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_i2_c___m_u_x___base_8h_1a72c59172e4484e4358dba1251d5b029b" prot="public" static="no">
+        <name>MECHALIB_I2C_MUX_BASE_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_Base.h" line="3" column="9" bodyfile="src/i2c/mux/I2C_MUX_Base.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MECHALIB_I2C_MUX_BASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_i2_c___m_u_x___base_8h_1a72c59172e4484e4358dba1251d5b029b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MECHALIB_I2C_MUX_BASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_i2_c___m_u_x___base" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_i2_c___m_u_x___base" kindref="compound">I2C_MUX_Base</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="class_i2_c___m_u_x___base_1a00e2399442ee54fed09c229e3483a7fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_i2_c___m_u_x___base_1a00e2399442ee54fed09c229e3483a7fe" kindref="member">begin</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="10" refid="class_i2_c___m_u_x___base_1a4fdffe0108dea3edf1c8e757f401a34b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_i2_c___m_u_x___base_1a4fdffe0108dea3edf1c8e757f401a34b" kindref="member">exposeChannel</ref>(uint8_t<sp/>channel)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="11" refid="class_i2_c___m_u_x___base_1a70dafd7f0d780e4ca28a71a03bae1cec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_i2_c___m_u_x___base_1a70dafd7f0d780e4ca28a71a03bae1cec" kindref="member">hideChannel</ref>(uint8_t<sp/>channel)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="12" refid="class_i2_c___m_u_x___base_1a642fa93b54625c83e72bbab8ef8f22ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_i2_c___m_u_x___base_1a642fa93b54625c83e72bbab8ef8f22ce" kindref="member">exposeAllChannels</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13" refid="class_i2_c___m_u_x___base_1afda776aaa3f349f462c3dceabc61df59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_i2_c___m_u_x___base_1afda776aaa3f349f462c3dceabc61df59" kindref="member">hideAllChannels</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14" refid="class_i2_c___m_u_x___base_1ae6a5dbac89a088fb224d3f1102f20e21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i2_c___m_u_x___base_1ae6a5dbac89a088fb224d3f1102f20e21" kindref="member">isChannelExposed</ref>(uint8_t<sp/>channel)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="15" refid="class_i2_c___m_u_x___base_1a2858960f9aed92bbf8b32deedcc3d330" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/><ref refid="class_i2_c___m_u_x___base_1a2858960f9aed92bbf8b32deedcc3d330" kindref="member">getChannelStates</ref>(uint8_t<sp/>channel)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/i2c/mux/I2C_MUX_Base.h"/>
+  </compounddef>
+</doxygen>

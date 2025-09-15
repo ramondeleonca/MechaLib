@@ -4,4 +4,6 @@
 .vscode/launch.json
 .vscode/ipch
 /scripts/*.zip
+/scripts/esp32-bluepad32-*
 src/frameworks
+**/__pycache__

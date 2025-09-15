@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_differential_drive_kinematics" kind="class" language="C++" prot="public">
+    <compoundname>DifferentialDriveKinematics</compoundname>
+    <includes refid="_differential_drive_kinematics_8h" local="no">DifferentialDriveKinematics.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_differential_drive_kinematics_1a263253aaa999456bcefa8a5b32d551a8" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DifferentialDriveKinematics::trackWidth</definition>
+        <argsstring></argsstring>
+        <name>trackWidth</name>
+        <qualifiedname>DifferentialDriveKinematics::trackWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/DifferentialDriveKinematics.h" line="9" column="15" bodyfile="src/drive/DifferentialDriveKinematics.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_differential_drive_kinematics_1ad89e71160cf6fc1c92d649e9fc3b7c29" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DifferentialDriveKinematics::wheelRadius</definition>
+        <argsstring></argsstring>
+        <name>wheelRadius</name>
+        <qualifiedname>DifferentialDriveKinematics::wheelRadius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/DifferentialDriveKinematics.h" line="10" column="15" bodyfile="src/drive/DifferentialDriveKinematics.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_differential_drive_kinematics_1a250cbd713d915923eef537b7bc5c6f31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DifferentialDriveKinematics::DifferentialDriveKinematics</definition>
+        <argsstring>(float trackWidth, float wheelRadius)</argsstring>
+        <name>DifferentialDriveKinematics</name>
+        <qualifiedname>DifferentialDriveKinematics::DifferentialDriveKinematics</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>trackWidth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>wheelRadius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/DifferentialDriveKinematics.h" line="13" column="9" bodyfile="src/drive/DifferentialDriveKinematics.h" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_differential_drive_kinematics_1ae79268d191cbb894cb4af092423e11a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DifferentialDriveKinematics::calculateWheelSpeeds</definition>
+        <argsstring>(float *wheelSpeeds, float vy, float omega)</argsstring>
+        <name>calculateWheelSpeeds</name>
+        <qualifiedname>DifferentialDriveKinematics::calculateWheelSpeeds</qualifiedname>
+        <param>
+          <type>float *</type>
+          <declname>wheelSpeeds</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/DifferentialDriveKinematics.h" line="18" column="14" bodyfile="src/drive/DifferentialDriveKinematics.h" bodystart="18" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_differential_drive_kinematics_1a581c3086f069d3ab6f91b40f9dc3623d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>static float * DifferentialDriveKinematics::normalizeWheelSpeeds</definition>
+        <argsstring>(float *wheelSpeeds)</argsstring>
+        <name>normalizeWheelSpeeds</name>
+        <qualifiedname>DifferentialDriveKinematics::normalizeWheelSpeeds</qualifiedname>
+        <param>
+          <type>float *</type>
+          <declname>wheelSpeeds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/DifferentialDriveKinematics.h" line="23" column="22" bodyfile="src/drive/DifferentialDriveKinematics.h" bodystart="23" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/drive/DifferentialDriveKinematics.h" line="7" column="1" bodyfile="src/drive/DifferentialDriveKinematics.h" bodystart="7" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_differential_drive_kinematics_1ae79268d191cbb894cb4af092423e11a7" prot="public" virt="non-virtual"><scope>DifferentialDriveKinematics</scope><name>calculateWheelSpeeds</name></member>
+      <member refid="class_differential_drive_kinematics_1a250cbd713d915923eef537b7bc5c6f31" prot="public" virt="non-virtual"><scope>DifferentialDriveKinematics</scope><name>DifferentialDriveKinematics</name></member>
+      <member refid="class_differential_drive_kinematics_1a581c3086f069d3ab6f91b40f9dc3623d" prot="public" virt="non-virtual"><scope>DifferentialDriveKinematics</scope><name>normalizeWheelSpeeds</name></member>
+      <member refid="class_differential_drive_kinematics_1a263253aaa999456bcefa8a5b32d551a8" prot="private" virt="non-virtual"><scope>DifferentialDriveKinematics</scope><name>trackWidth</name></member>
+      <member refid="class_differential_drive_kinematics_1ad89e71160cf6fc1c92d649e9fc3b7c29" prot="private" virt="non-virtual"><scope>DifferentialDriveKinematics</scope><name>wheelRadius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_joystick_util" kind="class" language="C++" prot="public">
+    <compoundname>JoystickUtil</compoundname>
+    <includes refid="_joystick_util_8h" local="no">JoystickUtil.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_joystick_util_1aa216fa6ddfe136e41e79bc75c4f6a7e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float JoystickUtil::deadbandMap</definition>
+        <argsstring>(float x, float deadband, float in_min, float in_max, float out_min, float out_max)</argsstring>
+        <name>deadbandMap</name>
+        <qualifiedname>JoystickUtil::deadbandMap</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>deadband</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>in_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>in_max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>out_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>out_max</declname>
+        </param>
+        <briefdescription>
+<para>Maps a joystick input value with a deadband. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The joystick input value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deadband</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The deadband value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum of the input range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum of the input range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum of the output range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum of the output range. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mapped joystick value with deadband applied. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/JoystickUtil.h" line="19" column="22" bodyfile="src/core/math/JoystickUtil.h" bodystart="19" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/math/JoystickUtil.h" line="6" column="1" bodyfile="src/core/math/JoystickUtil.h" bodystart="6" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_joystick_util_1aa216fa6ddfe136e41e79bc75c4f6a7e6" prot="public" virt="non-virtual"><scope>JoystickUtil</scope><name>deadbandMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

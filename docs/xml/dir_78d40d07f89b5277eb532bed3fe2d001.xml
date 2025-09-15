@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_78d40d07f89b5277eb532bed3fe2d001" kind="dir">
+    <compoundname>src/i2c/encoder</compoundname>
+    <innerfile refid="_e_n_c_o_d_e_r___i2_c___a_s5600_8h">ENCODER_I2C_AS5600.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/i2c/encoder/"/>
+  </compounddef>
+</doxygen>

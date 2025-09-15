@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="comms_8hpp" kind="file" language="C++">
+    <compoundname>comms.hpp</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes local="no">WiFi.h</includes>
+    <includes local="no">ESPmDNS.h</includes>
+    <includes local="no">WiFiUdp.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>src/core/comms/comms.hpp</label>
+        <link refid="comms_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ESPmDNS.h</label>
+      </node>
+      <node id="3">
+        <label>WiFi.h</label>
+      </node>
+      <node id="5">
+        <label>WiFiUdp.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_comms" prot="public">Comms</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="comms_8hpp_1a623f7e714f56d3d9d4a7220a7afc4ec3" prot="public" static="no">
+        <name>COMMS_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="3" column="9" bodyfile="src/core/comms/comms.hpp" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="comms_8hpp_1ab4c16e137e47552b53564bafb7f71ec7" prot="public" static="no">
+        <name>TEAM_ID</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="11" column="9" bodyfile="src/core/comms/comms.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519" prot="public" static="no" strong="no">
+        <type></type>
+        <name>COMMS_CONN_ERR</name>
+        <enumvalue id="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a1ea8c2fe1fcb20c57388391b0a119b49" prot="public">
+          <name>COMMS_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a55ae5ffab289e48983f817a928e04c65" prot="public">
+          <name>COMMS_FAILURE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a2faba8af5c6d987553decdd29a60f2a5" prot="public">
+          <name>COMMS_NO_TEAM_ID</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519ae040fc0e5b9d19c907a6c770008b33a2" prot="public">
+          <name>COMMS_INVALID_TEAM_ID</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="14" column="1" bodyfile="src/core/comms/comms.hpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="enum" id="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>COMMS_MDNS_ERR</name>
+        <enumvalue id="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897cafb931a3735bce4ebedcb45214d05ef44" prot="public">
+          <name>MDNS_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897ca9e20c570622ca7dd3df44b213c5f5d6e" prot="public">
+          <name>MDNS_FAILURE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="21" column="1" bodyfile="src/core/comms/comms.hpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="enum" id="comms_8hpp_1a35a239655a2c9416f22a61c230098e1d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>COMMS_CONN_TYPE</name>
+        <enumvalue id="comms_8hpp_1a35a239655a2c9416f22a61c230098e1da8d07c50402910b994777b750e9e61084" prot="public">
+          <name>CONN_FIELD</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="comms_8hpp_1a35a239655a2c9416f22a61c230098e1da363544e9ec20d0adb278989c917def6c" prot="public">
+          <name>CONN_BRIDGE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="comms_8hpp_1a35a239655a2c9416f22a61c230098e1dac4560036ff6104f2350e4c0cafee8454" prot="public">
+          <name>CONN_AP</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/comms/comms.hpp" line="26" column="1" bodyfile="src/core/comms/comms.hpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>COMMS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="comms_8hpp_1a623f7e714f56d3d9d4a7220a7afc4ec3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;WiFi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ESPmDNS.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;WiFiUdp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TEAM_ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="comms_8hpp_1ab4c16e137e47552b53564bafb7f71ec7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEAM_ID<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519" kindref="member">COMMS_CONN_ERR</ref><sp/>{</highlight></codeline>
+<codeline lineno="15" refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a1ea8c2fe1fcb20c57388391b0a119b49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a1ea8c2fe1fcb20c57388391b0a119b49" kindref="member">COMMS_SUCCESS</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="16" refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a55ae5ffab289e48983f817a928e04c65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a55ae5ffab289e48983f817a928e04c65" kindref="member">COMMS_FAILURE</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="17" refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a2faba8af5c6d987553decdd29a60f2a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a2faba8af5c6d987553decdd29a60f2a5" kindref="member">COMMS_NO_TEAM_ID</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="18" refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519ae040fc0e5b9d19c907a6c770008b33a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519ae040fc0e5b9d19c907a6c770008b33a2" kindref="member">COMMS_INVALID_TEAM_ID</ref><sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897c" kindref="member">COMMS_MDNS_ERR</ref><sp/>{</highlight></codeline>
+<codeline lineno="22" refid="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897cafb931a3735bce4ebedcb45214d05ef44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897cafb931a3735bce4ebedcb45214d05ef44" kindref="member">MDNS_SUCCESS</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="23" refid="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897ca9e20c570622ca7dd3df44b213c5f5d6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a7ad93b9f075ac98d334bccccd82e897ca9e20c570622ca7dd3df44b213c5f5d6e" kindref="member">MDNS_FAILURE</ref><sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1d" kindref="member">COMMS_CONN_TYPE</ref><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1da8d07c50402910b994777b750e9e61084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1da8d07c50402910b994777b750e9e61084" kindref="member">CONN_FIELD</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="28" refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1da363544e9ec20d0adb278989c917def6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1da363544e9ec20d0adb278989c917def6c" kindref="member">CONN_BRIDGE</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="29" refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1dac4560036ff6104f2350e4c0cafee8454" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a35a239655a2c9416f22a61c230098e1dac4560036ff6104f2350e4c0cafee8454" kindref="member">CONN_AP</ref><sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_comms" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_comms_1aa3878221ed907d6d6841ee77741c1f49" kindref="member">Comms</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Field</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_comms_1a7956d378223c598b4883d907cd9ef516" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_comms_1a7956d378223c598b4883d907cd9ef516" kindref="member">fieldSSID</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;MechaLeague-Field&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36" refid="class_comms_1aff24d317de710a5611c39f0c7de0827d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_comms_1aff24d317de710a5611c39f0c7de0827d" kindref="member">fieldPass</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;12345678&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MDNS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_comms_1a6758c5f5e83b592948f14179172a4734" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_comms_1a6758c5f5e83b592948f14179172a4734" kindref="member">mdnsFormat</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;mechaleague-bot-&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>mechaleague-bot-&lt;team_id&gt;.local</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Control<sp/>sockets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_comms_1a6f5704d758b4cec35422cd75e05f8d65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WiFiUDP<sp/><ref refid="class_comms_1a6f5704d758b4cec35422cd75e05f8d65" kindref="member">controlServer</ref>;</highlight></codeline>
+<codeline lineno="43" refid="class_comms_1a14fd34cdd849c52aa07852c065f289bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/><ref refid="class_comms_1a14fd34cdd849c52aa07852c065f289bc" kindref="member">controlServerPort</ref><sp/>=<sp/>1010;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Telemetry<sp/>sockets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_comms_1a18ce656a839865530778af6ff4439bef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WiFiUDP<sp/><ref refid="class_comms_1a18ce656a839865530778af6ff4439bef" kindref="member">telemetryServer</ref>;</highlight></codeline>
+<codeline lineno="47" refid="class_comms_1a7c02b0c1a838077a55a9669d39266e7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/><ref refid="class_comms_1a7c02b0c1a838077a55a9669d39266e7f" kindref="member">telemetryServerPort</ref><sp/>=<sp/>1011;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_comms_1ab72338d0d90e23b2d29f6f750cce6da0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_comms_1ab72338d0d90e23b2d29f6f750cce6da0" kindref="member">validateTeamID</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="comms_8hpp_1ab4c16e137e47552b53564bafb7f71ec7" kindref="member">TEAM_ID</ref><sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/><ref refid="comms_8hpp_1ab4c16e137e47552b53564bafb7f71ec7" kindref="member">TEAM_ID</ref><sp/>&lt;=<sp/>9999)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_comms_1a8604747083d79dd88dc290566f06d660" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519" kindref="member">COMMS_CONN_ERR</ref><sp/><ref refid="class_comms_1a8604747083d79dd88dc290566f06d660" kindref="member">connectToWiFi</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>ssid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>password<sp/>=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>TEAM_ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Validate<sp/>team<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_comms_1ab72338d0d90e23b2d29f6f750cce6da0" kindref="member">validateTeamID</ref>())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519ae040fc0e5b9d19c907a6c770008b33a2" kindref="member">COMMS_CONN_ERR::COMMS_INVALID_TEAM_ID</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>IP<sp/>address<sp/>if<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(localIP)<sp/>localIP.fromString(generateIPAddress(TEAM_ID));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Connect<sp/>to<sp/>wifi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>WiFi.config(localIP,<sp/>gateway,<sp/>subnet,<sp/>dns1,<sp/>dns2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WiFi.mode(WIFI_STA);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(password<sp/>!=<sp/>NULL)<sp/>WiFi.begin(ssid,<sp/>password);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>WiFi.begin(ssid);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WiFi.waitForConnectResult();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wl_status_t<sp/>status<sp/>=<sp/>WiFi.status();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>control<sp/>and<sp/>telemetry<sp/>servers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_comms_1a8ffdd1d67376e751d37cf0718fadae8a" kindref="member">startServer</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>MDNS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_comms_1a9b4c7c511347df093ae57149baf32128" kindref="member">startMDNS</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status<sp/>==<sp/>WL_CONNECTED<sp/>?<sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a1ea8c2fe1fcb20c57388391b0a119b49" kindref="member">COMMS_CONN_ERR::COMMS_SUCCESS</ref><sp/>:<sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a55ae5ffab289e48983f817a928e04c65" kindref="member">COMMS_CONN_ERR::COMMS_FAILURE</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519a2faba8af5c6d987553decdd29a60f2a5" kindref="member">COMMS_CONN_ERR::COMMS_NO_TEAM_ID</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84" refid="class_comms_1a9b4c7c511347df093ae57149baf32128" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_comms_1a9b4c7c511347df093ae57149baf32128" kindref="member">startMDNS</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>mdnsName[</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_comms_1a6758c5f5e83b592948f14179172a4734" kindref="member">mdnsFormat</ref>)<sp/>+<sp/>4];<sp/></highlight><highlight class="comment">//<sp/>Enough<sp/>space<sp/>for<sp/>&quot;mechaleague-bot-9999\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snprintf(mdnsName,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(mdnsName),<sp/></highlight><highlight class="stringliteral">&quot;%s%d&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_comms_1a6758c5f5e83b592948f14179172a4734" kindref="member">mdnsFormat</ref>,<sp/><ref refid="comms_8hpp_1ab4c16e137e47552b53564bafb7f71ec7" kindref="member">TEAM_ID</ref>);<sp/></highlight><highlight class="comment">//<sp/>mechaleague-bot-&lt;team_id&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MDNS.begin(mdnsName);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="class_comms_1a8ffdd1d67376e751d37cf0718fadae8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_comms_1a8ffdd1d67376e751d37cf0718fadae8a" kindref="member">startServer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_comms_1a6f5704d758b4cec35422cd75e05f8d65" kindref="member">controlServer</ref>.begin(<ref refid="class_comms_1a14fd34cdd849c52aa07852c065f289bc" kindref="member">controlServerPort</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_comms_1a18ce656a839865530778af6ff4439bef" kindref="member">telemetryServer</ref>.begin(<ref refid="class_comms_1a7c02b0c1a838077a55a9669d39266e7f" kindref="member">telemetryServerPort</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_comms_1acb67096a7b2d74f85842a3eee20aca25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="comms_8hpp_1a92825c0bc49f171921f4968bc8bdc519" kindref="member">COMMS_CONN_ERR</ref><sp/><ref refid="class_comms_1acb67096a7b2d74f85842a3eee20aca25" kindref="member">connectToField</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_comms_1a8604747083d79dd88dc290566f06d660" kindref="member">connectToWiFi</ref>(<ref refid="class_comms_1a7956d378223c598b4883d907cd9ef516" kindref="member">fieldSSID</ref>,<sp/><ref refid="class_comms_1aff24d317de710a5611c39f0c7de0827d" kindref="member">fieldPass</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Singleton</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103" refid="class_comms_1aa3878221ed907d6d6841ee77741c1f49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_comms_1aa3878221ed907d6d6841ee77741c1f49" kindref="member">Comms</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="104" refid="class_comms_1a84477cd2049de0d0d4dfe7b761574556" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_comms_1aa3878221ed907d6d6841ee77741c1f49" kindref="member">Comms</ref>&amp;<sp/><ref refid="class_comms_1a84477cd2049de0d0d4dfe7b761574556" kindref="member">getInstance</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_comms_1aa3878221ed907d6d6841ee77741c1f49" kindref="member">Comms</ref><sp/>instance;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>instance;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/core/comms/comms.hpp"/>
+  </compounddef>
+</doxygen>

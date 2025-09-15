@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h" kind="file" language="C++">
+    <compoundname>MOTOR_CONTROLLER_Base.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes refid="_motor_safety_8h" local="no">motor/MotorSafety.h</includes>
+    <includedby refid="_mecha_lib_8h" local="no">src/MechaLib.h</includedby>
+    <includedby refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h" local="no">src/motor/dc/MOTOR_CONTROLLER_DRV8871.h</includedby>
+    <includedby refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h" local="no">src/motor/dc/MOTOR_CONTROLLER_L298N.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="3">
+        <label>motor/MotorSafety.h</label>
+        <link refid="_motor_safety_8h"/>
+      </node>
+      <node id="1">
+        <label>src/motor/dc/MOTOR_CONTROLLER_Base.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/MechaLib.h</label>
+        <link refid="_mecha_lib_8h"/>
+      </node>
+      <node id="1">
+        <label>src/motor/dc/MOTOR_CONTROLLER_Base.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/motor/dc/MOTOR_CONTROLLER_DRV8871.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/motor/dc/MOTOR_CONTROLLER_L298N.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" prot="public">MOTOR_CONTROLLER_Base</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h_1a383a3031c34bc0428786cd5fad0b5d70" prot="public" static="no">
+        <name>CONTROLLER_BASE_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h" line="3" column="9" bodyfile="src/motor/dc/MOTOR_CONTROLLER_Base.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONTROLLER_BASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h_1a383a3031c34bc0428786cd5fad0b5d70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTROLLER_BASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_motor_safety_8h" kindref="compound">motor/MotorSafety.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ac8dd481c1d701b9ac01b7d3159db03d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ac8dd481c1d701b9ac01b7d3159db03d5" kindref="member">multiplier</ref><sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="14" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" kindref="member">deadband</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="15" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a3c835bb772f89cb1f481c7d20597e439" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a3c835bb772f89cb1f481c7d20597e439" kindref="member">inverted</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref>*<sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[2]<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4e4ef7b8731a5eaba5a76ae8730810ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4e4ef7b8731a5eaba5a76ae8730810ab" kindref="member">applySpeedFilters</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speed,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isBeep)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_motor_safety_1a37901b493830135d3d2ad23b80d7c0ec" kindref="member">MotorSafety::getInstance</ref>().getStatus()<sp/>==<sp/><ref refid="_motor_safety_8h_1a8460c8e6c209f14eaf581899e6c6c699a4eca054070419f48846f93d1e09f2ac6" kindref="member">MotorSafetyStatus::PROTECTED</ref><sp/>&amp;&amp;<sp/>!isBeep)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isBeep)<sp/>speed<sp/>=<sp/>this-&gt;deadband<sp/>*<sp/>speed;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;inverted)<sp/>speed<sp/>=<sp/>-speed;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>speed<sp/>*=<sp/>this-&gt;multiplier;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>speed<sp/>=<sp/>constrain(speed,<sp/>-1,<sp/>1);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(abs(speed)<sp/>&lt;<sp/>this-&gt;deadband)<sp/>speed<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>speed;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Per-controller<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af234d80a5f894665f9327696b442a721" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af234d80a5f894665f9327696b442a721" kindref="member">begin</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Per-controller<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a47435ee939e4d235d6f402c5b064e7e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a47435ee939e4d235d6f402c5b064e7e1" kindref="member">set</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speed,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isBeep)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a03c67f6e5a3c4e905151be11e2e5a761" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a03c67f6e5a3c4e905151be11e2e5a761" kindref="member">set</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speed)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a47435ee939e4d235d6f402c5b064e7e1" kindref="member">set</ref>(speed,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af99f51c50263a22b54e3034b7e81a50d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af99f51c50263a22b54e3034b7e81a50d" kindref="member">setInverted</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a3c835bb772f89cb1f481c7d20597e439" kindref="member">inverted</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;inverted<sp/>=<sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a3c835bb772f89cb1f481c7d20597e439" kindref="member">inverted</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a6f7bc574a1212f378719ff70bceedee8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a6f7bc574a1212f378719ff70bceedee8" kindref="member">stop</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a47435ee939e4d235d6f402c5b064e7e1" kindref="member">set</ref>(0);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a989e9662e5b9f44f961d8fae48efc2eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a989e9662e5b9f44f961d8fae48efc2eb" kindref="member">addFollower</ref>(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref>*<sp/>slave)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>openSlot<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[0]);<sp/>i++)<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[i]<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>openSlot<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(openSlot<sp/>!=<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[openSlot]<sp/>=<sp/>slave;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;No<sp/>open<sp/>slots<sp/>for<sp/>followers,<sp/>the<sp/>motor<sp/>controller<sp/>can<sp/>have<sp/>up<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[0]))<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>followers&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01ac03664b23edcd69e2dd3486a8546a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01ac03664b23edcd69e2dd3486a8546a" kindref="member">removeFollower</ref>(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref>*<sp/>slave)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[0]);<sp/>i++)<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[i]<sp/>==<sp/>slave)<sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[i]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a947bbbbfc685e913cfd6a8e322da140b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a947bbbbfc685e913cfd6a8e322da140b" kindref="member">follow</ref>(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref>*<sp/>master)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>master-&gt;<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a989e9662e5b9f44f961d8fae48efc2eb" kindref="member">addFollower</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aa65faf15f28cb8b8a7c3b6934ea1eaa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aa65faf15f28cb8b8a7c3b6934ea1eaa5" kindref="member">setMultiplier</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ac8dd481c1d701b9ac01b7d3159db03d5" kindref="member">multiplier</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;multiplier<sp/>=<sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ac8dd481c1d701b9ac01b7d3159db03d5" kindref="member">multiplier</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1acf1de87ef168ca4f590eddd1e0c91985" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1acf1de87ef168ca4f590eddd1e0c91985" kindref="member">setDeadband</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" kindref="member">deadband</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;deadband<sp/>=<sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" kindref="member">deadband</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4dc423a56131fbbd3f6ef56be993b075" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4dc423a56131fbbd3f6ef56be993b075" kindref="member">getMultiplier</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ac8dd481c1d701b9ac01b7d3159db03d5" kindref="member">multiplier</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aaecb4d51a118820a3c3b2b246a93fbc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1aaecb4d51a118820a3c3b2b246a93fbc6" kindref="member">getDeadband</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" kindref="member">deadband</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af538dceb11edc0a9f95c681eb406f878" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1af538dceb11edc0a9f95c681eb406f878" kindref="member">getInverted</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a3c835bb772f89cb1f481c7d20597e439" kindref="member">inverted</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01e88bf2cd39334fed8ad1e3f535eb65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref>**<sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a01e88bf2cd39334fed8ad1e3f535eb65" kindref="member">getFollowers</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a64c4bc2d03b238e81122bfa1cbd5f2b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a64c4bc2d03b238e81122bfa1cbd5f2b7" kindref="member">updateFollowers</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speed,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isBeep)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[0]);<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[i]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1ad1dd0fcc857808c9f4e04f14b4797636" kindref="member">followers</ref>[i]-&gt;set(speed,<sp/>isBeep);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/motor/dc/MOTOR_CONTROLLER_Base.h"/>
+  </compounddef>
+</doxygen>

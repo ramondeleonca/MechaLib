@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_chassis_speeds" kind="class" language="C++" prot="public">
+    <compoundname>ChassisSpeeds</compoundname>
+    <includes refid="_chassis_speeds_8h" local="no">ChassisSpeeds.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_chassis_speeds_1a41e1008349e53731f28386266892b908" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ChassisSpeeds::vx</definition>
+        <argsstring></argsstring>
+        <name>vx</name>
+        <qualifiedname>ChassisSpeeds::vx</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="9" column="15" bodyfile="src/drive/ChassisSpeeds.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_chassis_speeds_1aecdd35aa386f93577703d690707686a3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ChassisSpeeds::vy</definition>
+        <argsstring></argsstring>
+        <name>vy</name>
+        <qualifiedname>ChassisSpeeds::vy</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="10" column="15" bodyfile="src/drive/ChassisSpeeds.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_chassis_speeds_1af97b1b8dbd4dd72a9eee33f3bd3e87d4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ChassisSpeeds::omega</definition>
+        <argsstring></argsstring>
+        <name>omega</name>
+        <qualifiedname>ChassisSpeeds::omega</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="11" column="15" bodyfile="src/drive/ChassisSpeeds.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_chassis_speeds_1abe6d0b590cdc2dea9e645d5908bd8658" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ChassisSpeeds::getVx</definition>
+        <argsstring>()</argsstring>
+        <name>getVx</name>
+        <qualifiedname>ChassisSpeeds::getVx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="14" column="15" bodyfile="src/drive/ChassisSpeeds.h" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chassis_speeds_1aa1915396a41ad70f298076d8bb805f57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ChassisSpeeds::getVy</definition>
+        <argsstring>()</argsstring>
+        <name>getVy</name>
+        <qualifiedname>ChassisSpeeds::getVy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="18" column="15" bodyfile="src/drive/ChassisSpeeds.h" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chassis_speeds_1a415287bb731c5528002e0ea643062b80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ChassisSpeeds::getOmega</definition>
+        <argsstring>()</argsstring>
+        <name>getOmega</name>
+        <qualifiedname>ChassisSpeeds::getOmega</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="22" column="15" bodyfile="src/drive/ChassisSpeeds.h" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chassis_speeds_1a41faa0c3c3489cda270b55583a0c1871" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChassisSpeeds::setVx</definition>
+        <argsstring>(float vx)</argsstring>
+        <name>setVx</name>
+        <qualifiedname>ChassisSpeeds::setVx</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>vx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="26" column="14" bodyfile="src/drive/ChassisSpeeds.h" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chassis_speeds_1a978be66688e0023b3f17c3301f312394" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChassisSpeeds::setVy</definition>
+        <argsstring>(float vy)</argsstring>
+        <name>setVy</name>
+        <qualifiedname>ChassisSpeeds::setVy</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>vy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="30" column="14" bodyfile="src/drive/ChassisSpeeds.h" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chassis_speeds_1a0948898c43752cc6c8932524260add29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChassisSpeeds::setOmega</definition>
+        <argsstring>(float omega)</argsstring>
+        <name>setOmega</name>
+        <qualifiedname>ChassisSpeeds::setOmega</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="34" column="14" bodyfile="src/drive/ChassisSpeeds.h" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chassis_speeds_1aeb22ae59d74515619e757e39aaf8eb7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChassisSpeeds::set</definition>
+        <argsstring>(float vx, float vy, float omega)</argsstring>
+        <name>set</name>
+        <qualifiedname>ChassisSpeeds::set</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>vx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="38" column="14" bodyfile="src/drive/ChassisSpeeds.h" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chassis_speeds_1afda15133d06681a684e49cd96af16e1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChassisSpeeds::setFieldRelative</definition>
+        <argsstring>(float vx, float vy, float omega, float heading)</argsstring>
+        <name>setFieldRelative</name>
+        <qualifiedname>ChassisSpeeds::setFieldRelative</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>vx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>omega</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>heading</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="44" column="14" bodyfile="src/drive/ChassisSpeeds.h" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chassis_speeds_1a468ad906c43edc5d2662f24f91177df4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ChassisSpeeds::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>ChassisSpeeds::toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/drive/ChassisSpeeds.h" line="50" column="16" bodyfile="src/drive/ChassisSpeeds.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/drive/ChassisSpeeds.h" line="7" column="1" bodyfile="src/drive/ChassisSpeeds.h" bodystart="7" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_chassis_speeds_1a415287bb731c5528002e0ea643062b80" prot="public" virt="non-virtual"><scope>ChassisSpeeds</scope><name>getOmega</name></member>
+      <member refid="class_chassis_speeds_1abe6d0b590cdc2dea9e645d5908bd8658" prot="public" virt="non-virtual"><scope>ChassisSpeeds</scope><name>getVx</name></member>
+      <member refid="class_chassis_speeds_1aa1915396a41ad70f298076d8bb805f57" prot="public" virt="non-virtual"><scope>ChassisSpeeds</scope><name>getVy</name></member>
+      <member refid="class_chassis_speeds_1af97b1b8dbd4dd72a9eee33f3bd3e87d4" prot="private" virt="non-virtual"><scope>ChassisSpeeds</scope><name>omega</name></member>
+      <member refid="class_chassis_speeds_1aeb22ae59d74515619e757e39aaf8eb7c" prot="public" virt="non-virtual"><scope>ChassisSpeeds</scope><name>set</name></member>
+      <member refid="class_chassis_speeds_1afda15133d06681a684e49cd96af16e1e" prot="public" virt="non-virtual"><scope>ChassisSpeeds</scope><name>setFieldRelative</name></member>
+      <member refid="class_chassis_speeds_1a0948898c43752cc6c8932524260add29" prot="public" virt="non-virtual"><scope>ChassisSpeeds</scope><name>setOmega</name></member>
+      <member refid="class_chassis_speeds_1a41faa0c3c3489cda270b55583a0c1871" prot="public" virt="non-virtual"><scope>ChassisSpeeds</scope><name>setVx</name></member>
+      <member refid="class_chassis_speeds_1a978be66688e0023b3f17c3301f312394" prot="public" virt="non-virtual"><scope>ChassisSpeeds</scope><name>setVy</name></member>
+      <member refid="class_chassis_speeds_1a468ad906c43edc5d2662f24f91177df4" prot="public" virt="non-virtual"><scope>ChassisSpeeds</scope><name>toString</name></member>
+      <member refid="class_chassis_speeds_1a41e1008349e53731f28386266892b908" prot="private" virt="non-virtual"><scope>ChassisSpeeds</scope><name>vx</name></member>
+      <member refid="class_chassis_speeds_1aecdd35aa386f93577703d690707686a3" prot="private" virt="non-virtual"><scope>ChassisSpeeds</scope><name>vy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

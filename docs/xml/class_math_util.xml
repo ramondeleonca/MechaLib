@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_math_util" kind="class" language="C++" prot="public">
+    <compoundname>MathUtil</compoundname>
+    <includes refid="_math_util_8h" local="no">MathUtil.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_math_util_1a1d411db22ca61cc20ff783fd3ff72460" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float MathUtil::mapFloat</definition>
+        <argsstring>(float x, float in_min, float in_max, float out_min, float out_max)</argsstring>
+        <name>mapFloat</name>
+        <qualifiedname>MathUtil::mapFloat</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>in_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>in_max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>out_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>out_max</declname>
+        </param>
+        <briefdescription>
+<para>Maps a float from one range to another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The float to map. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum of the input range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum of the input range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum of the output range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum of the output range. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mapped float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/math/MathUtil.h" line="18" column="22" bodyfile="src/core/math/MathUtil.h" bodystart="18" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/math/MathUtil.h" line="6" column="1" bodyfile="src/core/math/MathUtil.h" bodystart="6" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_math_util_1a1d411db22ca61cc20ff783fd3ff72460" prot="public" virt="non-virtual"><scope>MathUtil</scope><name>mapFloat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

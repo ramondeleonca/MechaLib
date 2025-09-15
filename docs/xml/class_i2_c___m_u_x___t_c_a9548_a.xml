@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_i2_c___m_u_x___t_c_a9548_a" kind="class" language="C++" prot="public">
+    <compoundname>I2C_MUX_TCA9548A</compoundname>
+    <includes refid="_i2_c___m_u_x___t_c_a9548_a_8h" local="no">I2C_MUX_TCA9548A.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_i2_c___m_u_x___t_c_a9548_a_1a18da7f541195bea997899f2ecc0461d7" prot="private" static="no" mutable="no">
+        <type>TwoWire *</type>
+        <definition>TwoWire* I2C_MUX_TCA9548A::wire</definition>
+        <argsstring></argsstring>
+        <name>wire</name>
+        <qualifiedname>I2C_MUX_TCA9548A::wire</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="12" column="17" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_i2_c___m_u_x___t_c_a9548_a_1a2362d5bdc66c0f21cb17c8a92f2f2b4a" prot="private" static="no" mutable="no">
+        <type>TCA9548A</type>
+        <definition>TCA9548A I2C_MUX_TCA9548A::mux</definition>
+        <argsstring></argsstring>
+        <name>mux</name>
+        <qualifiedname>I2C_MUX_TCA9548A::mux</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="13" column="18" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_i2_c___m_u_x___t_c_a9548_a_1a52becaf38e2c76a02eb7f84093409dde" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool I2C_MUX_TCA9548A::channelStates[n_channels]</definition>
+        <argsstring>[n_channels]</argsstring>
+        <name>channelStates</name>
+        <qualifiedname>I2C_MUX_TCA9548A::channelStates</qualifiedname>
+        <initializer>= {false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="15" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_i2_c___m_u_x___t_c_a9548_a_1ac06540468a3409b1e4f3bf7d5540f826" prot="private" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t I2C_MUX_TCA9548A::n_channels</definition>
+        <argsstring></argsstring>
+        <name>n_channels</name>
+        <qualifiedname>I2C_MUX_TCA9548A::n_channels</qualifiedname>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="14" column="30" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1a7f2f10f000beb1d93902505e74b164a6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2C_MUX_TCA9548A::validateChannel</definition>
+        <argsstring>(uint8_t channel)</argsstring>
+        <name>validateChannel</name>
+        <qualifiedname>I2C_MUX_TCA9548A::validateChannel</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="17" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="17" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1a892b38566c4380cdd6c2302c22974069" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>I2C_MUX_TCA9548A::I2C_MUX_TCA9548A</definition>
+        <argsstring>()</argsstring>
+        <name>I2C_MUX_TCA9548A</name>
+        <qualifiedname>I2C_MUX_TCA9548A::I2C_MUX_TCA9548A</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="26" column="9" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1a3b0c3d395409b4a7c73cbf8f41880e3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>I2C_MUX_TCA9548A::I2C_MUX_TCA9548A</definition>
+        <argsstring>(uint8_t address)</argsstring>
+        <name>I2C_MUX_TCA9548A</name>
+        <qualifiedname>I2C_MUX_TCA9548A::I2C_MUX_TCA9548A</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="31" column="9" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1adf7551b8b1a86d5940605fda07a55f43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>I2C_MUX_TCA9548A::I2C_MUX_TCA9548A</definition>
+        <argsstring>(TwoWire *wire, uint8_t address)</argsstring>
+        <name>I2C_MUX_TCA9548A</name>
+        <qualifiedname>I2C_MUX_TCA9548A::I2C_MUX_TCA9548A</qualifiedname>
+        <param>
+          <type>TwoWire *</type>
+          <declname>wire</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="36" column="9" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1ac17b7ad45f9152c49825930fbfd8fe3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_MUX_TCA9548A::begin</definition>
+        <argsstring>(bool beginI2C=true)</argsstring>
+        <name>begin</name>
+        <qualifiedname>I2C_MUX_TCA9548A::begin</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>beginI2C</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Begin the I2C communication By default this function begins the I2C bus, if this behavior is not desired, pass false as the argument. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="46" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1a306a7e2b715f934ee1aec5f0da80e3a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2C_MUX_TCA9548A::exposeChannel</definition>
+        <argsstring>(uint8_t channel)</argsstring>
+        <name>exposeChannel</name>
+        <qualifiedname>I2C_MUX_TCA9548A::exposeChannel</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Expose a channel to the I2C bus. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="54" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1afd36d9cdce722a454569f102a2aee4a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2C_MUX_TCA9548A::hideChannel</definition>
+        <argsstring>(uint8_t channel)</argsstring>
+        <name>hideChannel</name>
+        <qualifiedname>I2C_MUX_TCA9548A::hideChannel</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Hide a channel from the I2C bus. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="64" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="64" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1abc62fbac04bd7b855157156268e90cd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_MUX_TCA9548A::exposeAllChannels</definition>
+        <argsstring>()</argsstring>
+        <name>exposeAllChannels</name>
+        <qualifiedname>I2C_MUX_TCA9548A::exposeAllChannels</qualifiedname>
+        <briefdescription>
+<para>Expose ALL channels to the I2C bus. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="74" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1abee68a010190764bc454faf70031f14b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_MUX_TCA9548A::hideAllChannels</definition>
+        <argsstring>()</argsstring>
+        <name>hideAllChannels</name>
+        <qualifiedname>I2C_MUX_TCA9548A::hideAllChannels</qualifiedname>
+        <briefdescription>
+<para>Hide ALL channels from the I2C bus. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="82" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1ae4b9abe94641a95ac7bc39e2cf69a941" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2C_MUX_TCA9548A::isChannelExposed</definition>
+        <argsstring>(uint8_t channel)</argsstring>
+        <name>isChannelExposed</name>
+        <qualifiedname>I2C_MUX_TCA9548A::isChannelExposed</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Check if a channel is exposed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="90" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1a8179714173d810aa078424d40ec35972" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool *</type>
+        <definition>bool * I2C_MUX_TCA9548A::getChannelStates</definition>
+        <argsstring>()</argsstring>
+        <name>getChannelStates</name>
+        <qualifiedname>I2C_MUX_TCA9548A::getChannelStates</qualifiedname>
+        <briefdescription>
+<para>Get the state of all channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="98" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1aba1f45fec68f07895ace2e709255e511" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_MUX_TCA9548A::writeRawRegister</definition>
+        <argsstring>(uint8_t value)</argsstring>
+        <name>writeRawRegister</name>
+        <qualifiedname>I2C_MUX_TCA9548A::writeRawRegister</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a raw value to the mux. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="105" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1ae04370f03b867c74334c699828239f1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte</type>
+        <definition>byte I2C_MUX_TCA9548A::readRawRegister</definition>
+        <argsstring>()</argsstring>
+        <name>readRawRegister</name>
+        <qualifiedname>I2C_MUX_TCA9548A::readRawRegister</qualifiedname>
+        <briefdescription>
+<para>Read a raw value from the mux. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="112" column="14" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_c___m_u_x___t_c_a9548_a_1a7afc9234f624d4b23c79c246a651f1ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>I2C_MUX_TCA9548A::~I2C_MUX_TCA9548A</definition>
+        <argsstring>()</argsstring>
+        <name>~I2C_MUX_TCA9548A</name>
+        <qualifiedname>I2C_MUX_TCA9548A::~I2C_MUX_TCA9548A</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="116" column="9" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="116" bodyend="118"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/i2c/mux/I2C_MUX_TCA9548A.h" line="10" column="1" bodyfile="src/i2c/mux/I2C_MUX_TCA9548A.h" bodystart="10" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1ac17b7ad45f9152c49825930fbfd8fe3a" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>begin</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a52becaf38e2c76a02eb7f84093409dde" prot="private" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>channelStates</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1abc62fbac04bd7b855157156268e90cd4" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>exposeAllChannels</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a306a7e2b715f934ee1aec5f0da80e3a4" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>exposeChannel</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a8179714173d810aa078424d40ec35972" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>getChannelStates</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1abee68a010190764bc454faf70031f14b" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>hideAllChannels</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1afd36d9cdce722a454569f102a2aee4a3" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>hideChannel</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a892b38566c4380cdd6c2302c22974069" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>I2C_MUX_TCA9548A</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a3b0c3d395409b4a7c73cbf8f41880e3f" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>I2C_MUX_TCA9548A</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1adf7551b8b1a86d5940605fda07a55f43" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>I2C_MUX_TCA9548A</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1ae4b9abe94641a95ac7bc39e2cf69a941" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>isChannelExposed</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a2362d5bdc66c0f21cb17c8a92f2f2b4a" prot="private" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>mux</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1ac06540468a3409b1e4f3bf7d5540f826" prot="private" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>n_channels</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1ae04370f03b867c74334c699828239f1f" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>readRawRegister</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a7f2f10f000beb1d93902505e74b164a6" prot="private" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>validateChannel</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a18da7f541195bea997899f2ecc0461d7" prot="private" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>wire</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1aba1f45fec68f07895ace2e709255e511" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>writeRawRegister</name></member>
+      <member refid="class_i2_c___m_u_x___t_c_a9548_a_1a7afc9234f624d4b23c79c246a651f1ec" prot="public" virt="non-virtual"><scope>I2C_MUX_TCA9548A</scope><name>~I2C_MUX_TCA9548A</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h" kind="file" language="C++">
+    <compoundname>MOTOR_CONTROLLER_L298N.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h" local="no">motor/dc/MOTOR_CONTROLLER_Base.h</includes>
+    <includes refid="_motor_safety_8h" local="no">motor/MotorSafety.h</includes>
+    <includedby refid="_mecha_lib_8h" local="no">src/MechaLib.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="4">
+        <label>motor/MotorSafety.h</label>
+        <link refid="_motor_safety_8h"/>
+      </node>
+      <node id="3">
+        <label>motor/dc/MOTOR_CONTROLLER_Base.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/motor/dc/MOTOR_CONTROLLER_L298N.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/MechaLib.h</label>
+        <link refid="_mecha_lib_8h"/>
+      </node>
+      <node id="1">
+        <label>src/motor/dc/MOTOR_CONTROLLER_L298N.h</label>
+        <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n" prot="public">MOTOR_CONTROLLER_L298N</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h_1ace41cc7ed06b72223eeb3ed3b4a165a9" prot="public" static="no">
+        <name>MOTOR_CONTROLLER_L298N_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/motor/dc/MOTOR_CONTROLLER_L298N.h" line="3" column="9" bodyfile="src/motor/dc/MOTOR_CONTROLLER_L298N.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MOTOR_CONTROLLER_L298N_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h_1ace41cc7ed06b72223eeb3ed3b4a165a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOTOR_CONTROLLER_L298N_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h" kindref="compound">motor/dc/MOTOR_CONTROLLER_Base.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_motor_safety_8h" kindref="compound">motor/MotorSafety.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1aaeaa2a619fb8b3d422c003f80c8fa5e2" kindref="member">MOTOR_CONTROLLER_L298N</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base" kindref="compound">MOTOR_CONTROLLER_Base</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>in1;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>in2;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>en;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1aaeaa2a619fb8b3d422c003f80c8fa5e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1aaeaa2a619fb8b3d422c003f80c8fa5e2" kindref="member">MOTOR_CONTROLLER_L298N</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>in1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>in2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>en,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" kindref="member">deadband</ref><sp/>=<sp/>0.075)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;in1<sp/>=<sp/>in1;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;in2<sp/>=<sp/>in2;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;en<sp/>=<sp/>en;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" kindref="member">deadband</ref><sp/>=<sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a1ae7c142456764a947e710fe501047b5" kindref="member">deadband</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a7c70540ef031820bacee4cae65f1b03b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a7c70540ef031820bacee4cae65f1b03b" kindref="member">begin</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pinMode(in1,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pinMode(in2,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pinMode(en,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(in1,<sp/>LOW);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(in2,<sp/>LOW);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>analogWrite(en,<sp/>LOW);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a4a2b1e5a011b885ce4c3f473382a8f13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a4a2b1e5a011b885ce4c3f473382a8f13" kindref="member">set</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speed,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isBeep)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>speed<sp/>=<sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a4e4ef7b8731a5eaba5a76ae8730810ab" kindref="member">applySpeedFilters</ref>(speed,<sp/>isBeep);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(speed<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(in1,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(in2,<sp/>LOW);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(speed<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(in1,<sp/>LOW);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(in2,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(in1,<sp/>LOW);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(in2,<sp/>LOW);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>analogWrite(en,<sp/>abs(speed)<sp/>*<sp/>255);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>followers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_1a64c4bc2d03b238e81122bfa1cbd5f2b7" kindref="member">updateFollowers</ref>(speed,<sp/>isBeep);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a8c0db9154498bc64fec5bbfb77070b19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a8c0db9154498bc64fec5bbfb77070b19" kindref="member">set</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speed)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_1a4a2b1e5a011b885ce4c3f473382a8f13" kindref="member">set</ref>(speed,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/motor/dc/MOTOR_CONTROLLER_L298N.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_be11f7c621fa6e62b686e188f0bed851" kind="dir">
+    <compoundname>src/core/comms</compoundname>
+    <innerfile refid="comms_8hpp">comms.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/comms/"/>
+  </compounddef>
+</doxygen>

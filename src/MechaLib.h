@@ -12,6 +12,10 @@
 #include <RemoteXY.h>
 
 //! MechaLib modules
+// * Core
+#include <core/Logger.h>
+#include <core/RobotBase.h>
+
 //* Drive
 #include <drive/ChassisSpeeds.h>
 #include <drive/DifferentialDriveKinematics.h>
