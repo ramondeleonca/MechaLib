@@ -4,8 +4,8 @@
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA[MechaLib]]></value></option>
   <option  id='PROJECT_NUMBER' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["The robust, all-in-one software library for MechaLeague Robots"]]></value></option>
-  <option  id='PROJECT_LOGO' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='PROJECT_ICON' default='yes' type='string'><value><![CDATA[]]></value></option>
+  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[./assets/MechaLibLogo80.png]]></value></option>
+  <option  id='PROJECT_ICON' default='no' type='string'><value><![CDATA[./assets/MechaLibLogo80.png]]></value></option>
   <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[docs]]></value></option>
   <option  id='CREATE_SUBDIRS' default='yes' type='bool'><value>NO</value></option>
   <option  id='CREATE_SUBDIRS_LEVEL' default='yes' type='int'><value>8</value></option>
@@ -44,7 +44,7 @@
   <option  id='TAB_SIZE' default='yes' type='int'><value>4</value></option>
   <option  id='ALIASES' default='yes' type='stringlist'>
   </option>
-  <option  id='OPTIMIZE_OUTPUT_FOR_C' default='yes' type='bool'><value>NO</value></option>
+  <option  id='OPTIMIZE_OUTPUT_FOR_C' default='no' type='bool'><value>YES</value></option>
   <option  id='OPTIMIZE_OUTPUT_JAVA' default='yes' type='bool'><value>NO</value></option>
   <option  id='OPTIMIZE_FOR_FORTRAN' default='yes' type='bool'><value>NO</value></option>
   <option  id='OPTIMIZE_OUTPUT_VHDL' default='yes' type='bool'><value>NO</value></option>
@@ -53,7 +53,7 @@
   </option>
   <option  id='MARKDOWN_SUPPORT' default='yes' type='bool'><value>YES</value></option>
   <option  id='TOC_INCLUDE_HEADINGS' default='yes' type='int'><value>6</value></option>
-  <option  id='MARKDOWN_ID_STYLE' default='yes' type='string'><value>DOXYGEN</value></option>
+  <option  id='MARKDOWN_ID_STYLE' default='no' type='string'><value>GITHUB</value></option>
   <option  id='AUTOLINK_SUPPORT' default='yes' type='bool'><value>YES</value></option>
   <option  id='AUTOLINK_IGNORE_WORDS' default='yes' type='stringlist'>
   </option>
@@ -211,7 +211,7 @@
   <option  id='FILTER_SOURCE_FILES' default='yes' type='bool'><value>NO</value></option>
   <option  id='FILTER_SOURCE_PATTERNS' default='yes' type='stringlist'>
   </option>
-  <option  id='USE_MDFILE_AS_MAINPAGE' default='yes' type='string'><value><![CDATA[]]></value></option>
+  <option  id='USE_MDFILE_AS_MAINPAGE' default='no' type='string'><value><![CDATA[README.MD]]></value></option>
   <option  id='IMPLICIT_DIR_DOCS' default='yes' type='bool'><value>YES</value></option>
   <option  id='FORTRAN_COMMENT_AFTER' default='yes' type='int'><value>72</value></option>
   <option  id='SOURCE_BROWSER' default='yes' type='bool'><value>NO</value></option>
@@ -232,7 +232,7 @@
   <option  id='IGNORE_PREFIX' default='yes' type='stringlist'>
   </option>
   <option  id='GENERATE_HTML' default='yes' type='bool'><value>YES</value></option>
-  <option  id='HTML_OUTPUT' default='yes' type='string'><value><![CDATA[html]]></value></option>
+  <option  id='HTML_OUTPUT' default='no' type='string'><value><![CDATA[.]]></value></option>
   <option  id='HTML_FILE_EXTENSION' default='yes' type='string'><value><![CDATA[.html]]></value></option>
   <option  id='HTML_HEADER' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='HTML_FOOTER' default='yes' type='string'><value><![CDATA[]]></value></option>
@@ -249,7 +249,7 @@
   <option  id='HTML_DYNAMIC_SECTIONS' default='yes' type='bool'><value>NO</value></option>
   <option  id='HTML_CODE_FOLDING' default='yes' type='bool'><value>YES</value></option>
   <option  id='HTML_COPY_CLIPBOARD' default='yes' type='bool'><value>YES</value></option>
-  <option  id='HTML_PROJECT_COOKIE' default='yes' type='string'><value><![CDATA[]]></value></option>
+  <option  id='HTML_PROJECT_COOKIE' default='no' type='string'><value><![CDATA[MechaLib]]></value></option>
   <option  id='HTML_INDEX_NUM_ENTRIES' default='yes' type='int'><value>100</value></option>
   <option  id='GENERATE_DOCSET' default='yes' type='bool'><value>NO</value></option>
   <option  id='DOCSET_FEEDNAME' default='yes' type='string'><value><![CDATA["Doxygen generated docs"]]></value></option>
@@ -278,7 +278,7 @@
   <option  id='DISABLE_INDEX' default='yes' type='bool'><value>NO</value></option>
   <option  id='GENERATE_TREEVIEW' default='yes' type='bool'><value>YES</value></option>
   <option  id='PAGE_OUTLINE_PANEL' default='yes' type='bool'><value>YES</value></option>
-  <option  id='FULL_SIDEBAR' default='yes' type='bool'><value>NO</value></option>
+  <option  id='FULL_SIDEBAR' default='no' type='bool'><value>YES</value></option>
   <option  id='ENUM_VALUES_PER_LINE' default='yes' type='int'><value>4</value></option>
   <option  id='SHOW_ENUM_VALUES' default='yes' type='bool'><value>NO</value></option>
   <option  id='TREEVIEW_WIDTH' default='yes' type='int'><value>250</value></option>

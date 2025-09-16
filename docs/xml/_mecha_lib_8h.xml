@@ -3,7 +3,6 @@
   <compounddef id="_mecha_lib_8h" kind="file" language="C++">
     <compoundname>MechaLib.h</compoundname>
     <includes local="no">Arduino.h</includes>
-    <includes local="no">Bluepad32.h</includes>
     <includes local="no">RemoteXY.h</includes>
     <includes refid="_logger_8h" local="no">core/Logger.h</includes>
     <includes refid="_robot_base_8h" local="no">core/RobotBase.h</includes>
@@ -18,15 +17,13 @@
     <includes refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h" local="no">motor/dc/MOTOR_CONTROLLER_DRV8871.h</includes>
     <includes refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h" local="no">motor/dc/MOTOR_CONTROLLER_L298N.h</includes>
     <includes refid="_s_e_r_v_o___base_8h" local="no">motor/servo/SERVO_Base.h</includes>
+    <includedby refid="_robot_init_8h" local="no">src/core/robot/RobotInit.h</includedby>
     <incdepgraph>
-      <node id="12">
+      <node id="11">
         <label>AS5600.h</label>
       </node>
       <node id="2">
         <label>Arduino.h</label>
-      </node>
-      <node id="3">
-        <label>Bluepad32.h</label>
       </node>
       <node id="1">
         <label>src/MechaLib.h</label>
@@ -47,11 +44,11 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
@@ -61,117 +58,127 @@
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
       </node>
-      <node id="5">
+      <node id="4">
         <label>core/Logger.h</label>
         <link refid="_logger_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="5">
         <label>core/RobotBase.h</label>
         <link refid="_robot_base_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="6">
         <label>drive/ChassisSpeeds.h</label>
         <link refid="_chassis_speeds_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="7">
         <label>drive/DifferentialDriveKinematics.h</label>
         <link refid="_differential_drive_kinematics_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="8">
         <label>drive/MecanumDriveKinematics.h</label>
         <link refid="_mecanum_drive_kinematics_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="10">
+      <node id="9">
         <label>i2c/encoder/ENCODER_I2C_AS5600.h</label>
         <link refid="_e_n_c_o_d_e_r___i2_c___a_s5600_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
       </node>
-      <node id="13">
+      <node id="12">
         <label>i2c/mux/I2C_MUX_Base.h</label>
         <link refid="_i2_c___m_u_x___base_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="13">
         <label>i2c/mux/I2C_MUX_TCA9548A.h</label>
         <link refid="_i2_c___m_u_x___t_c_a9548_a_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="15">
         <label>motor/MotorSafety.h</label>
         <link refid="_motor_safety_8h"/>
       </node>
-      <node id="17">
+      <node id="16">
         <label>motor/dc/MOTOR_CONTROLLER_Base.h</label>
         <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___base_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="17">
         <label>motor/dc/MOTOR_CONTROLLER_DRV8871.h</label>
         <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___d_r_v8871_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
         <childnode refid="16" relation="include">
         </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
-      <node id="19">
+      <node id="18">
         <label>motor/dc/MOTOR_CONTROLLER_L298N.h</label>
         <link refid="_m_o_t_o_r___c_o_n_t_r_o_l_l_e_r___l298_n_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
         <childnode refid="16" relation="include">
         </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
-      <node id="20">
+      <node id="19">
         <label>motor/servo/SERVO_Base.h</label>
         <link refid="_s_e_r_v_o___base_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>RemoteXY.h</label>
       </node>
-      <node id="15">
+      <node id="14">
         <label>TCA9548A.h</label>
       </node>
-      <node id="11">
+      <node id="10">
         <label>Wire.h</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/MechaLib.h</label>
+        <link refid="_mecha_lib_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/core/robot/RobotInit.h</label>
+        <link refid="_robot_init_8h"/>
+      </node>
+    </invincdepgraph>
     <sectiondef kind="define">
       <memberdef kind="define" id="_mecha_lib_8h_1aa15587e1ec054e50987a89a7beb959dc" prot="public" static="no">
         <name>MECHALIB_H</name>
@@ -195,7 +202,7 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Bluepad32.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;Bluepad32.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;RemoteXY.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>

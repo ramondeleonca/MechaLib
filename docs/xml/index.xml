@@ -46,13 +46,6 @@
     <member refid="class_e_n_c_o_d_e_r___a_s5600_1a13b0f3cfecc1b35f2581d811a7f02488" kind="function"><name>begin</name></member>
     <member refid="class_e_n_c_o_d_e_r___a_s5600_1a2f9da0bfd074f178700c87f0ec82cb23" kind="function"><name>getAbsoluteAngle</name></member>
   </compound>
-  <compound refid="class_gamepad_manager" kind="class"><name>GamepadManager</name>
-    <member refid="class_gamepad_manager_1a1a0c59438bf9ed8fa93fd621c7de505d" kind="variable"><name>gamepads</name></member>
-    <member refid="class_gamepad_manager_1a530775ebaa765de0b17f9a87f3b4e7d4" kind="function"><name>onConnect</name></member>
-    <member refid="class_gamepad_manager_1aea58faba8fc0488d1a437575fa70a6ae" kind="function"><name>onDisconnect</name></member>
-    <member refid="class_gamepad_manager_1a0d3fe1187cce00784a069f10bb1266df" kind="function"><name>GamepadManager</name></member>
-    <member refid="class_gamepad_manager_1a857fb4815da21121dfe49bd3cf4082d9" kind="function"><name>getInstance</name></member>
-  </compound>
   <compound refid="class_i2_c___m_u_x___base" kind="class"><name>I2C_MUX_Base</name>
     <member refid="class_i2_c___m_u_x___base_1a00e2399442ee54fed09c229e3483a7fe" kind="function"><name>begin</name></member>
     <member refid="class_i2_c___m_u_x___base_1a4fdffe0108dea3edf1c8e757f401a34b" kind="function"><name>exposeChannel</name></member>
@@ -200,7 +193,6 @@
     <member refid="_alliance_8h_1ae9e309c8266f9d55633e3ed8eae9cfe3af2d552c371ad47db5d9f42554d34c573" kind="enumvalue"><name>NO_ALLIANCE</name></member>
   </compound>
   <compound refid="_gamepad_8h" kind="file"><name>Gamepad.h</name>
-    <member refid="_gamepad_8h_1ab4a7e6fe758e860c3283fb0b31ade572" kind="define"><name>GAMEPAD_H</name></member>
   </compound>
   <compound refid="_logger_8h" kind="file"><name>Logger.h</name>
     <member refid="_logger_8h_1a99e9475c18d71618254ad969a68df5e8" kind="define"><name>LOGGER_H</name></member>
@@ -209,6 +201,11 @@
   <compound refid="_joystick_util_8h" kind="file"><name>JoystickUtil.h</name>
   </compound>
   <compound refid="_math_util_8h" kind="file"><name>MathUtil.h</name>
+  </compound>
+  <compound refid="_robot_init_8h" kind="file"><name>RobotInit.h</name>
+    <member refid="_robot_init_8h_1a628f652b2f6eecd66cd49f8ead4d0c05" kind="define"><name>ROBOTINIT_H</name></member>
+    <member refid="_robot_init_8h_1a4fc01d736fe50cf5b977f755b675f11d" kind="function"><name>setup</name></member>
+    <member refid="_robot_init_8h_1afe461d27b9c48d5921c00d521181f12f" kind="function"><name>loop</name></member>
   </compound>
   <compound refid="_robot_base_8h" kind="file"><name>RobotBase.h</name>
     <member refid="_robot_base_8h_1abb1a716f109046cb721824fb4e6702a9" kind="define"><name>ROBOTBASE_H</name></member>
@@ -273,6 +270,8 @@
   <compound refid="dir_51d2704dc12fe8077069f9b3a7ec2d12" kind="dir"><name>src/motor</name>
   </compound>
   <compound refid="dir_b4dca12d053d0d167a3da5e39a8064f3" kind="dir"><name>src/i2c/mux</name>
+  </compound>
+  <compound refid="dir_3f932c4cf117e7f08377821ba64f8ce6" kind="dir"><name>src/core/robot</name>
   </compound>
   <compound refid="dir_b29cb1b40fd868ec3c3c0dea742d0e64" kind="dir"><name>src/motor/servo</name>
   </compound>

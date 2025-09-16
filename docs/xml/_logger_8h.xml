@@ -19,12 +19,18 @@
       <node id="2">
         <label>src/MechaLib.h</label>
         <link refid="_mecha_lib_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>src/core/Logger.h</label>
         <link refid="_logger_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+      </node>
+      <node id="3">
+        <label>src/core/robot/RobotInit.h</label>
+        <link refid="_robot_init_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_logger" prot="public">Logger</innerclass>

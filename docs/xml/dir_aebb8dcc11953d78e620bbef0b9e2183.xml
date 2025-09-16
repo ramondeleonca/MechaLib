@@ -6,6 +6,7 @@
     <innerdir refid="dir_0130927f3d1a7a08b11c8881127d3514">src/core/game</innerdir>
     <innerdir refid="dir_7feb203e202d67008ad99ecce317cfac">src/core/gamepad</innerdir>
     <innerdir refid="dir_e235ce117329fd16b24743c07cd49299">src/core/math</innerdir>
+    <innerdir refid="dir_3f932c4cf117e7f08377821ba64f8ce6">src/core/robot</innerdir>
     <innerfile refid="_logger_8h">Logger.h</innerfile>
     <innerfile refid="_robot_base_8h">RobotBase.h</innerfile>
     <briefdescription>

@@ -6,7 +6,7 @@
 #include <Arduino.h>
 
 //! Bluepad
-#include <Bluepad32.h>
+// #include <Bluepad32.h>
 
 //! RemoteXY
 #include <RemoteXY.h>

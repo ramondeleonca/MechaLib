@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="./assets/MechaLibLogo200.png" width="100px" />    
+</p>
+
 # MechaLib
 
 The robust, all-in-one software library for **MechaLeague** Robots
