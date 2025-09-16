@@ -3,14 +3,24 @@
 #define LOGGER_H
 
 #include <Arduino.h>
-
-const int LOGGER_SERIAL_BAUD = 115200;
+#include <drive/ChassisSpeeds.h>
 
 class Logger {
+    public:
+        const int SERIAL_BAUD = 115200;
+        
     private:
         Logger() {
-            Serial.begin(LOGGER_SERIAL_BAUD);
-            
+            Serial.begin(SERIAL_BAUD);
+        }
+    
+    public:
+        void log(String message) {
+            Serial.println(message);
+        }
+
+        void log(ChassisSpeeds &speeds) {
+            Serial.println(speeds.toString());
         }
 
     // Singleton

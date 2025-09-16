@@ -29,6 +29,7 @@ enum COMMS_CONN_TYPE {
     CONN_AP = 2
 };
 
+// TODO: nada que ver
 class Comms {
     protected:
         // Field

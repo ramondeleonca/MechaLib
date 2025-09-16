@@ -12,9 +12,11 @@ class MOTOR_CONTROLLER_Base {
     protected:
         float multiplier = 1.0;
         float deadband = 0.0;
+        float deadbandLimit = 0.1;
         bool inverted = false;
         MOTOR_CONTROLLER_Base* followers[2] = {};
 
+        // TODO: Check the logic of this function
         /**
          * @brief Process the speed value (apply deadband, multiplier, inversion, constraints, motor safety status and beep setpoint)
          * @param speed The speed to process
@@ -22,8 +24,10 @@ class MOTOR_CONTROLLER_Base {
          */
         virtual float applySpeedFilters(float speed, bool isBeep) {
             if (MotorSafety::getInstance().getStatus() == MotorSafetyStatus::PROTECTED && !isBeep) return 0;
-            if (isBeep) speed = this->deadband * speed;
-            else {
+            if (isBeep) {
+                if (this->deadband > deadbandLimit) speed = deadbandLimit * speed;
+                else speed = this->deadband * speed;
+            } else {
                 if (this->inverted) speed = -speed;
                 speed *= this->multiplier;
                 speed = constrain(speed, -1, 1);

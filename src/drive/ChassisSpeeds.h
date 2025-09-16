@@ -11,6 +11,12 @@ class ChassisSpeeds {
         float omega = 0.0;
 
     public:
+        ChassisSpeeds(float vx, float vy, float omega) {
+            this->vx = vx;
+            this->vy = vy;
+            this->omega = omega;
+        };
+
         float getVx() {
             return this->vx;
         };
