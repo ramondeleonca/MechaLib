@@ -1,13 +1,17 @@
-#include <MechaLib.h>
+#include <Arduino.h>
+// #include <MechaLib.h>
+// #include "./robot.h"
 
-class Robot : public RobotBase {
-    public:
-        void robotSetup() override {
-            Serial.begin(115200);
-            Serial.println("Robot setup complete.");
-        }
-};
+// // Create robot instance
+// Robot robot;
 
-#define ROBOT_CLASS Robot
+// // Register robot
+// REGISTER_ROBOT(robot);
 
-#include <core/robot/RobotInit.h>
+void setup() {
+
+}
+
+void loop() {
+
+}

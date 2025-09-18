@@ -41,3 +41,19 @@ classDiagram
     DisabledMethods : disabledLoop()
     RobotBase --> DisabledMethods
 ```
+
+Startup Process:
+```mermaid
+flowchart TB
+    I[Log Start]
+
+    subgraph dev["Check Dev Mode"]
+        DM2[Read GPIO 15]
+    end
+
+    II["RobotSetup()"]
+    III[Register ESP32 watchdog]
+    IV[Log Setup complete]
+
+    I --> dev --> II --> III --> IV
+```

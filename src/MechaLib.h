@@ -5,16 +5,18 @@
 //! Arduino core
 #include <Arduino.h>
 
-//! Bluepad
-// #include <Bluepad32.h>
-
 //! RemoteXY
 #include <RemoteXY.h>
 
+//! Bluepad
+// #include <Bluepad32.h>
+
 //! MechaLib modules
 // * Core
-#include <core/Logger.h>
+#include <core/logger/Logger.h>
 #include <core/RobotBase.h>
+#include <core/comms/comms.hpp>
+#include <core/game/Alliance.h>
 
 //* Drive
 #include <drive/ChassisSpeeds.h>
