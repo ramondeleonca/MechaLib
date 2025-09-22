@@ -4,6 +4,7 @@
 
 #include <Arduino.h>
 #include <type_traits>
+#include <core/logic/EventLoop.h>
 
 /**
  * ## Binding
@@ -15,38 +16,123 @@
  * 
  * Supported types are `bool` and `float`.
  * Los tipos soportados son `bool` y `float`.
- * 
- * Example:
- * ```cpp
- * Binding<float> leftJoystickX;
- * Binding<bool> buttonA;
- * ```
  */
-template <typename T> class Binding {
+template <typename T> class BindingBase {
     static_assert(std::is_same<T, bool> || std::is_same<T, float>, "Binding only supports bool and float types");
 
     protected:
         T (*provider)();
 
     public:
-        Binding(T (*provider)()) {
-            this->provider = provider;
-        }
+        BindingBase(T (*provider)()) : provider(provider) {}
+        virtual ~BindingBase() = default;
 
+        T get() const { return provider ? provider() : T{}; }
 };
 
-template <> class Binding<bool> {
-
-}
-
-template <> class Binding<float> {
+/**
+ * Binding<bool>
+ */
+template <> class Binding<bool> : public BindingBase<bool> {
     public:
+        using BindingBase<bool>::BindingBase; // inherit constructor
+
+        /**
+         * @brief [EN] Executes the action for every robot loop the binding is true.
+         * @brief [ES] Ejecuta la acción en cada ciclo del robot mientras el binding sea verdadero.
+         * 
+         * @param action [EN] Action to be executed.
+         * [ES] Acción a ejecutar.
+         */
+        Binding<bool> whileTrue(void (*action)()) {
+            gamepadEventLoop.bind([this, action]() {
+                if (this->get()) action();
+            });
+            return this;
+        }
+
+        /**
+         * @brief [EN] Executes the action for every robot loop the binding is false.
+         * @brief [ES] Ejecuta la acción en cada ciclo del robot mientras el binding sea falso.
+         * 
+         * @param action [EN] Action to be executed.
+         * [ES] Acción a ejecutar.
+         */
+        Binding<bool> whileFalse(void (*action)()) {
+            gamepadEventLoop.bind([this, action]() {
+                if (!this->get()) action();
+            });
+            return this;
+        }
+
+        /**
+         * @brief [EN] Executes the action when the binding changes from false to true.
+         * @brief [ES] Ejecuta la acción cuando el binding cambia de falso a verdadero.
+         * 
+         * @param action [EN] Action to be executed.
+         * [ES] Acción a ejecutar.
+         */
+        Binding<bool> onTrue(void (*action)()) {
+            static bool lastState = false;
+            gamepadEventLoop.bind([this, action, &lastState]() {
+                bool currentState = this->get();
+                if (currentState && !lastState) action();
+                lastState = currentState;
+            });
+            return this;
+        }
+
+        /**
+         * @brief [EN] Executes the action when the binding changes from true to false.
+         * @brief [ES] Ejecuta la acción cuando el binding cambia de verdadero a falso.
+         * 
+         * @param action [EN] Action to be executed.
+         * [ES] Acción a ejecutar.
+         */
+        Binding<bool> onFalse(void (*action)()) {
+            static bool lastState = false;
+            gamepadEventLoop.bind([this, action, &lastState]() {
+                bool currentState = this->get();
+                if (!currentState && lastState) action();
+                lastState = currentState;
+            });
+            return this;
+        }
+};
+
+/**
+ * Binding<float>
+ */
+template <> class Binding<float> : public BindingBase<float> {
+    public:
+        using BindingBase<float>::BindingBase; // inherit constructor
+
+        /**
+         * @brief [EN] Returns a binding that is true when the value is greater than the threshold.
+         * @brief [ES] Devuelve un binding que es verdadero cuando el valor es mayor que el umbral.
+         * 
+         * @param threshold 
+         * @return Binding<bool> 
+         */
         Binding<bool> greaterThan(float threshold) {
-            
-            return Binding<bool>([]() {
-                return 
+            return Binding<bool>([this, threshold]() {
+                return this->get() > threshold;
             });
         }
-}
+
+        /**
+         * @brief [EN] Returns a binding that is true when the value is less than the threshold.
+         * @brief [ES] Devuelve un binding que es verdadero cuando el valor es menor que el umbral.
+         * 
+         * @param threshold 
+         * @return Binding<bool> 
+         */        
+        Binding<bool> lessThan(float threshold) {
+            return Binding<bool>([this, threshold]() {
+                return this->get() < threshold;
+            });
+        }
+};
+
 
 #endif
