@@ -7,3 +7,4 @@
 /scripts/esp32-bluepad32-*
 src/frameworks
 **/__pycache__
+src/main.cpp

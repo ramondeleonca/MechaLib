@@ -1,6 +1,5 @@
+#define MECHALEAGUE_TEAM 9999
 
-
-#include <Arduino.h>
 #include <MechaLib.h>
 #include "./robot.h"
 

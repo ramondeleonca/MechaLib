@@ -3,7 +3,7 @@
 #define TELEMETRYOUTPUT_H
 
 #include <Arduino.h>
-#include <core/comms/comms.hpp>
+#include <core/comms/comms.h>
 
 /**
  * ## TelemetryOutput

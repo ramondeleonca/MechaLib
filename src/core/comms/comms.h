@@ -7,10 +7,6 @@
 #include <ESPmDNS.h>
 #include <WiFiUdp.h>
 
-#ifndef TEAM_ID
-#define TEAM_ID 0
-#endif
-
 enum COMMS_CONN_ERR {
     COMMS_SUCCESS = 0,
     COMMS_FAILURE = 1,
@@ -48,8 +44,8 @@ class Comms {
         const uint telemetryServerPort = 1011;
 
         bool validateTeamID() {
-            if (TEAM_ID > 0 && TEAM_ID <= 9999) return true;
-            return false;
+            // if (TEAM_ID > 0 && TEAM_ID <= 9999) return true;
+            // return false;
         }
 
         COMMS_CONN_ERR connectToWiFi(const char* ssid, const char* password = NULL) {
@@ -84,7 +80,7 @@ class Comms {
     public:
         void startMDNS() {
             char mdnsName[sizeof(mdnsFormat) + 4]; // Enough space for "mechaleague-bot-9999\0"
-            snprintf(mdnsName, sizeof(mdnsName), "%s%d", mdnsFormat, TEAM_ID); // mechaleague-bot-<team_id>
+            // snprintf(mdnsName, sizeof(mdnsName), "%s%d", mdnsFormat, TEAM_ID); // mechaleague-bot-<team_id>
             MDNS.begin(mdnsName);
         }
 

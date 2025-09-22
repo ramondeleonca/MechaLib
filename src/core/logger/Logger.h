@@ -5,18 +5,25 @@
 #include <Arduino.h>
 #include <drive/ChassisSpeeds.h>
 
+/**
+ * ## Logger
+ * @brief [EN] Logger for logging messages to Serial and telemetry with different log levels.
+ * @brief [ES] Logger para registrar mensajes en Serial y telemetría con diferentes niveles de gravedad.
+ */
 class Logger {
     public:
         const int SERIAL_BAUD = 115200;
 
         enum LOG_LEVEL {
-            DEBUG = 0,
-            INFO = 1,
-            WARN = 2,
-            ERROR = 3
+            NONE = 0,
+            DEBUG = 1,
+            INFO = 2,
+            WARN = 3,
+            ERROR = 4
         };
 
-        const char* LOG_LEVEL_PREFIXES[4] = {
+        const char* LOG_LEVEL_PREFIXES[5] = {
+            "",
             "[DEBUG] ",
             "[INFO] ",
             "[WARN] ",

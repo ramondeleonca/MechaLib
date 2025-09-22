@@ -32,7 +32,17 @@
       {
         "owner": "remotexy",
         "name": "RemoteXY",
-        "version": "@^4.1.4"
+        "version": "^4.1.4"
+      },
+      {
+        "owner": "pablomarquez76",
+        "name": "PS4_Controller_Host",
+        "version": "^1.1.1"
+      },
+      {
+        "owner": "rodneybakiskan",
+        "name": "ps5-esp32",
+        "version": "https://github.com/rodneybakiskan/ps5-esp32.git"
       }
     ],
     "scripts": {

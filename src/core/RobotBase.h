@@ -4,6 +4,7 @@
 
 #include <Arduino.h>
 #include <core/logger/Logger.h>
+#include <core/logic/EventLoop.h>
 #include <esp_task_wdt.h>
 
 /**
@@ -14,7 +15,7 @@
 class RobotBase {
     // ! Public constants
     public:
-        const enum ROBOT_STATUS {
+        enum ROBOT_STATUS {
             ROBOT_DISABLED,
             ROBOT_AUTO,
             ROBOT_DRIVER
@@ -22,6 +23,7 @@ class RobotBase {
 
         static const uint8_t ROBOT_PERIOD = 20; // Main loop period in milliseconds
         static const uint16_t ROBOT_STALL_TIMEOUT = 2000; // Time in milliseconds before the watchdog timer triggers a reset
+        static const uint8_t DEV_MODE_GPIO = GPIO_NUM_15; // GPIO pin to check for dev mode (active low)
 
     // ! Private members called by the main program
     private:
@@ -30,9 +32,11 @@ class RobotBase {
         uint32_t currentTime = 0;
         uint16_t deltaTime = 0;
 
-    // ! Protected members for use by child classes
-    protected:
-        RobotBase::ROBOT_STATUS robotStatus = ROBOT_STATUS::ROBOT_DISABLED;
+        // Robot status
+        static RobotBase::ROBOT_STATUS robotStatus;
+
+        // Dev Mode (ONLY SET ONCE)
+        static int8_t devMode; // -1 = unset, 0 = disabled, 1 = enabled
 
     // ! Public methods
     public:
@@ -53,6 +57,11 @@ class RobotBase {
 
             // * Call user-defined robot setup
             robot.robotSetup();
+
+            // * Initialize RemoteXY (if applicable)
+            #ifdef RemoteXY_CONF
+            RemoteXY_Init();
+            #endif
 
             // * Setup watchdog timer for loop
             // Watchdog timer is set up after robotSetup to avoid false positives during setup which could take longer than the stall timeout
@@ -94,14 +103,23 @@ class RobotBase {
                 robot.deltaTime = robot.currentTime - robot.lastTime;
             } else if (robot.deltaTime > ROBOT_PERIOD && robot.lastTime != 0) {
                 // If the loop is running slower than the desired period, log a warning
+                // TODO: Make these F strings
                 Logger::getInstance().log("Warning: Robot loop overrun (dt: " + String(robot.deltaTime) + " ms)");
             }
+
+            // * Call RemoteXY loop (if applicable)
+            #ifdef RemoteXY_CONF
+            RemoteXY_Handler();
+            #endif
+
+            // * Poll gamepad event loop
+            gamepadEventLoop.poll();
 
             // * Call user-defined robot loop
             robot.robotLoop();
 
             // * Call the apporpriate mode loop
-            switch(robot.robotStatus) {
+            switch(RobotBase::robotStatus) {
                 case ROBOT_DISABLED:
                     robot.disabledLoop();
                     break;
@@ -119,6 +137,34 @@ class RobotBase {
             // Update lastTime for the next loop iteration
             robot.lastTime = robot.currentTime;
         }
+
+        // * Static Getters
+
+        /**
+         * @brief [EN] isDev checks if the robot is in development mode by reading a specific GPIO pin. See: @ref RobotBase::DEV_MODE_GPIO
+         * @brief [ES] isDev verifica si el robot está en modo de desarrollo leyendo un pin GPIO específico. Ver: @ref RobotBase::DEV_MODE_GPIO
+         * @return true [EN] DEV mode enabled [ES] Modo DESARROLLO habilitado
+         * @return false [EN] DEV mode disabled [ES] Modo DESARROLLO deshabilitado
+         */
+        static bool isDev() {
+            // Read the dev mode pin only when not set
+            if (RobotBase::devMode == -1) {
+                pinMode(DEV_MODE_GPIO, INPUT_PULLUP); // Set GPIO 0 as input with pull-up resistor
+                devMode = (digitalRead(DEV_MODE_GPIO) == LOW) ? 1 : 0; // Active low: LOW means dev mode enabled
+            }
+            return RobotBase::devMode == 1;
+        }
+
+        /**
+         * @brief [EN] getRobotStatus returns the current robot status.
+         * @brief [ES] getRobotStatus devuelve el estado actual del robot.
+         * @see @ref RobotBase::ROBOT_STATUS
+         * @return RobotBase::ROBOT_STATUS [EN] Current robot status [ES] Estado actual del robot
+         */
+        static RobotBase::ROBOT_STATUS getRobotStatus() {
+            return RobotBase::robotStatus;
+        }
+
 
     // ! User-defined methods
     public:
@@ -178,6 +224,10 @@ class RobotBase {
         virtual void disabledLoop() {};
 };
 
+// * Initialze RobotBase static members
+int8_t RobotBase::devMode = -1;
+RobotBase::ROBOT_STATUS RobotBase::robotStatus = RobotBase::ROBOT_DISABLED;
+ 
 /**
  * ## ARDUINO_MECHALEAGUE_ROBOT_REGISTRATION
  * @brief [EN] Automatically sets up the Arduino functions for the robot instance.

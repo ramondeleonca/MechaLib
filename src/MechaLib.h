@@ -6,16 +6,22 @@
 #include <Arduino.h>
 
 //! RemoteXY
+#ifdef RemoteXY_CONF
+
 #include <RemoteXY.h>
 
-//! Bluepad
-// #include <Bluepad32.h>
+// TODO: Implement RemoteXY unsupported wifi logic
+#ifdef REMOTEXY_MODE__WIFI_POINT && !defined(MECHALIB_REMOTEXY_ALLOW_WIFI_POINT)
+#error "RemoteXY WiFi Point mode cannot be used in MechaLib"
+#endif
+
+#endif
 
 //! MechaLib modules
 // * Core
 #include <core/logger/Logger.h>
 #include <core/RobotBase.h>
-#include <core/comms/comms.hpp>
+#include <core/comms/comms.h>
 #include <core/game/Alliance.h>
 
 //* Drive
