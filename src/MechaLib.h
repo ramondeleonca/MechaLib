@@ -2,6 +2,8 @@
 #ifndef MECHALIB_H
 #define MECHALIB_H
 
+// ! Ensure required const
+
 //! Arduino core
 #include <Arduino.h>
 
@@ -11,7 +13,7 @@
 #include <RemoteXY.h>
 
 // TODO: Implement RemoteXY unsupported wifi logic
-#ifdef REMOTEXY_MODE__WIFI_POINT && !defined(MECHALIB_REMOTEXY_ALLOW_WIFI_POINT)
+#if defined(REMOTEXY_MODE__WIFI_POINT) && !defined(MECHALIB_REMOTEXY_ALLOW_WIFI_POINT)
 #error "RemoteXY WiFi Point mode cannot be used in MechaLib"
 #endif
 

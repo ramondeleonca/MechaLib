@@ -52,6 +52,12 @@ class RobotBase {
             // * Log program start
             Logger::getInstance().log(F("********** MechaLeague Robot Setup **********"));
 
+            // * Check DEV mode
+            // DEV mode needs to be checked at init
+            bool isDev = RobotBase::isDev();
+            if (isDev) Logger::getInstance().log(F("ROBOT IS IN DEV MODE"));
+            else Logger::getInstance().log(F("ROBOT IS IN COMP MODE"));
+
             // * Set CPU frequency to 240 MHz for maximum performance
             setCpuFrequencyMhz(240);
 

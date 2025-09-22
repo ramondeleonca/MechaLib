@@ -45,7 +45,7 @@ class Comms {
 
         bool validateTeamID() {
             // if (TEAM_ID > 0 && TEAM_ID <= 9999) return true;
-            // return false;
+            return false;
         }
 
         COMMS_CONN_ERR connectToWiFi(const char* ssid, const char* password = NULL) {

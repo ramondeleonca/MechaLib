@@ -16,7 +16,7 @@ class EventLoop {
     private:
         void (*callbacks[MAX_CALLBACKS])();
         uint8_t callbackCount = 0;
-        char *name;
+        const char* name;
         static uint8_t eventLoopCount;
 
     public:
@@ -26,7 +26,7 @@ class EventLoop {
          * 
          * @param name Name of the event loop.
          */
-        EventLoop(char *name = "EventLoop") {
+        EventLoop(const char* name = "EventLoop") {
             this->name = name;
             eventLoopCount++;
         }
@@ -83,6 +83,8 @@ class EventLoop {
             for (uint8_t i = 0; i < callbackCount; i++) if (callbacks[i]) callbacks[i]();
         }
 };
+
+uint8_t EventLoop::eventLoopCount = 0;
 
 /**
  * ## gamepadEventLoop
