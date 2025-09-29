@@ -1,3 +1,4 @@
+Coming from Hack Club? [click here for more information](/HACKCLUB.md)
 <p align="center">
     <img src="./assets/MechaLibLogo200.png" width="100px" />    
 </p>

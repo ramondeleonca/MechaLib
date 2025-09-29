@@ -9,15 +9,11 @@
  * @brief [EN] Class that represents an event loop.
  * @brief [ES] Clase que representa un bucle de eventos.
  */
-class EventLoop {
-    public:
-        static const uint8_t MAX_CALLBACKS = 32;
-
+template <uint8_t MAX_CALLBACKS = 32> class EventLoop {
     private:
         void (*callbacks[MAX_CALLBACKS])();
         uint8_t callbackCount = 0;
         const char* name;
-        static uint8_t eventLoopCount;
 
     public:
         /**
@@ -28,7 +24,6 @@ class EventLoop {
          */
         EventLoop(const char* name = "EventLoop") {
             this->name = name;
-            eventLoopCount++;
         }
 
         /**
@@ -44,6 +39,38 @@ class EventLoop {
                 Logger::getInstance().log(F("EventLoop: Maximum number of callbacks reached: "), Logger::LOG_LEVEL::ERROR, false);
                 Logger::getInstance().log(name, Logger::LOG_LEVEL::NONE);
             }
+        }
+
+        /**
+         * @brief [EN] Binds a callback to be called only once on the next poll.
+         * @brief [ES] Vincula una función para ser llamada solo una vez en la siguiente llamada.
+         * 
+         * @param callback Function to be called once.
+         */
+        void bindOnce(void (*callback)()) {
+            // Wrap the callback to unbind itself after being called
+            this->bind(callbacks[callbackCount++] = [this, callback]() {
+                callback();
+                this->unbind(callback);
+            });
+        }
+
+        /**
+         * @brief [EN] Binds a callback to be called only once after the delay time has passed (non-blocking).
+         * @brief [ES] Vincula una función para ser llamada solo una vez cuando el tiempo de delay haya pasado (no bloquea).
+         * 
+         * @param callback Function to be called once.
+         * @param delayMs Time to pass before calling
+         */
+        void bindOnceDelay(void (*callback)(), uint16_t delayMs) {
+            static uint32_t bindTime = millis();
+            // Wrap the callback to unbind itself after being called after the time specified
+            this->bind(callbacks[callbackCount++] = [this, callback]() {
+                if (millis() >= bindTime + delayMs) {
+                    callback();
+                    this->unbind(callback);
+                }
+            });
         }
 
         /**
@@ -66,9 +93,7 @@ class EventLoop {
                 if (callbacks[i] == callback) {
                     callbacks[i] = nullptr;
                     // Shift remaining callbacks
-                    for (uint8_t j = i; j < callbackCount - 1; j++) {
-                        callbacks[j] = callbacks[j + 1];
-                    }
+                    for (uint8_t j = i; j < callbackCount - 1; j++) callbacks[j] = callbacks[j + 1];
                     callbacks[--callbackCount] = nullptr;
                     break;
                 }
@@ -84,13 +109,18 @@ class EventLoop {
         }
 };
 
-uint8_t EventLoop::eventLoopCount = 0;
-
 /**
  * ## gamepadEventLoop
  * @brief [EN] Static instance of EventLoop for gamepad polling.
  * @brief [ES] Instancia estática de EventLoop para el sondeo del gamepad.
  */
-EventLoop gamepadEventLoop("GamepadEventLoop");
+EventLoop<64> gamepadEventLoop("GamepadEventLoop");
+
+/**
+ * ## defaultEventLoop
+ * @brief [EN] Static instance of EventLoop for general purposes.
+ * @brief [ES] Instancia estática de EventLoop para propósitos generales.
+ */
+EventLoop<32> defaultEventLoop("DefaultEventLoop");
 
 #endif
