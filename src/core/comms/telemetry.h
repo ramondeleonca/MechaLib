@@ -4,13 +4,21 @@
 
 #include <Arduino.h>
 
+/**
+ * @brief [EN] MechaTelemetry1 Message Types
+ * @brief [ES] Tipos de Mensajes de MechaTelemetry1
+ */
 enum class MT1_MessageType : uint8_t {
-    SET,
-    DEL,
-    SYNC,
-    PING
+    SET = 0,
+    DEL = 1,
+    SYNC = 2,
+    PING = 3
 };
 
+/**
+ * @brief [EN] MechaTelemetry1 Value Types
+ * @brief [ES] Tipos de Valores de MechaTelemetry1
+ */
 enum class MT1_ValueType : uint8_t {
     FLOAT,
     STRING,
@@ -18,6 +26,10 @@ enum class MT1_ValueType : uint8_t {
 };
 
 #pragma pack(push, 1)
+/**
+ * @brief [EN] MechaTelemetry1 Message Structure
+ * @brief [ES] Estructura de Mensaje de MechaTelemetry1
+ */
 struct MT1_Message {
     MT1_MessageType messageType;
     MT1_ValueType valueType;
@@ -33,11 +45,5 @@ struct MT1_Message {
     } value;
 };
 #pragma pack(pop)
-
-MT1_Message msg;
-
-void setup() {
-    
-}
 
 #endif

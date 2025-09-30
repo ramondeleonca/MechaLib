@@ -1,10 +1,9 @@
 Coming from Hack Club? [click here for more information](/HACKCLUB.md)
 <p align="center">
-    <img src="./assets/MechaLibLogo200.png" width="100px" />    
+    <img src="./assets/MechaLibLogo200.png" width="100px" /> 
+    <h1 align="center">MechaLib</h1>
+    <p align="center">The robust, all-in-one software library for <b>MechaLeague</b> Robots</p>
 </p>
-
-# MechaLib
-The robust, all-in-one software library for **MechaLeague** Robots
 
 ## The purpose of MechaLib
 MechaLib's mission is to empower anyone with basic Arduino and robotics knowledge with the ability to create impressive robots, by focusing on the game and competition: **MechaLeague**
