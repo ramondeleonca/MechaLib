@@ -17,6 +17,7 @@ The work done on MechaLeague this summer consists of:
 The challenge consists of 2 opposing alliances (Red and Blue) composed of 3 teams each, playing on opposite sides of a 2m x 3m field. The game starts with a 20 second autonomous period where they share the objective of filling their own alliance's orbits with electrons in order to achieve the valence bonus when they're filled, robots can also take neutrons and protons from their ally station and deposit them into the core for more points; robots continue this objective with a 2 minute teleoperated period where they're remote controlled by the team's driver operator, in the last 20 seconds of the game, robots can stay under or ascend on their team's reactor for an extra endgame bonus.
 
 ![](./assets/field.png)
+[Field CAD model](https://cad.onshape.com/documents/ba6518bcb4885c2b6878085e/w/0bf40196900ad0589ed0d01f/e/8d5deeb368cbbde373f27a9c?renderMode=0&uiState=68dbd9dfa284fd146393e80c)
 <!-- (Other specific information not disclosed for project confidentiality) -->
 
 ## The Website
