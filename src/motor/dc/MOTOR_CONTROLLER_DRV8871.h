@@ -68,4 +68,7 @@ class MOTOR_CONTROLLER_DRV8871 : public MOTOR_CONTROLLER_Base {
         };
 };
 
+// Alias
+using CONTROLADOR_MOTOR_DRV8871 = MOTOR_CONTROLLER_DRV8871;
+
 #endif

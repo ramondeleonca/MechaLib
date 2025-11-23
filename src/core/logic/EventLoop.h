@@ -1,8 +1,10 @@
+// TODO: REEVALUATE
 #pragma once
 #ifndef EVENTLOOP_H
 #define EVENTLOOP_H
 
 #include <core/logger/Logger.h>
+#include <functional>
 
 /**
  * ## EventLoop
@@ -11,7 +13,7 @@
  */
 template <uint8_t MAX_CALLBACKS = 32> class EventLoop {
     private:
-        void (*callbacks[MAX_CALLBACKS])();
+        std::function<void()> callbacks[MAX_CALLBACKS];
         uint8_t callbackCount = 0;
         const char* name;
 
@@ -32,9 +34,9 @@ template <uint8_t MAX_CALLBACKS = 32> class EventLoop {
          * 
          * @param callback Function to be called.
          */
-        void bind(void (*callback)()) {
+        void bind(std::function<void()> callback) {
             if (callbackCount < MAX_CALLBACKS) {
-                callbacks[callbackCount++] = callback;
+                callbacks[callbackCount++] = std::move(callback);
             } else {
                 Logger::getInstance().log(F("EventLoop: Maximum number of callbacks reached: "), Logger::LOG_LEVEL::ERROR, false);
                 Logger::getInstance().log(name, Logger::LOG_LEVEL::NONE);
@@ -47,12 +49,20 @@ template <uint8_t MAX_CALLBACKS = 32> class EventLoop {
          * 
          * @param callback Function to be called once.
          */
-        void bindOnce(void (*callback)()) {
-            // Wrap the callback to unbind itself after being called
-            this->bind(callbacks[callbackCount++] = [this, callback]() {
-                callback();
-                this->unbind(callback);
-            });
+        void bindOnce(std::function<void()> callback) {
+            if (callbackCount < MAX_CALLBACKS) {
+                uint8_t slot = callbackCount++;
+                callbacks[slot] = [this, callback = std::move(callback), slot]() mutable {
+                    callback();
+                    // remove this slot and compact the array
+                    callbacks[slot] = nullptr;
+                    for (uint8_t j = slot; j < callbackCount - 1; j++) callbacks[j] = callbacks[j + 1];
+                    callbacks[--callbackCount] = nullptr;
+                };
+            } else {
+                Logger::getInstance().log(F("EventLoop: Maximum number of callbacks reached: "), Logger::LOG_LEVEL::ERROR, false);
+                Logger::getInstance().log(name, Logger::LOG_LEVEL::NONE);
+            }
         }
 
         /**
@@ -62,15 +72,23 @@ template <uint8_t MAX_CALLBACKS = 32> class EventLoop {
          * @param callback Function to be called once.
          * @param delayMs Time to pass before calling
          */
-        void bindOnceDelay(void (*callback)(), uint16_t delayMs) {
-            static uint32_t bindTime = millis();
-            // Wrap the callback to unbind itself after being called after the time specified
-            this->bind(callbacks[callbackCount++] = [this, callback]() {
-                if (millis() >= bindTime + delayMs) {
-                    callback();
-                    this->unbind(callback);
-                }
-            });
+        void bindOnceDelay(std::function<void()> callback, uint16_t delayMs) {
+            if (callbackCount < MAX_CALLBACKS) {
+                uint8_t slot = callbackCount++;
+                uint32_t start = millis();
+                callbacks[slot] = [this, callback = std::move(callback), delayMs, start, slot]() mutable {
+                    if (millis() >= start + delayMs) {
+                        callback();
+                        // remove this slot and compact the array
+                        callbacks[slot] = nullptr;
+                        for (uint8_t j = slot; j < callbackCount - 1; j++) callbacks[j] = callbacks[j + 1];
+                        callbacks[--callbackCount] = nullptr;
+                    }
+                };
+            } else {
+                Logger::getInstance().log(F("EventLoop: Maximum number of callbacks reached: "), Logger::LOG_LEVEL::ERROR, false);
+                Logger::getInstance().log(name, Logger::LOG_LEVEL::NONE);
+            }
         }
 
         /**
@@ -88,16 +106,25 @@ template <uint8_t MAX_CALLBACKS = 32> class EventLoop {
          * 
          * @param callback Function to be unbound.
          */
-        void unbind(void (*callback)()) {
+        void unbind(std::function<void()> callback) {
             for (uint8_t i = 0; i < callbackCount; i++) {
-                if (callbacks[i] == callback) {
-                    callbacks[i] = nullptr;
-                    // Shift remaining callbacks
-                    for (uint8_t j = i; j < callbackCount - 1; j++) callbacks[j] = callbacks[j + 1];
-                    callbacks[--callbackCount] = nullptr;
-                    break;
+                // Try to compare underlying function pointers when possible
+                auto a = callbacks[i].template target<void(*)()>();
+                auto b = callback.template target<void(*)()>();
+                if (a && b) {
+                    if (*a == *b) {
+                        callbacks[i] = nullptr;
+                        for (uint8_t j = i; j < callbackCount - 1; j++) callbacks[j] = callbacks[j + 1];
+                        callbacks[--callbackCount] = nullptr;
+                        break;
+                    }
                 }
             }
+        }
+
+        // Convenience overload for unbinding plain function pointers
+        void unbind(void (*callback)()) {
+            unbind(std::function<void()>(callback));
         }
 
         /**

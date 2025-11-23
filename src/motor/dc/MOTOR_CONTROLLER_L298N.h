@@ -61,4 +61,7 @@ class MOTOR_CONTROLLER_L298N : public MOTOR_CONTROLLER_Base {
         };
 };
 
+// Alias
+using CONTROLADOR_MOTOR_L298N = MOTOR_CONTROLLER_L298N;
+
 #endif

@@ -169,4 +169,7 @@ class MOTOR_CONTROLLER_Base {
         }
 };
 
+// Alias
+using CONTROLADOR_MOTOR_Base = MOTOR_CONTROLLER_Base;
+
 #endif

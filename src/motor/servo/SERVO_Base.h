@@ -1,3 +1,4 @@
+// TODO: Complete class behavior
 #pragma once
 #ifndef SERVO_BASE_H
 #define SERVO_BASE_H
@@ -41,7 +42,7 @@ class SERVO_Base {
              */
             void setAngle(int angle) {
                 angle = constrain(angle, minDeg, maxDeg);
-                float rotation = (float)(angle - minDeg) / (maxDeg - minDeg);
+                float rotation = (angle - minDeg) / (maxDeg - minDeg);
                 set(rotation);
             };
 
